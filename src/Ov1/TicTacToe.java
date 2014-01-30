@@ -87,4 +87,8 @@ public class TicTacToe extends JFrame implements ListSelectionListener
       setStatusMessage("Player " + playerMarks[currentPlayer] + " won!");
     currentPlayer = 1 - currentPlayer; // The next turn is by the other player.
   }
+
+public BoardModel getBoardModel() {
+	return this.boardModel;
+}
 }

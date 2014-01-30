@@ -1,11 +1,17 @@
 package Ov1;
 
+import java.rmi.AlreadyBoundException;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 import java.util.Scanner;
 
 public class Player {
-	
+	private TicTacToe ttt;
+	 private static String adresse = "JavaRMItest";
+	 
 	public Player() {
-		System.setSecurityManager(new LiberalSecurityManager());
 		
 		try {
             Scanner scan = new Scanner(System.in);
@@ -23,12 +29,22 @@ public class Player {
             e.printStackTrace();
     }
 	}
-	
-	public void server() {
-		
+	public void server() throws RemoteException, NotBoundException, AlreadyBoundException, InterruptedException {
+		System.out.println("Starting game ...");
+		ttt = new TicTacToe();
+		Implementation imp = new Implementation(ttt.getBoardModel());
+		Registry registry = LocateRegistry.createRegistry(1000);
+		registry.bind(adresse, imp);
+		System.out.println("server kjører");
 	}
 	
-	public void client(String ip, String port, Scanner scan){
-		
+	public void client(String ip, String port, Scanner scan) throws RemoteException, NotBoundException, InterruptedException{
+		Registry registry = LocateRegistry.getRegistry("localhost", 1000);
+		RMIInterface rint = (RMIInterface) registry.lookup(adresse);
+		System.out.println(rint.checkwin());
+		System.out.println("wait finnished");
+	}
+	public static void main(String[] args) {
+		Player p = new Player();
 	}
 }
