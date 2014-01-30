@@ -1,9 +1,13 @@
 package Ov1;
+
+
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableCellRenderer;
+
 import java.awt.*;
+import java.rmi.RemoteException;
 
 /**
  * A Tic Tac Toe application.
@@ -20,6 +24,7 @@ public class TicTacToe extends JFrame implements ListSelectionListener
   private final JLabel statusLabel = new JLabel();
   private final char playerMarks[] = {'X', 'O'};
   private int currentPlayer = 0; // Player to set the next mark.
+  private RMIInterface rint;
 
   public static void main(String args[])
   {
@@ -62,7 +67,42 @@ public class TicTacToe extends JFrame implements ListSelectionListener
     setVisible(true);
   }
 
-  void setStatusMessage(String status)
+  public TicTacToe(RMIInterface rint) {
+	    super("TDT4190: Tic Tac Toe");
+	    this.rint = rint;
+	    boardModel = new BoardModel(BOARD_SIZE);
+	    board = new JTable(boardModel);
+	    board.setFont(board.getFont().deriveFont(25.0f));
+	    board.setRowHeight(30);
+	    board.setCellSelectionEnabled(true);
+	    for (int i = 0; i < board.getColumnCount(); i++)
+	      board.getColumnModel().getColumn(i).setPreferredWidth(30);
+	    board.setGridColor(Color.BLACK);
+	    board.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+	    DefaultTableCellRenderer dtcl = new DefaultTableCellRenderer();
+	    dtcl.setHorizontalAlignment(SwingConstants.CENTER);
+	    board.setDefaultRenderer(Object.class, dtcl);
+	    board.getSelectionModel().addListSelectionListener(this);
+	    board.getColumnModel().getSelectionModel().addListSelectionListener(this);
+
+	    statusLabel.setPreferredSize(new Dimension(statusLabel.getPreferredSize().width, 40));
+	    statusLabel.setHorizontalAlignment(SwingConstants.CENTER);
+
+	    Container contentPane = getContentPane();
+	    contentPane.setLayout(new BorderLayout());
+	    contentPane.add(board, BorderLayout.CENTER);
+	    contentPane.add(statusLabel, BorderLayout.SOUTH);
+	    pack();
+
+	    setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+	    int centerX = (int)(Toolkit.getDefaultToolkit().getScreenSize().getWidth() - getSize().width) / 2;
+	    int centerY = (int)(Toolkit.getDefaultToolkit().getScreenSize().getHeight() - getSize().height) / 2;
+	    setLocation(centerX, centerY);
+	    setVisible(true);
+}
+
+void setStatusMessage(String status)
   {
     statusLabel.setText(status);
   }
@@ -86,9 +126,22 @@ public class TicTacToe extends JFrame implements ListSelectionListener
     if (boardModel.setCell(x, y, playerMarks[currentPlayer]))
       setStatusMessage("Player " + playerMarks[currentPlayer] + " won!");
     currentPlayer = 1 - currentPlayer; // The next turn is by the other player.
+    try {
+		rint.placeServer(x, y,playerMarks[currentPlayer]);
+		rint.placeClient(x, y,playerMarks[currentPlayer]);
+		rint.changeTurn();
+	} catch (RemoteException e1) {
+		// TODO Auto-generated catch block
+		e1.printStackTrace();
+	}
+    
+  }
+  public BoardModel getBoardModel(){
+	  return this.boardModel;
   }
 
-public BoardModel getBoardModel() {
-	return this.boardModel;
+public void setRint(RMIInterface rmiInterface) {
+	this.rint = rmiInterface;
+	
 }
 }

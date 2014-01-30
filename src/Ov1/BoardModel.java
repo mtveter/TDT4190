@@ -2,6 +2,8 @@ package Ov1;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +11,7 @@ import java.util.List;
  * This class contains the board data represented as a two dimensional
  * array of Cell. Each Cell can contain a single char (e.g. X or O).
  */
-final class BoardModel implements TableModel
+final class BoardModel implements TableModel,Serializable
 {
   private final Cell boardCells[][];
   private final List<TableModelListener> listeners = new ArrayList<TableModelListener>();
@@ -24,7 +26,9 @@ final class BoardModel implements TableModel
     }
 
   }
-
+  public Cell[][] getBoardCells(){
+	  return boardCells;
+  }
   /**
    * Does (x,y) have a mark already?
    *
@@ -205,7 +209,7 @@ final class BoardModel implements TableModel
   /**
    * Class representing a single cell in the board.
    */
-  private final class Cell
+  public final class Cell implements Serializable
   {
     private char contents = ' ';
 

@@ -1,11 +1,15 @@
 package Ov1;
 
+
+import java.io.Serializable;
 import java.rmi.AlreadyBoundException;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Scanner;
+
+import Ov1.BoardModel.Cell;
 
 public class Player {
 	private TicTacToe ttt;
@@ -33,6 +37,7 @@ public class Player {
 		System.out.println("Starting game ...");
 		ttt = new TicTacToe();
 		Implementation imp = new Implementation(ttt.getBoardModel());
+		ttt.setRint((RMIInterface) imp);
 		Registry registry = LocateRegistry.createRegistry(1000);
 		registry.bind(adresse, imp);
 		System.out.println("server kjører");
@@ -41,7 +46,9 @@ public class Player {
 	public void client(String ip, String port, Scanner scan) throws RemoteException, NotBoundException, InterruptedException{
 		Registry registry = LocateRegistry.getRegistry("localhost", 1000);
 		RMIInterface rint = (RMIInterface) registry.lookup(adresse);
-		System.out.println(rint.checkwin());
+		ttt = new TicTacToe(rint);
+		Implementation imp = new Implementation(ttt.getBoardModel());
+		rint.setClient((RMIInterface) imp);
 		System.out.println("wait finnished");
 	}
 	public static void main(String[] args) {
