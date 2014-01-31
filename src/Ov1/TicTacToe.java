@@ -127,9 +127,11 @@ void setStatusMessage(String status)
       setStatusMessage("Player " + playerMarks[currentPlayer] + " won!");
     currentPlayer = 1 - currentPlayer; // The next turn is by the other player.
     try {
-		rint.placeServer(x, y,playerMarks[currentPlayer]);
-		rint.placeClient(x, y,playerMarks[currentPlayer]);
-		rint.changeTurn();
+		if(rint.placeServer(x, y)){
+			setStatusMessage("Player " + playerMarks[rint.getTurnWin()] + " won!");
+			rint.tellOpponent();
+		}
+		rint.placeClient(x, y);
 	} catch (RemoteException e1) {
 		// TODO Auto-generated catch block
 		e1.printStackTrace();
@@ -143,5 +145,9 @@ void setStatusMessage(String status)
 public void setRint(RMIInterface rmiInterface) {
 	this.rint = rmiInterface;
 	
+}
+
+public void win() throws RemoteException {
+	setStatusMessage("Player " + playerMarks[rint.getTurnWin()] + " won!");
 }
 }
