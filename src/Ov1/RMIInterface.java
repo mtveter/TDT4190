@@ -10,8 +10,11 @@ public interface RMIInterface extends Remote{
 	public void win() throws RemoteException;
 	public void setClient(RMIInterface client) throws RemoteException;
 	public boolean placeServer(int x, int y) throws RemoteException;
-	public boolean placeClient(int x, int y) throws RemoteException;
+	public boolean placeClient(int x, int y, char c) throws RemoteException;
 	public void changeTurn() throws RemoteException;
-	public int getTurnWin() throws RemoteException;
+	public int getTurn() throws RemoteException;
 	public void tellOpponent() throws RemoteException;
+	public int getWinner() throws RemoteException;
+	public void winner() throws RemoteException;
+	public boolean Havewinner() throws RemoteException;
 }

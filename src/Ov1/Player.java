@@ -35,7 +35,7 @@ public class Player {
 	}
 	public void server() throws RemoteException, NotBoundException, AlreadyBoundException, InterruptedException {
 		System.out.println("Starting game ...");
-		ttt = new TicTacToe();
+		ttt = new TicTacToe(0);
 		Implementation imp = new Implementation(ttt);
 		ttt.setRint((RMIInterface) imp);
 		Registry registry = LocateRegistry.createRegistry(1000);
@@ -46,10 +46,9 @@ public class Player {
 	public void client(String ip, String port, Scanner scan) throws RemoteException, NotBoundException, InterruptedException{
 		Registry registry = LocateRegistry.getRegistry("localhost", 1000);
 		RMIInterface rint = (RMIInterface) registry.lookup(adresse);
-		ttt = new TicTacToe(rint);
+		ttt = new TicTacToe(rint,1);
 		Implementation imp = new Implementation(ttt);
 		rint.setClient((RMIInterface) imp);
-		imp.setClient(rint);
 		System.out.println("wait finnished");
 	}
 	public static void main(String[] args) {

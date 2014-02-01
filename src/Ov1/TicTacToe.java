@@ -23,18 +23,18 @@ public class TicTacToe extends JFrame implements ListSelectionListener
   private final JTable board;
   private final JLabel statusLabel = new JLabel();
   private final char playerMarks[] = {'X', 'O'};
-  private int currentPlayer = 0; // Player to set the next mark.
+  private int player; // Player to set the next mark.
   private RMIInterface rint;
 
-  public static void main(String args[])
+  /*public static void main(String args[])
   {
     new TicTacToe();
-  }
+  }*/
 
-  public TicTacToe()
+  public TicTacToe(int player)
   {
     super("TDT4190: Tic Tac Toe");
-
+    this.player = player;
     boardModel = new BoardModel(BOARD_SIZE);
     board = new JTable(boardModel);
     board.setFont(board.getFont().deriveFont(25.0f));
@@ -67,8 +67,9 @@ public class TicTacToe extends JFrame implements ListSelectionListener
     setVisible(true);
   }
 
-  public TicTacToe(RMIInterface rint) {
+  public TicTacToe(RMIInterface rint, int player) {
 	    super("TDT4190: Tic Tac Toe");
+	    this.player = player;
 	    this.rint = rint;
 	    boardModel = new BoardModel(BOARD_SIZE);
 	    board = new JTable(boardModel);
@@ -121,17 +122,16 @@ void setStatusMessage(String status)
       return;
     int x = board.getSelectedColumn();
     int y = board.getSelectedRow();
-    if (x == -1 || y == -1 || !boardModel.isEmpty(x, y))
+   if (x == -1 || y == -1 || !boardModel.isEmpty(x, y))
       return;
-    if (boardModel.setCell(x, y, playerMarks[currentPlayer]))
-      setStatusMessage("Player " + playerMarks[currentPlayer] + " won!");
-    currentPlayer = 1 - currentPlayer; // The next turn is by the other player.
     try {
+    	if(player == rint.getTurn() && rint.Havewinner() == false){
 		if(rint.placeServer(x, y)){
-			setStatusMessage("Player " + playerMarks[rint.getTurnWin()] + " won!");
+			setStatusMessage("Player " + playerMarks[rint.getWinner()] + " won!");
 			rint.tellOpponent();
+			rint.winner();
 		}
-		rint.placeClient(x, y);
+    	}
 	} catch (RemoteException e1) {
 		// TODO Auto-generated catch block
 		e1.printStackTrace();
@@ -148,6 +148,6 @@ public void setRint(RMIInterface rmiInterface) {
 }
 
 public void win() throws RemoteException {
-	setStatusMessage("Player " + playerMarks[rint.getTurnWin()] + " won!");
+	setStatusMessage("Player " + playerMarks[rint.getWinner()] + " won!");
 }
 }

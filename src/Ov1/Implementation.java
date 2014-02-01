@@ -6,13 +6,16 @@ import java.rmi.server.UnicastRemoteObject;
 
 
 public class Implementation extends UnicastRemoteObject implements RMIInterface{
-	int turn= 0;
+	int turn;
 	private final char playerMarks[] = {'X', 'O'};
 	TicTacToe ttt;
 	BoardModel bm;
 	RMIInterface client;
+	boolean haveWinner;
 	protected Implementation(TicTacToe ttt) throws RemoteException {
 		super();
+		haveWinner = false;
+		turn = 0;
 		this.ttt = ttt;
 		this.bm = ttt.getBoardModel();
 		// TODO Auto-generated constructor stub
@@ -31,13 +34,15 @@ public class Implementation extends UnicastRemoteObject implements RMIInterface{
 	@Override
 	public boolean placeServer(int x, int y) throws RemoteException{
 		boolean b = bm.setCell(x, y, playerMarks[turn]);
+		client.placeClient(x, y, playerMarks[turn]);
 		changeTurn();
 		return b;
 	}
 
 	@Override
-	public boolean placeClient(int x, int y) throws RemoteException {
-		return client.placeServer(x, y);
+	public boolean placeClient(int x, int y, char c) throws RemoteException {
+		bm.setCell(x, y, c);
+		return true;
 	}
 
 	@Override
@@ -46,8 +51,8 @@ public class Implementation extends UnicastRemoteObject implements RMIInterface{
 	}
 
 	@Override
-	public int getTurnWin() throws RemoteException {
-		return 1- turn;
+	public int getTurn() throws RemoteException {
+		return turn;
 		
 	}
 
@@ -55,6 +60,21 @@ public class Implementation extends UnicastRemoteObject implements RMIInterface{
 	public void tellOpponent() throws RemoteException {
 		win();
 		client.win();
+	}
+
+	@Override
+	public int getWinner() throws RemoteException {
+		return 1- turn;
+	}
+
+	@Override
+	public void winner() throws RemoteException {
+		haveWinner = true;
+	}
+
+	@Override
+	public boolean Havewinner() throws RemoteException {
+		return haveWinner;
 	}
 	
 
