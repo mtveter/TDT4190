@@ -4,8 +4,6 @@ package Ov1;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
-import Ov1.BoardModel.Cell;
-
 public interface RMIInterface extends Remote{
 	public void win() throws RemoteException;
 	public void setClient(RMIInterface client) throws RemoteException;
@@ -17,4 +15,7 @@ public interface RMIInterface extends Remote{
 	public int getWinner() throws RemoteException;
 	public void winner() throws RemoteException;
 	public boolean Havewinner() throws RemoteException;
+	public boolean connected() throws RemoteException;
+	public void setStatusMessage(String message) throws RemoteException;
+	public void setStatusMessageClient(String message) throws RemoteException;
 }

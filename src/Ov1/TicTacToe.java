@@ -125,12 +125,16 @@ void setStatusMessage(String status)
    if (x == -1 || y == -1 || !boardModel.isEmpty(x, y))
       return;
     try {
-    	if(player == rint.getTurn() && rint.Havewinner() == false){
-		if(rint.placeServer(x, y)){
-			setStatusMessage("Player " + playerMarks[rint.getWinner()] + " won!");
-			rint.tellOpponent();
-			rint.winner();
-		}
+    	if(player == rint.getTurn() && rint.Havewinner() == false && rint.connected() == true){
+			if(rint.placeServer(x, y)){
+				setStatusMessage("Player " + playerMarks[rint.getWinner()] + " won!");
+				rint.tellOpponent();
+				rint.winner();
+			}
+			else{
+				rint.setStatusMessage("");
+				rint.setStatusMessageClient("");
+			}
     	}
 	} catch (RemoteException e1) {
 		// TODO Auto-generated catch block

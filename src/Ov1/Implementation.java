@@ -11,9 +11,11 @@ public class Implementation extends UnicastRemoteObject implements RMIInterface{
 	TicTacToe ttt;
 	BoardModel bm;
 	RMIInterface client;
+	boolean isConnected;
 	boolean haveWinner;
 	protected Implementation(TicTacToe ttt) throws RemoteException {
 		super();
+		isConnected = false;
 		haveWinner = false;
 		turn = 0;
 		this.ttt = ttt;
@@ -29,6 +31,7 @@ public class Implementation extends UnicastRemoteObject implements RMIInterface{
 	@Override
 	public void setClient(RMIInterface client) {
 		this.client = client;
+		isConnected = true;
 		
 	}
 	@Override
@@ -75,6 +78,20 @@ public class Implementation extends UnicastRemoteObject implements RMIInterface{
 	@Override
 	public boolean Havewinner() throws RemoteException {
 		return haveWinner;
+	}
+
+	@Override
+	public boolean connected() throws RemoteException {
+		return isConnected;
+	}
+
+	@Override
+	public void setStatusMessage(String message) throws RemoteException {
+		ttt.setStatusMessage(message);
+	}
+	@Override
+	public void setStatusMessageClient(String message) throws RemoteException {
+		client.setStatusMessage(message);
 	}
 	
 
