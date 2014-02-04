@@ -67,42 +67,6 @@ public class TicTacToe extends JFrame implements ListSelectionListener
     setVisible(true);
   }
 
-  public TicTacToe(RMIInterface rint, int player) {
-	    super("TDT4190: Tic Tac Toe");
-	    this.player = player;
-	    this.rint = rint;
-	    boardModel = new BoardModel(BOARD_SIZE);
-	    board = new JTable(boardModel);
-	    board.setFont(board.getFont().deriveFont(25.0f));
-	    board.setRowHeight(30);
-	    board.setCellSelectionEnabled(true);
-	    for (int i = 0; i < board.getColumnCount(); i++)
-	      board.getColumnModel().getColumn(i).setPreferredWidth(30);
-	    board.setGridColor(Color.BLACK);
-	    board.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-	    DefaultTableCellRenderer dtcl = new DefaultTableCellRenderer();
-	    dtcl.setHorizontalAlignment(SwingConstants.CENTER);
-	    board.setDefaultRenderer(Object.class, dtcl);
-	    board.getSelectionModel().addListSelectionListener(this);
-	    board.getColumnModel().getSelectionModel().addListSelectionListener(this);
-
-	    statusLabel.setPreferredSize(new Dimension(statusLabel.getPreferredSize().width, 40));
-	    statusLabel.setHorizontalAlignment(SwingConstants.CENTER);
-
-	    Container contentPane = getContentPane();
-	    contentPane.setLayout(new BorderLayout());
-	    contentPane.add(board, BorderLayout.CENTER);
-	    contentPane.add(statusLabel, BorderLayout.SOUTH);
-	    pack();
-
-	    setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
-	    int centerX = (int)(Toolkit.getDefaultToolkit().getScreenSize().getWidth() - getSize().width) / 2;
-	    int centerY = (int)(Toolkit.getDefaultToolkit().getScreenSize().getHeight() - getSize().height) / 2;
-	    setLocation(centerX, centerY);
-	    setVisible(true);
-}
-
 void setStatusMessage(String status)
   {
     statusLabel.setText(status);
@@ -127,8 +91,6 @@ void setStatusMessage(String status)
     try {
     	if(player == rint.getTurn() && rint.Havewinner() == false && rint.connected() == true){
 			if(rint.placeServer(x, y)){
-				setStatusMessage("Player " + playerMarks[rint.getWinner()] + " won!");
-				rint.tellOpponent();
 				rint.winner();
 			}
 			else{
@@ -142,16 +104,17 @@ void setStatusMessage(String status)
 	}
     
   }
+  // Returnerer boardModell
   public BoardModel getBoardModel(){
 	  return this.boardModel;
   }
-
+//Setter rint
 public void setRint(RMIInterface rmiInterface) {
 	this.rint = rmiInterface;
 	
 }
-
+//printer beskjed om at man har vunnet
 public void win() throws RemoteException {
-	setStatusMessage("Player " + playerMarks[rint.getWinner()] + " won!");
+	setStatusMessage("Player " + playerMarks[1-rint.getTurn()] + " won!");
 }
 }
