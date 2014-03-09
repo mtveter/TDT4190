@@ -12,11 +12,11 @@ public class StartRegistry
    */
   public static void main(String[] args)
   {
-    if (args.length > 0) {
+    if (true) {
       try {
-        Registry r = LocateRegistry.createRegistry(Integer.parseInt(args[0]));
+        Registry r = LocateRegistry.createRegistry(Integer.parseInt("1111"));
         r.bind("RegistryProxy", new RegistryProxyImpl());
-        System.out.println("RMI registry is now running on port " + args[0] + '.');
+        System.out.println("RMI registry is now running on port " + "1111" + '.');
       } catch (Exception re) {
         re.printStackTrace();
       }

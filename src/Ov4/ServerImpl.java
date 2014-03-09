@@ -587,7 +587,10 @@ public class ServerImpl extends UnicastRemoteObject implements Server
    */
   public static void main(String[] args)
   {
-    String registryAddress = "localhost";
+    String registryAddress = "localhost:1111";
+    String[] temp = new String[1];
+    temp[0] = registryAddress;
+    StartRegistry.main(temp);
     String inputfile = null;
     if (args.length > 0)
       registryAddress = args[0];
