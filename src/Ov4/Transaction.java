@@ -60,9 +60,15 @@ class Transaction
    */
   boolean runTransaction()
   {
+	try {
+		this.wait((long) (Math.random()*1000000.0));
+	} catch (Exception e) {
+		System.out.println("halla");
+	}
     abortTransaction = false;
     lockedResources.clear();
     owner.println("Starting transaction " + transactionId + '.', transactionId);
+    System.out.println("Starting transaction " + transactionId);
 
     // Figure out how many resource accesses the transaction consists of.
     int nofAccesses = Globals.random(Globals.MIN_NOF_ACCESSES_PER_TRANSACTION, Globals.MAX_NOF_ACCESSES_PER_TRANSACTION);

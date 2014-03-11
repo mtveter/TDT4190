@@ -40,3 +40,15 @@
 2037: TRANS 4001: Lock claimed. Processing...
 2068: TRANS 4001: Trying to claim lock of resource 0 at server 3
 15533: Contact with server 3 was lost.
+==================================================================
+231: Server 4 started.
+3240: Server 4 started its transactions.
+3336: Transaction 4000 arrived.
+3337: TRANS 4000: Starting transaction 4000.
+3339: TRANS 4000: Trying to claim lock of resource 3 at server 1
+3341: TRANS 4000: Lock claimed. Processing...
+3364: TRANS 4000: Trying to claim lock of resource 2 at server 3
+3365: TRANS 4000: Lock claimed. Processing...
+3416: TRANS 4000: Trying to claim lock of resource 9 at server 1
+3421: TRANS 4000: Lock claimed. Processing...
+3479: TRANS 4000: Trying to claim lock of resource 5 at server 1
