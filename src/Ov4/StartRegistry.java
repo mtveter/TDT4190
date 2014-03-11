@@ -18,7 +18,6 @@ public class StartRegistry
         r.bind("RegistryProxy", new RegistryProxyImpl());
         System.out.println("RMI registry is now running on port " + "1111" + '.');
       } catch (Exception re) {
-        re.printStackTrace();
       }
     }
     else {
