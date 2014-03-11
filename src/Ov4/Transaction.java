@@ -78,19 +78,29 @@ class Transaction
     }
 
     // Perform the accesses
-    for (int i = 0; i < nofAccesses; i++) {
-      ResourceAccess nextResource = getNextResource();
-      abortTransaction = !acquireLock(nextResource);
-      if (abortTransaction) {
-        // Transaction should abort due to a communication failure
-        abort();
-        return false;
-      }
-      else {
-        owner.println("Lock claimed. Processing...", transactionId);
-        processResource();
-      }
-    }
+    boolean deadlock = true;
+    while(deadlock){
+	    for (int i = 0; i < nofAccesses; i++) {
+	      ResourceAccess nextResource = getNextResource();
+	      abortTransaction = !acquireLock(nextResource);
+	      deadlock = abortTransaction;
+	      if (abortTransaction) {
+	        // Transaction should abort due to a communication failure
+	        abort();
+	        try {
+	        	// TODO: Change the value of the variable in Globals-class
+				this.wait(Globals.TIMEOUT_INTERVAL);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+	        break;
+	      }
+	      else {
+	        owner.println("Lock claimed. Processing...", transactionId);
+	        processResource();
+	      }
+	    }
+  	}
     commit();
     return true;
   }
