@@ -27,23 +27,41 @@ class Resource
    * @param transactionId The ID of the transaction that wants the lock.
    * @return Whether or not the lock could be acquired.
    */
-  synchronized boolean lock(int transactionId)
-  {
-    if (lockOwner == transactionId) {
-      System.err.println("Error: Transaction " + transactionId + " tried to lock a resource it already has locked!");
-      return false;
-    }
-
-    while (lockOwner != NOT_LOCKED) {
-      try {
-        wait();
-      } catch (InterruptedException ie) {
-      }
-    }
-
-    lockOwner = transactionId;
-    return true;
-  }
+//  synchronized boolean lock(int transactionId)
+//  {
+//    if (lockOwner == transactionId) {
+//      System.err.println("Error: Transaction " + transactionId + " tried to lock a resource it already has locked!");
+//      return false;
+//    }
+//
+//    while (lockOwner != NOT_LOCKED) {
+//      try {
+//        wait();
+//      } catch (InterruptedException ie) {
+//      }
+//    }
+//
+//    lockOwner = transactionId;
+//    return true;
+//  }
+  
+  public synchronized boolean lock(int transactionId) {
+		if(lockOwner == transactionId) {
+			System.err.println("Error: Transaction " + transactionId + " tried to lock a resource it already has locked!");
+			return false;
+		}
+		else {
+			// Wait for the lock
+			try	{
+				//Wait a predetermined amount of time
+				wait(Globals.TIMEOUT_INTERVAL);
+			} catch (InterruptedException ie) {
+				return false;
+			}
+		}
+		lockOwner = transactionId;
+		return true;
+	}
 
   /**
    * Releases the lock of this resource.
@@ -62,7 +80,7 @@ class Resource
 
     lockOwner = NOT_LOCKED;
     // Notify a waiting thread that it can acquire the lock
-    notifyAll();
+    notify();
     return true;
   }
 

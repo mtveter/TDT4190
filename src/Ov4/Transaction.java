@@ -169,6 +169,8 @@ class Transaction
         lockedResources.add(resourceAccess);
         waitingForResource = null;
         return true;
+      } else {
+    	  this.abortTransaction = true;
       }
     } catch (RemoteException re) {
       owner.lostContactWithServer(resourceAccess.serverId);
