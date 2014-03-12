@@ -79,6 +79,10 @@ public class ServerImpl extends UnicastRemoteObject implements Server
    */
   private long startupTime;
 
+  
+  public List<Resource> getResources(){
+	  return resources;
+  }
   /**
    * Creates a new server.
    *

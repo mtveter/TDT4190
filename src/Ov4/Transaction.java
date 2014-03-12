@@ -1,6 +1,7 @@
 package Ov4;
 import java.rmi.*;
 import java.util.*;
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.NoFixedFacet;
 
 /**
  * A transaction in the distributed transaction system.
@@ -78,31 +79,31 @@ class Transaction
     }
 
     // Perform the accesses
-    boolean deadlock = true;
-    while(deadlock){
+    while(true){
 	    for (int i = 0; i < nofAccesses; i++) {
 	      ResourceAccess nextResource = getNextResource();
 	      abortTransaction = !acquireLock(nextResource);
-	      deadlock = abortTransaction;
 	      if (abortTransaction) {
 	        // Transaction should abort due to a communication failure
 	        abort();
-	        try {
-	        	// TODO: Change the value of the variable in Globals-class
-				this.wait(Globals.TRANSACTION_WAIT);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-	        break;
 	      }
 	      else {
 	        owner.println("Lock claimed. Processing...", transactionId);
 	        processResource();
 	      }
 	    }
-  	}
-    commit();
-    return true;
+	    if (allLocksAcquired(nofAccesses)){
+	    	commit();
+	    	return true;
+	    } else {
+	    	releaseLocks();
+	    }
+    }
+  }
+  
+  public boolean allLocksAcquired(int nofAccesses){
+	  return true;
+	  // i dunno wat i am doing
   }
 
   /**
