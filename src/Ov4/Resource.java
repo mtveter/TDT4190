@@ -6,7 +6,6 @@ package Ov4;
 class Resource
 {
   static final int NOT_LOCKED = -1;
-
   /**
    * The transaction currently holding the lock to this resource
    */
@@ -33,7 +32,6 @@ class Resource
       System.err.println("Error: Transaction " + transactionId + " tried to lock a resource it already has locked!");
       return false;
     }
-
     while (lockOwner != NOT_LOCKED) {
       try {
         wait();
@@ -44,7 +42,7 @@ class Resource
     lockOwner = transactionId;
     return true;
   }
-
+  
   /**
    * Releases the lock of this resource.
    *

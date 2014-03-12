@@ -10,6 +10,8 @@ import java.util.*;
  */
 class Transaction
 {
+	Timer t;
+	boolean isRunning;
   /**
    * The ID of this transaction
    */
@@ -50,6 +52,7 @@ class Transaction
     this.input = input;
     waitingForResource = null;
     lockedResources = new ArrayList<ResourceAccess>();
+    isRunning = true;
   }
 
   /**
@@ -60,11 +63,6 @@ class Transaction
    */
   boolean runTransaction()
   {
-	try {
-		this.wait((long) (Math.random()*1000000.0));
-	} catch (Exception e) {
-		System.out.println("halla");
-	}
     abortTransaction = false;
     lockedResources.clear();
     owner.println("Starting transaction " + transactionId + '.', transactionId);
@@ -82,7 +80,7 @@ class Transaction
       }
       nofAccesses = Integer.parseInt(line.substring(20));
     }
-
+    Timeren t = new Timeren();
     // Perform the accesses
     for (int i = 0; i < nofAccesses; i++) {
       ResourceAccess nextResource = getNextResource();
@@ -202,6 +200,7 @@ class Transaction
     owner.println("Committing transaction " + transactionId + '.', transactionId);
     releaseLocks();
     owner.println("Transaction " + transactionId + " committed.", transactionId);
+    isRunning = false;
   }
 
   /**
@@ -225,7 +224,7 @@ class Transaction
   /**
    * Releases all locks held by this transaction, in the reverse order of the order they were acquired in.
    */
-  private synchronized void releaseLocks()
+  synchronized void releaseLocks()
   {
     for (ResourceAccess lockedResource : lockedResources)
       releaseLock(lockedResource);
@@ -256,5 +255,8 @@ class Transaction
     } catch (RemoteException re) {
       owner.println("Failed to unlock resource " + resource.resourceId + " at server " + resource.serverId + " due to communication failure.", transactionId);
     }
+  }
+  public int getTransactionId(){
+	  return this.transactionId;
   }
 }
