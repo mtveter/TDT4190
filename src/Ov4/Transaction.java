@@ -10,6 +10,7 @@ import java.util.*;
  */
 class Transaction
 {
+	boolean deadlock;
   /**
    * The ID of this transaction
    */
@@ -78,14 +79,17 @@ class Transaction
     }
 
     // Perform the accesses
-    boolean deadlock = true;
+    deadlock = true;
     while(deadlock){
+    	System.out.println(deadlock);
 	    for (int i = 0; i < nofAccesses; i++) {
 	      ResourceAccess nextResource = getNextResource();
 	      abortTransaction = !acquireLock(nextResource);
 	      deadlock = abortTransaction;
+	      System.out.println("Deadlock= "+deadlock);
 	      if (abortTransaction) {
 	        // Transaction should abort due to a communication failure
+	    	  System.out.println("abborterer transaksjon: " + this.transactionId);
 	        abort();
 	        try {
 	        	// TODO: Change the value of the variable in Globals-class
@@ -178,6 +182,7 @@ class Transaction
       if (resourceAccess.server.lockResource(transactionId, resourceAccess.resourceId)) {
         lockedResources.add(resourceAccess);
         waitingForResource = null;
+        System.out.println("retunerer true. Låsen er låst");
         return true;
       }
     } catch (RemoteException re) {
@@ -185,6 +190,7 @@ class Transaction
     }
     waitingForResource = null;
     System.err.println("We didn't get the lock we wanted! How can that happen?");
+    System.out.println("retunerer false. Låsen er ikke låst");
     return false;
   }
 
@@ -193,6 +199,7 @@ class Transaction
    */
   private synchronized void abort()
   {
+	 System.out.println("Hei. Jeg kjorer abort");
     owner.println("Aborting transaction " + transactionId + '.', transactionId);
     releaseLocks();
     owner.println("Transaction " + transactionId + " aborted.", transactionId);

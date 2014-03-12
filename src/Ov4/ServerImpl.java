@@ -596,10 +596,8 @@ public class ServerImpl extends UnicastRemoteObject implements Server
     	
     }
     String inputfile = null;
-    if (args.length > 0)
-      registryAddress = args[0];
-    if (args.length > 1)
-      inputfile = args[1];
+    //String inputfile = "C:/Users/Petter/Documents/Eclipse/TDT4190/src/Ov4/cases_ov4/input_test_case_B_server_1.txt";
+    System.out.println(inputfile);
     try {
       new ServerImpl(registryAddress, inputfile);
     } catch (RemoteException re) {

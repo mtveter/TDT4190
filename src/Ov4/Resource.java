@@ -32,7 +32,7 @@ class Resource
    */
   synchronized boolean lock(int transactionId)
   {
-	this.clock = new Clock(Globals.TIMEOUT_INTERVAL, this);
+
 	
     if (lockOwner == transactionId) {
       System.err.println("Error: Transaction " + transactionId + " tried to lock a resource it already has locked!");
@@ -45,8 +45,8 @@ class Resource
       } catch (InterruptedException ie) {
       }
     }
-
     lockOwner = transactionId;
+	this.clock = new Clock(Globals.TIMEOUT_INTERVAL, this);
     return true;
   }
 
