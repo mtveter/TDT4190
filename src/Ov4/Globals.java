@@ -10,7 +10,7 @@ class Globals
   /**
    * The number of milliseconds to wait for a lock before a timeout is declared.
    */
-  static long TIMEOUT_INTERVAL = 500; // Timeouts disabled
+  static long TIMEOUT_INTERVAL = 1000; // Timeouts disabled
   /**
    * The number of milliseconds for a transaction to wait before trying to acquire locks 
    * after discovering a deadlock

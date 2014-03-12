@@ -293,3 +293,5 @@
 10279: TRANS 3007: Unlocked resource 2 at server 1
 10279: TRANS 3007: Transaction 3007 committed.
 10280: Transaction 3007 ended.
+==================================================================
+390: Server 3 started.

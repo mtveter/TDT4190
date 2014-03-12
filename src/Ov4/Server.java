@@ -46,7 +46,7 @@ public interface Server extends Remote
    * @param resourceID      The ID of the resource whose lock the transaction wants to release.
    * @return Whether or not the lock could be released.
    */
-  boolean releaseLock(int transactionId, int resourceId) throws RemoteException;
+  int releaseLock(int transactionId, int resourceId) throws RemoteException;
 
   /**
    * Called by another server to ask this server to start its transactions.

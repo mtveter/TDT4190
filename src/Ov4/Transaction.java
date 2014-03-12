@@ -251,11 +251,13 @@ class Transaction
   private void releaseLock(ResourceAccess resource)
   {
     try {
-      if (resource.server.releaseLock(transactionId, resource.resourceId)) {
+      if (resource.server.releaseLock(transactionId, resource.resourceId) == 1) {
         owner.println("Unlocked resource " + resource.resourceId + " at server " + resource.serverId, transactionId);
+      } else if (resource.server.releaseLock(transactionId, resource.resourceId) == -1) {
+          owner.println("Failed to unlock resource " + resource.resourceId + " at server " + resource.serverId + " because lock is acquired by another transaction!", transactionId);
       }
       else {
-        owner.println("Failed to unlock resource " + resource.resourceId + " at server " + resource.serverId, transactionId);
+        owner.println("Failed to unlock resource " + resource.resourceId + " at server " + resource.serverId + " because of timeout", transactionId);
       }
     } catch (RemoteException re) {
       owner.println("Failed to unlock resource " + resource.resourceId + " at server " + resource.serverId + " due to communication failure.", transactionId);

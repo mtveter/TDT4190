@@ -58,17 +58,19 @@ class Resource
    *                      error message is displayed.
    * @return Whether or not the lock could be released.
    */
-  synchronized boolean unlock(int transactionId)
+  synchronized int unlock(int transactionId)
   {
-    if (lockOwner == NOT_LOCKED || lockOwner != transactionId) {
+    if (lockOwner == NOT_LOCKED) {
       //System.err.println("Error: Transaction " + transactionId + " tried to unlock a resource without owning the lock!");
-      return false;
+      return 0;
+    } else if (lockOwner != transactionId) {
+    	return -1;
     }
 
     lockOwner = NOT_LOCKED;
     // Notify a waiting thread that it can acquire the lock
     notifyAll();
-    return true;
+    return 1;
   }
 
   /**

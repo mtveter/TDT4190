@@ -395,10 +395,10 @@ public class ServerImpl extends UnicastRemoteObject implements Server
    * @param resourceID The ID of the resource whose lock the transaction wants to release.
    * @return Whether or not the lock could be released.
    */
-  public boolean releaseLock(int transactionId, int resourceId) throws RemoteException
+  public int releaseLock(int transactionId, int resourceId) throws RemoteException
   {
     Resource r = resources.get(resourceId);
-    boolean result = r.unlock(transactionId);
+    int result = r.unlock(transactionId);
     if (gui != null)
       gui.updateResourceTable(resources);
     return result;
