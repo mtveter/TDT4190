@@ -231,8 +231,10 @@ class Transaction
    */
   private synchronized void releaseLocks()
   {
-    for (ResourceAccess lockedResource : lockedResources)
+    for (ResourceAccess lockedResource : lockedResources){
       releaseLock(lockedResource);
+      //System.out.println("Resource " + lockedResource.resourceId + " is released from server " + lockedResource.serverId);
+    }
     lockedResources.clear();
 
     if (input != null) {
