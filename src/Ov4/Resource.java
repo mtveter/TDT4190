@@ -5,6 +5,9 @@ package Ov4;
  */
 class Resource
 {
+	/**
+	 * The clock which specifies how long a resource can be locked, and performs time out
+	 */
 	private Clock clock = null;
 	
   static final int NOT_LOCKED = -1;
@@ -27,11 +30,15 @@ class Resource
    * Gives the lock of this resource to the requesting transaction. Blocks
    * the caller until the lock could be acquired.
    *
+   * Each time a lock is acquired, a new clock is initiated with the given timeout interval
+   * and assigned to the clock of this resource
+   *
    * @param transactionId The ID of the transaction that wants the lock.
    * @return Whether or not the lock could be acquired.
    */
   synchronized boolean lock(int transactionId)
   {
+
 	this.clock = new Clock(Globals.TIMEOUT_INTERVAL, this);
 	
     if (lockOwner == transactionId) {

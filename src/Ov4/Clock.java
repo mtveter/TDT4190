@@ -1,32 +1,40 @@
 package Ov4;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * Implementation of timeout for locking of resources
+ * Creates a timer which works as a count-down with a task that is run at timeout
+ */
 public class Clock {
-Timer timer;
-Resource resource;
-	
+	/**
+	 * The timer that handles counting, tasks and the implemented timeout
+	 */
+	private Timer timer;
+	/**
+	 * The resource which is associated with the timer
+	 */
+	private Resource resource;
+	/**
+	 * Creates a new transaction object.
+	 *
+	 * @param milliseconds 	The amount of ms a transaction is allowed to lock a resource(timeout)
+	 * @param resource  	The resources which the timer is associated with.
+	 */
 	public Clock(long milliseconds, Resource resource){
 		this.resource = resource;
 		timer = new Timer();  //At this line a new Thread will be created
-		timer.schedule(new RemindTask(), milliseconds); //delay in milliseconds
+		timer.schedule(new RemindTask(), milliseconds); //scheduled timeout
 	}
-	
+	/**
+	 * A task is run at the schedule timeout specified in clock
+	 */
 	 class RemindTask extends TimerTask {
 	        public void run() {
-	            resource.unlock(resource.getLockOwner()); //prevents creating new customers.
-	            System.out.println("timer started");
+	        	// Unlocks the resource from current transaction-owner and cancels timer
+	            resource.unlock(resource.getLockOwner());  
 	            timer.cancel();
 	        }
 	 }
-	 
-	 public static String getTime(){
-		// get current time
-		Calendar cal = Calendar.getInstance();
-		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-		return sdf.format(cal.getTime()) ;
-	}
 }
