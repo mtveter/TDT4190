@@ -5,12 +5,15 @@ package Ov4;
  */
 class Resource
 {
+	private Clock clock = null;
+	
   static final int NOT_LOCKED = -1;
 
   /**
    * The transaction currently holding the lock to this resource
    */
   private int lockOwner;
+  
 
   /**
    * Creates a new resource.
@@ -29,6 +32,8 @@ class Resource
    */
   synchronized boolean lock(int transactionId)
   {
+	this.clock = new Clock(Globals.TIMEOUT_INTERVAL, this);
+	
     if (lockOwner == transactionId) {
       System.err.println("Error: Transaction " + transactionId + " tried to lock a resource it already has locked!");
       return false;
@@ -56,7 +61,7 @@ class Resource
   synchronized boolean unlock(int transactionId)
   {
     if (lockOwner == NOT_LOCKED || lockOwner != transactionId) {
-      System.err.println("Error: Transaction " + transactionId + " tried to unlock a resource without owning the lock!");
+      //System.err.println("Error: Transaction " + transactionId + " tried to unlock a resource without owning the lock!");
       return false;
     }
 

@@ -51,3 +51,34 @@
 2586: TRANS 3000: Trying to claim lock of resource 6 at server 3
 2812: TRANS 3000: Lock claimed. Processing...
 2900: TRANS 3000: Trying to claim lock of resource 2 at server 1
+==================================================================
+159: Server 3 started.
+9116: Server 3 started its transactions.
+9198: Transaction 3000 arrived.
+9201: TRANS 3000: Starting transaction 3000.
+9206: TRANS 3000: Trying to claim lock of resource 7 at server 3
+9209: TRANS 3000: Lock claimed. Processing...
+9257: TRANS 3000: Trying to claim lock of resource 0 at server 1
+9258: TRANS 3000: Lock claimed. Processing...
+9335: TRANS 3000: Trying to claim lock of resource 1 at server 2
+9841: TRANS 3000: Lock claimed. Processing...
+9880: TRANS 3000: Committing transaction 3000.
+9881: TRANS 3000: Unlocked resource 7 at server 3
+9882: TRANS 3000: Unlocked resource 0 at server 1
+9884: TRANS 3000: Unlocked resource 1 at server 2
+9885: TRANS 3000: Transaction 3000 committed.
+9887: Transaction 3000 ended.
+10094: Transaction 3001 arrived.
+10094: TRANS 3001: Starting transaction 3001.
+10094: TRANS 3001: Trying to claim lock of resource 9 at server 1
+10095: TRANS 3001: Lock claimed. Processing...
+10182: TRANS 3001: Trying to claim lock of resource 8 at server 1
+10186: TRANS 3001: Lock claimed. Processing...
+10206: TRANS 3001: Trying to claim lock of resource 3 at server 1
+10210: TRANS 3001: Lock claimed. Processing...
+10274: TRANS 3001: Trying to claim lock of resource 7 at server 3
+10274: TRANS 3001: Lock claimed. Processing...
+10359: TRANS 3001: Trying to claim lock of resource 3 at server 2
+10362: TRANS 3001: Lock claimed. Processing...
+10427: TRANS 3001: Trying to claim lock of resource 1 at server 1
+40551: Contact with server 1 was lost.

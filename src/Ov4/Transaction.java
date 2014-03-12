@@ -89,7 +89,7 @@ class Transaction
 	        abort();
 	        try {
 	        	// TODO: Change the value of the variable in Globals-class
-				this.wait(Globals.TIMEOUT_INTERVAL);
+				this.wait(Globals.TRANSACTION_WAIT);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
