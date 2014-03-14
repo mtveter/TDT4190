@@ -1,6 +1,7 @@
 package Ov4;
 import java.rmi.*;
 import java.util.*;
+
 import com.sun.xml.internal.bind.v2.schemagen.xmlschema.NoFixedFacet;
 
 /**
@@ -97,6 +98,10 @@ class Transaction
 	    	return true;
 	    } else {
 	    	releaseLocks();
+	    	try {
+	            wait(Globals.TRANSACTION_WAIT);
+	          } catch (InterruptedException ie) {
+	        }
 	    }
     }
   }
