@@ -12,6 +12,11 @@ import com.sun.xml.internal.bind.v2.schemagen.xmlschema.NoFixedFacet;
  */
 class Transaction
 {
+	
+	/**
+	 * The clock which specifies how long a resource can be locked, and performs time out
+	 */
+	private Clock clock = null;
   /**
    * The ID of this transaction
    */
@@ -25,9 +30,10 @@ class Transaction
    */
   private final List<ResourceAccess> lockedResources;
   /**
-   * Signalling variable used to exchange messages between different threads operating on this transaction
+   * Signaling variable used to exchange messages between different threads operating on this transaction
    */
   private boolean abortTransaction;
+  private boolean commitTransaction;
   /**
    * The resource whose lock this transaction is currently waiting for
    */
@@ -52,6 +58,16 @@ class Transaction
     this.input = input;
     waitingForResource = null;
     lockedResources = new ArrayList<ResourceAccess>();
+    
+    abortTransaction = false;
+    commitTransaction = false;
+  }
+  
+  public void setAbortTransaction(boolean abortTransaction){
+	  this.abortTransaction = abortTransaction;
+  }
+  public boolean getCommitTransaction() {
+	  return this.commitTransaction;
   }
 
   /**
@@ -62,6 +78,9 @@ class Transaction
    */
   boolean runTransaction()
   {
+	// Generates a clock to use for timeout
+//	this.clock = new Clock(Globals.TIMEOUT_INTERVAL, this);
+	
     abortTransaction = false;
     lockedResources.clear();
     owner.println("Starting transaction " + transactionId + '.', transactionId);
@@ -80,35 +99,22 @@ class Transaction
     }
 
     // Perform the accesses
-    while(true){
-	    for (int i = 0; i < nofAccesses; i++) {
-	      ResourceAccess nextResource = getNextResource();
-	      abortTransaction = !acquireLock(nextResource);
-	      if (abortTransaction) {
-	        // Transaction should abort due to a communication failure
-	        abort();
-	      }
-	      else {
-	        owner.println("Lock claimed. Processing...", transactionId);
-	        processResource();
-	      }
-	    }
-	    if (allLocksAcquired(nofAccesses)){
-	    	commit();
-	    	return true;
-	    } else {
-	    	releaseLocks();
-	    	try {
-	            wait(Globals.TRANSACTION_WAIT);
-	          } catch (InterruptedException ie) {
-	        }
-	    }
+    for (int i = 0; i < nofAccesses; i++) {
+      ResourceAccess nextResource = getNextResource();
+      abortTransaction = !acquireLock(nextResource);
+      if (abortTransaction) {
+        // Transaction should abort due to a communication failure
+    	System.out.println("going for the abortion");
+        abort();
+        return false;
+      }
+      else {
+        owner.println("Lock claimed. Processing...", transactionId);
+        processResource();
+      }
     }
-  }
-  
-  public boolean allLocksAcquired(int nofAccesses){
-	  return true;
-	  // i dunno wat i am doing
+    commit();
+    return true;
   }
 
   /**
@@ -197,8 +203,9 @@ class Transaction
   /**
    * Aborts this transaction, releasing all the locks held by it.
    */
-  private synchronized void abort()
+  synchronized void abort()
   {
+	
     owner.println("Aborting transaction " + transactionId + '.', transactionId);
     releaseLocks();
     owner.println("Transaction " + transactionId + " aborted.", transactionId);
@@ -207,7 +214,7 @@ class Transaction
   /**
    * Commits this transaction, releasing all the locks held by it.
    */
-  private synchronized void commit()
+  private void commit()
   {
     owner.println("Committing transaction " + transactionId + '.', transactionId);
     releaseLocks();
@@ -235,7 +242,7 @@ class Transaction
   /**
    * Releases all locks held by this transaction, in the reverse order of the order they were acquired in.
    */
-  private synchronized void releaseLocks()
+  private void releaseLocks()
   {
     for (ResourceAccess lockedResource : lockedResources){
       releaseLock(lockedResource);

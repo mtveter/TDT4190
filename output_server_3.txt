@@ -295,3 +295,6 @@
 10280: Transaction 3007 ended.
 ==================================================================
 390: Server 3 started.
+==================================================================
+149: Server 3 started.
+1696: Server 3 was notified of the arrival of server 4

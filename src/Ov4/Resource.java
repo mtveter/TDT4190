@@ -5,10 +5,6 @@ package Ov4;
  */
 class Resource
 {
-	/**
-	 * The clock which specifies how long a resource can be locked, and performs time out
-	 */
-	private Clock clock = null;
 	
   static final int NOT_LOCKED = -1;
 
@@ -46,13 +42,13 @@ class Resource
     
     while (lockOwner != NOT_LOCKED) {
       try {
-        wait();
+        wait(Globals.TRANSACTION_WAIT);
       } catch (InterruptedException ie) {
+    	  break;
       }
+      return false;
     }
-
     lockOwner = transactionId;
-	this.clock = new Clock(Globals.TIMEOUT_INTERVAL, this);
     return true;
   }
 

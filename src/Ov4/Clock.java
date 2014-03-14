@@ -13,18 +13,18 @@ public class Clock {
 	 */
 	private Timer timer;
 	/**
-	 * The resource which is associated with the timer
+	 * The transaction which is associated with the timer
 	 */
-	private Resource resource;
+	private Transaction transaction;
 	/**
 	 * Creates a new transaction object.
 	 *
 	 * @param milliseconds 	The amount of ms a transaction is allowed to lock a resource(timeout)
-	 * @param resource  	The resources which the timer is associated with.
+	 * @param transation  	The transaction which the timer is associated with.
 	 */
-	public Clock(long milliseconds, Resource resource){
-		this.resource = resource;
-		timer = new Timer();  //At this line a new Thread will be created
+	public Clock(long milliseconds, Transaction transaction){
+		this.transaction = transaction;
+		timer = new Timer();  // At this line a new Thread will be created
 		timer.schedule(new RemindTask(), milliseconds); //scheduled timeout
 	}
 	/**
@@ -32,8 +32,12 @@ public class Clock {
 	 */
 	 class RemindTask extends TimerTask {
 	        public void run() {
-	        	// Unlocks the resource from current transaction-owner and cancels timer
-	            resource.unlock(resource.getLockOwner());  
+	        	// Aborts the transaction and notifies the transaction
+	            if(!transaction.getCommitTransaction()) {
+	            	System.out.println("going for the abortion");
+	            	transaction.abort();
+	            	transaction.setAbortTransaction(true);
+	            }
 	            timer.cancel();
 	        }
 	 }
