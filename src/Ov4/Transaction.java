@@ -66,6 +66,8 @@ class Transaction
 
     // Figure out how many resource accesses the transaction consists of.
     int nofAccesses = Globals.random(Globals.MIN_NOF_ACCESSES_PER_TRANSACTION, Globals.MAX_NOF_ACCESSES_PER_TRANSACTION);
+    
+    // using inputfile:
     if (input != null) {
       // Read the number of accesses from the input file instead.
       // Expected format: NUMBER OF ACCESSES: 7
@@ -176,8 +178,9 @@ class Transaction
       owner.lostContactWithServer(resourceAccess.serverId);
     }
     waitingForResource = null;
+    System.out.println("Didn't get lock of resource" + resourceAccess.resourceId + " from server " + resourceAccess.serverId);
     System.err.println("We didn't get the lock we wanted! How can that happen?");
-    return false;
+    return false;	
   }
 
   /**

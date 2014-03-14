@@ -3,8 +3,7 @@ package Ov4;
 /**
  * A resource with an associated lock that can be held by only one transaction at a time.
  */
-class Resource
-{
+class Resource{
   static final int NOT_LOCKED = -1;
 
   /**
@@ -15,8 +14,7 @@ class Resource
   /**
    * Creates a new resource.
    */
-  Resource()
-  {
+  Resource(){
     lockOwner = NOT_LOCKED;
   }
 
@@ -46,21 +44,33 @@ class Resource
 //  }
   
   public synchronized boolean lock(int transactionId) {
-		if(lockOwner == transactionId) {
-			System.err.println("Error: Transaction " + transactionId + " tried to lock a resource it already has locked!");
-			return false;
-		}
+//		if(lockOwner == transactionId) {
+//			System.err.println("Error: Transaction " + transactionId + " tried to lock a resource it already has locked!");
+//			return false;
+//		}
+	  if (lockOwner == NOT_LOCKED){
+		  lockOwner = transactionId;
+		  return true;
+	  }
 		else {
 			// Wait for the lock
 			try	{
-				//Wait a predetermined amount of time
-				wait(Globals.TIMEOUT_INTERVAL);
+				if (Globals.PROBING_ENABLED == true){
+					wait();
+				} else {
+					//Wait a predetermined amount of time
+					wait(Globals.TIMEOUT_INTERVAL);
+				}
 			} catch (InterruptedException ie) {
 				return false;
 			}
+			if (lockOwner == NOT_LOCKED){
+				lockOwner = transactionId;
+				return true;
+			} else {
+				return false;
+			}
 		}
-		lockOwner = transactionId;
-		return true;
 	}
 
   /**

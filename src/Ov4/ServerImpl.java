@@ -585,25 +585,39 @@ public class ServerImpl extends UnicastRemoteObject implements Server
    *             If no parameters are supplied, the default address of "localhost:1111" is used, and
    *             transactions are performed randomly.
    */
-  public static void main(String[] args)
-  {
-    String registryAddress = "localhost:1111";
-    String[] temp = new String[1];
-    temp[0] = registryAddress;
-    try{
-    StartRegistry.main(temp);
-    }catch(Exception e){
-    	
-    }
-    String inputfile = null;
-    if (args.length > 0)
-      registryAddress = args[0];
-    if (args.length > 1)
-      inputfile = args[1];
-    try {
-      new ServerImpl(registryAddress, inputfile);
-    } catch (RemoteException re) {
-      re.printStackTrace();
-    }
-  }
+	public static void main(String[] args) {
+		String registryAddress = "localhost:1111";
+		String[] temp = new String[1];
+		temp[0] = registryAddress;
+		try {
+			StartRegistry.main(temp);
+		} catch (Exception e) {
+
+		}
+		boolean useInput = false;
+		
+		if (useInput == false) {
+			String inputfile = null;
+			if (args.length > 0)
+				registryAddress = args[0];
+			if (args.length > 1)
+				inputfile = args[1];
+			try {
+				new ServerImpl(registryAddress, inputfile);
+			} catch (RemoteException re) {
+				re.printStackTrace();
+			}
+		} else {
+			String inputfile = "src/Ov4/cases/input_test_case_A_server_1.txt";
+			if (args.length > 0)
+				registryAddress = args[0];
+			if (args.length > 1)
+				inputfile = args[1];
+			try {
+				new ServerImpl(registryAddress, inputfile);
+			} catch (RemoteException re) {
+				re.printStackTrace();
+			}
+		}
+	}
 }
