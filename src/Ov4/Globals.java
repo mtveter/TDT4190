@@ -12,11 +12,6 @@ class Globals
    */
   static long TIMEOUT_INTERVAL = 1; // Timeouts disabled
   /**
-   * The number of milliseconds for a transaction to wait before trying to acquire locks 
-   * after discovering a deadlock
-   */
-  static long TRANSACTION_WAIT = 5; // Timeouts disabled
-  /**
    * Whether or not to use edge chasing to detect deadlocks
    */
   static boolean PROBING_ENABLED = true;

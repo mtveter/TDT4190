@@ -42,7 +42,7 @@ class Resource
     
     while (lockOwner != NOT_LOCKED) {
       try {
-        wait(Globals.TRANSACTION_WAIT);
+        wait(Globals.TIMEOUT_INTERVAL);
       } catch (InterruptedException ie) {
     	  break;
       }
