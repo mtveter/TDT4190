@@ -1,4 +1,5 @@
 package Ov4;
+
 import java.net.MalformedURLException;
 import java.rmi.*;
 import java.rmi.server.*;
@@ -79,10 +80,6 @@ public class ServerImpl extends UnicastRemoteObject implements Server
    */
   private long startupTime;
 
-  
-  public List<Resource> getResources(){
-	  return resources;
-  }
   /**
    * Creates a new server.
    *
@@ -399,10 +396,10 @@ public class ServerImpl extends UnicastRemoteObject implements Server
    * @param resourceID The ID of the resource whose lock the transaction wants to release.
    * @return Whether or not the lock could be released.
    */
-  public int releaseLock(int transactionId, int resourceId) throws RemoteException
+  public boolean releaseLock(int transactionId, int resourceId) throws RemoteException
   {
     Resource r = resources.get(resourceId);
-    int result = r.unlock(transactionId);
+    boolean result = r.unlock(transactionId);
     if (gui != null)
       gui.updateResourceTable(resources);
     return result;
@@ -592,13 +589,10 @@ public class ServerImpl extends UnicastRemoteObject implements Server
   public static void main(String[] args)
   {
     String registryAddress = "localhost:1111";
+    String portNumber = "1111";
     String[] temp = new String[1];
-    temp[0] = registryAddress;
-    try{
+    temp[0] = portNumber;
     StartRegistry.main(temp);
-    }catch(Exception e){
-    	
-    }
     String inputfile = null;
     if (args.length > 0)
       registryAddress = args[0];

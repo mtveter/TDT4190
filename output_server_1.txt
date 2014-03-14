@@ -9775,3 +9775,3021 @@
 5445: TRANS 1004: Unlocked resource 5 at server 1
 5446: TRANS 1004: Transaction 1004 committed.
 5447: Transaction 1004 ended.
+==================================================================
+303: Server 1 started.
+2868: Server 1 was notified of the arrival of server 2
+4658: Server 1 started its transactions.
+4716: Transaction 1000 arrived.
+4717: TRANS 1000: Starting transaction 1000.
+4722: TRANS 1000: Trying to claim lock of resource 1 at server 2
+4726: TRANS 1000: Lock claimed. Processing...
+4789: TRANS 1000: Trying to claim lock of resource 7 at server 2
+4792: TRANS 1000: Lock claimed. Processing...
+4856: TRANS 1000: Trying to claim lock of resource 5 at server 1
+4857: TRANS 1000: Lock claimed. Processing...
+4900: TRANS 1000: Committing transaction 1000.
+4903: TRANS 1000: Unlocked resource 1 at server 2
+4906: TRANS 1000: Unlocked resource 7 at server 2
+4906: TRANS 1000: Unlocked resource 5 at server 1
+4907: TRANS 1000: Transaction 1000 committed.
+4907: Transaction 1000 ended.
+5184: Transaction 1001 arrived.
+5184: TRANS 1001: Starting transaction 1001.
+5185: TRANS 1001: Trying to claim lock of resource 2 at server 2
+5185: TRANS 1001: Lock claimed. Processing...
+5266: TRANS 1001: Trying to claim lock of resource 6 at server 2
+5271: TRANS 1001: Lock claimed. Processing...
+5343: TRANS 1001: Trying to claim lock of resource 2 at server 1
+5344: TRANS 1001: Lock claimed. Processing...
+5395: TRANS 1001: Trying to claim lock of resource 6 at server 1
+5396: TRANS 1001: Lock claimed. Processing...
+5478: TRANS 1001: Trying to claim lock of resource 7 at server 1
+5479: TRANS 1001: Lock claimed. Processing...
+5506: TRANS 1001: Trying to claim lock of resource 0 at server 1
+5506: TRANS 1001: Lock claimed. Processing...
+5535: TRANS 1001: Trying to claim lock of resource 8 at server 2
+5537: TRANS 1001: Lock claimed. Processing...
+5619: TRANS 1001: Trying to claim lock of resource 0 at server 2
+5621: TRANS 1001: Lock claimed. Processing...
+5688: TRANS 1001: Trying to claim lock of resource 9 at server 1
+5689: TRANS 1001: Lock claimed. Processing...
+5723: TRANS 1000: Aborting transaction 1000.
+5723: TRANS 1000: Transaction 1000 aborted.
+5767: TRANS 1001: Committing transaction 1001.
+5772: TRANS 1001: Unlocked resource 2 at server 2
+5774: TRANS 1001: Unlocked resource 6 at server 2
+5774: TRANS 1001: Unlocked resource 2 at server 1
+5774: TRANS 1001: Unlocked resource 6 at server 1
+5775: TRANS 1001: Unlocked resource 7 at server 1
+5775: TRANS 1001: Unlocked resource 0 at server 1
+5776: TRANS 1001: Unlocked resource 8 at server 2
+5777: TRANS 1001: Unlocked resource 0 at server 2
+5778: TRANS 1001: Unlocked resource 9 at server 1
+5778: TRANS 1001: Transaction 1001 committed.
+5779: Transaction 1001 ended.
+6051: Transaction 1002 arrived.
+6051: TRANS 1002: Starting transaction 1002.
+6053: TRANS 1002: Trying to claim lock of resource 6 at server 1
+6053: TRANS 1002: Lock claimed. Processing...
+6142: TRANS 1002: Trying to claim lock of resource 7 at server 1
+6143: TRANS 1002: Lock claimed. Processing...
+6185: TRANS 1001: Aborting transaction 1001.
+6185: TRANS 1001: Transaction 1001 aborted.
+6225: TRANS 1002: Trying to claim lock of resource 9 at server 1
+6225: TRANS 1002: Lock claimed. Processing...
+6312: TRANS 1002: Trying to claim lock of resource 5 at server 1
+6313: TRANS 1002: Lock claimed. Processing...
+6381: TRANS 1002: Trying to claim lock of resource 9 at server 2
+6392: TRANS 1002: Lock claimed. Processing...
+6479: TRANS 1002: Trying to claim lock of resource 8 at server 2
+6480: TRANS 1002: Lock claimed. Processing...
+6511: TRANS 1002: Trying to claim lock of resource 3 at server 2
+6513: TRANS 1002: Lock claimed. Processing...
+6576: TRANS 1002: Trying to claim lock of resource 5 at server 2
+6582: TRANS 1002: Lock claimed. Processing...
+6670: TRANS 1002: Trying to claim lock of resource 4 at server 2
+6675: TRANS 1002: Lock claimed. Processing...
+6717: TRANS 1002: Trying to claim lock of resource 2 at server 1
+6718: TRANS 1002: Lock claimed. Processing...
+6754: TRANS 1002: Committing transaction 1002.
+6755: TRANS 1002: Unlocked resource 6 at server 1
+6755: TRANS 1002: Unlocked resource 7 at server 1
+6755: TRANS 1002: Unlocked resource 9 at server 1
+6756: TRANS 1002: Unlocked resource 5 at server 1
+6764: TRANS 1002: Unlocked resource 9 at server 2
+6773: TRANS 1002: Unlocked resource 8 at server 2
+6778: TRANS 1002: Unlocked resource 3 at server 2
+6781: TRANS 1002: Unlocked resource 5 at server 2
+6785: TRANS 1002: Unlocked resource 4 at server 2
+6785: TRANS 1002: Unlocked resource 2 at server 1
+6785: TRANS 1002: Transaction 1002 committed.
+6785: Transaction 1002 ended.
+7053: TRANS 1002: Aborting transaction 1002.
+7053: TRANS 1002: Transaction 1002 aborted.
+7087: Transaction 1003 arrived.
+7088: TRANS 1003: Starting transaction 1003.
+7089: TRANS 1003: Trying to claim lock of resource 2 at server 1
+7089: TRANS 1003: Lock claimed. Processing...
+7174: TRANS 1003: Trying to claim lock of resource 6 at server 1
+7174: TRANS 1003: Lock claimed. Processing...
+7207: TRANS 1003: Trying to claim lock of resource 5 at server 1
+7208: TRANS 1003: Lock claimed. Processing...
+7229: TRANS 1003: Trying to claim lock of resource 7 at server 2
+7233: TRANS 1003: Lock claimed. Processing...
+7272: TRANS 1003: Committing transaction 1003.
+7273: TRANS 1003: Unlocked resource 2 at server 1
+7274: TRANS 1003: Unlocked resource 6 at server 1
+7274: TRANS 1003: Unlocked resource 5 at server 1
+7284: TRANS 1003: Unlocked resource 7 at server 2
+7284: TRANS 1003: Transaction 1003 committed.
+7285: Transaction 1003 ended.
+7482: Transaction 1004 arrived.
+7483: TRANS 1004: Starting transaction 1004.
+7485: TRANS 1004: Trying to claim lock of resource 5 at server 2
+7488: TRANS 1004: Lock claimed. Processing...
+7510: TRANS 1004: Trying to claim lock of resource 1 at server 1
+7513: TRANS 1004: Lock claimed. Processing...
+7557: TRANS 1004: Trying to claim lock of resource 7 at server 1
+7558: TRANS 1004: Lock claimed. Processing...
+7598: TRANS 1004: Trying to claim lock of resource 9 at server 1
+7598: TRANS 1004: Lock claimed. Processing...
+7678: TRANS 1004: Trying to claim lock of resource 3 at server 2
+7802: TRANS 1004: Lock claimed. Processing...
+7886: TRANS 1004: Trying to claim lock of resource 2 at server 2
+7888: TRANS 1004: Lock claimed. Processing...
+7954: TRANS 1004: Committing transaction 1004.
+7959: TRANS 1004: Unlocked resource 5 at server 2
+7959: TRANS 1004: Unlocked resource 1 at server 1
+7960: TRANS 1004: Unlocked resource 7 at server 1
+7960: TRANS 1004: Unlocked resource 9 at server 1
+7969: TRANS 1004: Unlocked resource 3 at server 2
+7976: TRANS 1004: Unlocked resource 2 at server 2
+7976: TRANS 1004: Transaction 1004 committed.
+7976: Transaction 1004 ended.
+8089: TRANS 1003: Aborting transaction 1003.
+8089: TRANS 1003: Transaction 1003 aborted.
+8166: Transaction 1005 arrived.
+8167: TRANS 1005: Starting transaction 1005.
+8168: TRANS 1005: Trying to claim lock of resource 1 at server 2
+8176: TRANS 1005: Lock claimed. Processing...
+8245: TRANS 1005: Trying to claim lock of resource 6 at server 1
+8381: TRANS 1005: Lock claimed. Processing...
+8406: TRANS 1005: Trying to claim lock of resource 7 at server 1
+8406: TRANS 1005: Lock claimed. Processing...
+8452: TRANS 1005: Trying to claim lock of resource 4 at server 2
+8454: TRANS 1005: Lock claimed. Processing...
+8484: TRANS 1004: Aborting transaction 1004.
+8484: TRANS 1004: Transaction 1004 aborted.
+8528: TRANS 1005: Trying to claim lock of resource 4 at server 1
+8529: TRANS 1005: Lock claimed. Processing...
+8551: TRANS 1005: Trying to claim lock of resource 5 at server 1
+8552: TRANS 1005: Lock claimed. Processing...
+8608: TRANS 1005: Trying to claim lock of resource 1 at server 1
+8609: TRANS 1005: Lock claimed. Processing...
+8686: TRANS 1005: Trying to claim lock of resource 2 at server 2
+8688: TRANS 1005: Lock claimed. Processing...
+8724: TRANS 1005: Trying to claim lock of resource 0 at server 2
+8729: TRANS 1005: Lock claimed. Processing...
+8766: TRANS 1005: Committing transaction 1005.
+8783: TRANS 1005: Unlocked resource 1 at server 2
+8783: TRANS 1005: Unlocked resource 6 at server 1
+8783: TRANS 1005: Unlocked resource 7 at server 1
+8784: TRANS 1005: Unlocked resource 4 at server 2
+8785: TRANS 1005: Unlocked resource 4 at server 1
+8785: TRANS 1005: Unlocked resource 5 at server 1
+8785: TRANS 1005: Unlocked resource 1 at server 1
+8786: TRANS 1005: Unlocked resource 2 at server 2
+8787: TRANS 1005: Unlocked resource 0 at server 2
+8787: TRANS 1005: Transaction 1005 committed.
+8788: Transaction 1005 ended.
+8877: Transaction 1006 arrived.
+8878: TRANS 1006: Starting transaction 1006.
+8879: TRANS 1006: Trying to claim lock of resource 7 at server 1
+8879: TRANS 1006: Lock claimed. Processing...
+8938: TRANS 1006: Trying to claim lock of resource 1 at server 1
+8938: TRANS 1006: Lock claimed. Processing...
+8979: TRANS 1006: Trying to claim lock of resource 3 at server 1
+8979: TRANS 1006: Lock claimed. Processing...
+9031: TRANS 1006: Trying to claim lock of resource 5 at server 2
+9033: TRANS 1006: Lock claimed. Processing...
+9062: TRANS 1006: Trying to claim lock of resource 6 at server 1
+9063: TRANS 1006: Lock claimed. Processing...
+9123: TRANS 1006: Trying to claim lock of resource 0 at server 2
+9130: TRANS 1006: Lock claimed. Processing...
+9167: TRANS 1005: Aborting transaction 1005.
+9167: TRANS 1005: Transaction 1005 aborted.
+9192: TRANS 1006: Committing transaction 1006.
+9194: TRANS 1006: Unlocked resource 7 at server 1
+9194: TRANS 1006: Unlocked resource 1 at server 1
+9194: TRANS 1006: Unlocked resource 3 at server 1
+9199: TRANS 1006: Unlocked resource 5 at server 2
+9199: TRANS 1006: Unlocked resource 6 at server 1
+9203: TRANS 1006: Unlocked resource 0 at server 2
+9203: TRANS 1006: Transaction 1006 committed.
+9204: Transaction 1006 ended.
+9318: Transaction 1007 arrived.
+9318: TRANS 1007: Starting transaction 1007.
+9319: TRANS 1007: Trying to claim lock of resource 2 at server 2
+9321: TRANS 1007: Lock claimed. Processing...
+9408: TRANS 1007: Trying to claim lock of resource 0 at server 2
+9415: TRANS 1007: Lock claimed. Processing...
+9457: TRANS 1007: Trying to claim lock of resource 3 at server 2
+9605: TRANS 1007: Lock claimed. Processing...
+9704: TRANS 1007: Trying to claim lock of resource 9 at server 2
+9706: TRANS 1007: Lock claimed. Processing...
+9757: TRANS 1007: Trying to claim lock of resource 7 at server 2
+9758: TRANS 1007: Lock claimed. Processing...
+9824: TRANS 1007: Trying to claim lock of resource 0 at server 1
+9825: TRANS 1007: Lock claimed. Processing...
+9867: TRANS 1007: Trying to claim lock of resource 5 at server 1
+9868: TRANS 1007: Lock claimed. Processing...
+9878: TRANS 1006: Aborting transaction 1006.
+9879: TRANS 1006: Transaction 1006 aborted.
+9945: TRANS 1007: Committing transaction 1007.
+9948: TRANS 1007: Unlocked resource 2 at server 2
+9953: TRANS 1007: Unlocked resource 0 at server 2
+9956: TRANS 1007: Unlocked resource 3 at server 2
+9959: TRANS 1007: Unlocked resource 9 at server 2
+9965: TRANS 1007: Unlocked resource 7 at server 2
+9965: TRANS 1007: Unlocked resource 0 at server 1
+9966: TRANS 1007: Unlocked resource 5 at server 1
+9966: TRANS 1007: Transaction 1007 committed.
+9966: Transaction 1007 ended.
+10088: Transaction 1008 arrived.
+10088: TRANS 1008: Starting transaction 1008.
+10089: TRANS 1008: Trying to claim lock of resource 1 at server 2
+10090: TRANS 1008: Lock claimed. Processing...
+10170: TRANS 1008: Trying to claim lock of resource 7 at server 2
+10172: TRANS 1008: Lock claimed. Processing...
+10207: TRANS 1008: Trying to claim lock of resource 9 at server 2
+10208: TRANS 1008: Lock claimed. Processing...
+10300: TRANS 1008: Trying to claim lock of resource 4 at server 1
+10300: TRANS 1008: Lock claimed. Processing...
+10319: TRANS 1007: Aborting transaction 1007.
+10319: TRANS 1007: Transaction 1007 aborted.
+10322: TRANS 1008: Trying to claim lock of resource 8 at server 1
+10322: TRANS 1008: Lock claimed. Processing...
+10365: TRANS 1008: Committing transaction 1008.
+10366: TRANS 1008: Unlocked resource 1 at server 2
+10367: TRANS 1008: Unlocked resource 7 at server 2
+10368: TRANS 1008: Unlocked resource 9 at server 2
+10368: TRANS 1008: Unlocked resource 4 at server 1
+10368: TRANS 1008: Unlocked resource 8 at server 1
+10368: TRANS 1008: Transaction 1008 committed.
+10369: Transaction 1008 ended.
+10526: Transaction 1009 arrived.
+10526: TRANS 1009: Starting transaction 1009.
+10527: TRANS 1009: Trying to claim lock of resource 8 at server 2
+10528: TRANS 1009: Lock claimed. Processing...
+10593: TRANS 1009: Trying to claim lock of resource 9 at server 2
+10594: TRANS 1009: Lock claimed. Processing...
+10689: TRANS 1009: Trying to claim lock of resource 8 at server 1
+10690: TRANS 1009: Lock claimed. Processing...
+10739: TRANS 1009: Trying to claim lock of resource 7 at server 2
+10742: TRANS 1009: Lock claimed. Processing...
+10785: TRANS 1009: Trying to claim lock of resource 4 at server 2
+10787: TRANS 1009: Lock claimed. Processing...
+10865: TRANS 1009: Trying to claim lock of resource 1 at server 2
+10867: TRANS 1009: Lock claimed. Processing...
+10895: TRANS 1009: Trying to claim lock of resource 3 at server 1
+10896: TRANS 1009: Lock claimed. Processing...
+10992: TRANS 1009: Trying to claim lock of resource 3 at server 2
+10994: TRANS 1009: Lock claimed. Processing...
+11085: TRANS 1009: Trying to claim lock of resource 2 at server 1
+11086: TRANS 1009: Lock claimed. Processing...
+11090: TRANS 1008: Aborting transaction 1008.
+11091: TRANS 1008: Transaction 1008 aborted.
+11159: TRANS 1009: Trying to claim lock of resource 6 at server 1
+11160: TRANS 1009: Lock claimed. Processing...
+11251: TRANS 1009: Committing transaction 1009.
+11254: TRANS 1009: Unlocked resource 8 at server 2
+11258: TRANS 1009: Unlocked resource 9 at server 2
+11258: TRANS 1009: Unlocked resource 8 at server 1
+11263: TRANS 1009: Unlocked resource 7 at server 2
+11268: TRANS 1009: Unlocked resource 4 at server 2
+11273: TRANS 1009: Unlocked resource 1 at server 2
+11274: TRANS 1009: Unlocked resource 3 at server 1
+11280: TRANS 1009: Unlocked resource 3 at server 2
+11280: TRANS 1009: Unlocked resource 2 at server 1
+11280: TRANS 1009: Unlocked resource 6 at server 1
+11280: TRANS 1009: Transaction 1009 committed.
+11281: Transaction 1009 ended.
+11476: Transaction 1010 arrived.
+11477: TRANS 1010: Starting transaction 1010.
+11477: TRANS 1010: Trying to claim lock of resource 6 at server 2
+11485: TRANS 1010: Lock claimed. Processing...
+11528: TRANS 1009: Aborting transaction 1009.
+11528: TRANS 1009: Transaction 1009 aborted.
+11580: TRANS 1010: Trying to claim lock of resource 2 at server 2
+11581: TRANS 1010: Lock claimed. Processing...
+11653: TRANS 1010: Trying to claim lock of resource 4 at server 2
+11654: TRANS 1010: Lock claimed. Processing...
+11743: TRANS 1010: Trying to claim lock of resource 3 at server 1
+11744: TRANS 1010: Lock claimed. Processing...
+11773: TRANS 1010: Trying to claim lock of resource 9 at server 1
+11773: TRANS 1010: Lock claimed. Processing...
+11819: TRANS 1010: Trying to claim lock of resource 5 at server 1
+11820: TRANS 1010: Lock claimed. Processing...
+11891: TRANS 1010: Trying to claim lock of resource 9 at server 2
+11893: TRANS 1010: Lock claimed. Processing...
+11929: TRANS 1010: Committing transaction 1010.
+11932: TRANS 1010: Unlocked resource 6 at server 2
+11935: TRANS 1010: Unlocked resource 2 at server 2
+11937: TRANS 1010: Unlocked resource 4 at server 2
+11938: TRANS 1010: Unlocked resource 3 at server 1
+11938: TRANS 1010: Unlocked resource 9 at server 1
+11938: TRANS 1010: Unlocked resource 5 at server 1
+11954: TRANS 1010: Unlocked resource 9 at server 2
+11955: TRANS 1010: Transaction 1010 committed.
+11955: Transaction 1010 ended.
+12049: Transaction 1011 arrived.
+12049: TRANS 1011: Starting transaction 1011.
+12050: TRANS 1011: Trying to claim lock of resource 8 at server 1
+12050: TRANS 1011: Lock claimed. Processing...
+12073: TRANS 1011: Trying to claim lock of resource 8 at server 2
+12477: TRANS 1010: Aborting transaction 1010.
+12478: TRANS 1010: Transaction 1010 aborted.
+12480: TRANS 1011: Lock claimed. Processing...
+12513: TRANS 1011: Trying to claim lock of resource 3 at server 2
+12514: TRANS 1011: Lock claimed. Processing...
+12589: TRANS 1011: Trying to claim lock of resource 5 at server 1
+12591: TRANS 1011: Lock claimed. Processing...
+12669: TRANS 1011: Trying to claim lock of resource 1 at server 1
+12670: TRANS 1011: Lock claimed. Processing...
+12716: TRANS 1011: Trying to claim lock of resource 9 at server 1
+12717: TRANS 1011: Lock claimed. Processing...
+12776: TRANS 1011: Trying to claim lock of resource 1 at server 2
+12782: TRANS 1011: Lock claimed. Processing...
+12838: TRANS 1011: Committing transaction 1011.
+12839: TRANS 1011: Unlocked resource 8 at server 1
+12847: TRANS 1011: Unlocked resource 8 at server 2
+12850: TRANS 1011: Unlocked resource 3 at server 2
+12851: TRANS 1011: Unlocked resource 5 at server 1
+12851: TRANS 1011: Unlocked resource 1 at server 1
+12852: TRANS 1011: Unlocked resource 9 at server 1
+12853: TRANS 1011: Unlocked resource 1 at server 2
+12854: TRANS 1011: Transaction 1011 committed.
+12855: Transaction 1011 ended.
+13051: TRANS 1011: Aborting transaction 1011.
+13051: TRANS 1011: Transaction 1011 aborted.
+13093: Transaction 1012 arrived.
+13093: TRANS 1012: Starting transaction 1012.
+13094: TRANS 1012: Trying to claim lock of resource 4 at server 2
+13098: TRANS 1012: Lock claimed. Processing...
+13153: TRANS 1012: Trying to claim lock of resource 1 at server 1
+13153: TRANS 1012: Lock claimed. Processing...
+13252: TRANS 1012: Trying to claim lock of resource 5 at server 2
+13254: TRANS 1012: Lock claimed. Processing...
+13338: TRANS 1012: Committing transaction 1012.
+13342: TRANS 1012: Unlocked resource 4 at server 2
+13343: TRANS 1012: Unlocked resource 1 at server 1
+13346: TRANS 1012: Unlocked resource 5 at server 2
+13346: TRANS 1012: Transaction 1012 committed.
+13346: Transaction 1012 ended.
+13531: Transaction 1013 arrived.
+13531: TRANS 1013: Starting transaction 1013.
+13532: TRANS 1013: Trying to claim lock of resource 2 at server 1
+13532: TRANS 1013: Lock claimed. Processing...
+13605: TRANS 1013: Trying to claim lock of resource 9 at server 2
+13606: TRANS 1013: Lock claimed. Processing...
+13664: TRANS 1013: Trying to claim lock of resource 6 at server 1
+13665: TRANS 1013: Lock claimed. Processing...
+13724: TRANS 1013: Committing transaction 1013.
+13725: TRANS 1013: Unlocked resource 2 at server 1
+13727: TRANS 1013: Unlocked resource 9 at server 2
+13727: TRANS 1013: Unlocked resource 6 at server 1
+13728: TRANS 1013: Transaction 1013 committed.
+13728: Transaction 1013 ended.
+14004: Transaction 1014 arrived.
+14005: TRANS 1014: Starting transaction 1014.
+14008: TRANS 1014: Trying to claim lock of resource 8 at server 2
+14011: TRANS 1014: Lock claimed. Processing...
+14056: TRANS 1014: Trying to claim lock of resource 0 at server 1
+14056: TRANS 1014: Lock claimed. Processing...
+14095: TRANS 1012: Aborting transaction 1012.
+14095: TRANS 1012: Transaction 1012 aborted.
+14113: TRANS 1014: Trying to claim lock of resource 6 at server 1
+14261: TRANS 1014: Lock claimed. Processing...
+14292: TRANS 1014: Trying to claim lock of resource 6 at server 2
+14293: TRANS 1014: Lock claimed. Processing...
+14386: TRANS 1014: Trying to claim lock of resource 5 at server 1
+14390: TRANS 1014: Lock claimed. Processing...
+14465: TRANS 1014: Trying to claim lock of resource 0 at server 2
+14467: TRANS 1014: Lock claimed. Processing...
+14516: TRANS 1014: Trying to claim lock of resource 5 at server 2
+14518: TRANS 1014: Lock claimed. Processing...
+14532: TRANS 1013: Aborting transaction 1013.
+14532: TRANS 1013: Transaction 1013 aborted.
+14585: TRANS 1014: Trying to claim lock of resource 4 at server 1
+14586: TRANS 1014: Lock claimed. Processing...
+14656: TRANS 1014: Trying to claim lock of resource 8 at server 1
+14657: TRANS 1014: Lock claimed. Processing...
+14681: TRANS 1014: Committing transaction 1014.
+14683: TRANS 1014: Unlocked resource 8 at server 2
+14683: TRANS 1014: Unlocked resource 0 at server 1
+14683: TRANS 1014: Unlocked resource 6 at server 1
+14687: TRANS 1014: Unlocked resource 6 at server 2
+14687: TRANS 1014: Unlocked resource 5 at server 1
+14690: TRANS 1014: Unlocked resource 0 at server 2
+14692: TRANS 1014: Unlocked resource 5 at server 2
+14692: TRANS 1014: Unlocked resource 4 at server 1
+14693: TRANS 1014: Unlocked resource 8 at server 1
+14693: TRANS 1014: Transaction 1014 committed.
+14693: Transaction 1014 ended.
+14990: Transaction 1015 arrived.
+14990: TRANS 1015: Starting transaction 1015.
+14991: TRANS 1015: Trying to claim lock of resource 0 at server 2
+14993: TRANS 1015: Lock claimed. Processing...
+15008: TRANS 1014: Aborting transaction 1014.
+15008: TRANS 1014: Transaction 1014 aborted.
+15088: TRANS 1015: Trying to claim lock of resource 2 at server 1
+==================================================================
+232: Server 1 started.
+2527: Server 1 was notified of the arrival of server 2
+9043: Server 1 started its transactions.
+9143: Transaction 1000 arrived.
+9144: TRANS 1000: Starting transaction 1000.
+9149: TRANS 1000: Trying to claim lock of resource 3 at server 2
+9152: TRANS 1000: Lock claimed. Processing...
+9188: TRANS 1000: Trying to claim lock of resource 9 at server 1
+9188: TRANS 1000: Lock claimed. Processing...
+9256: TRANS 1000: Trying to claim lock of resource 0 at server 1
+9257: TRANS 1000: Lock claimed. Processing...
+9298: TRANS 1000: Trying to claim lock of resource 8 at server 1
+9299: TRANS 1000: Lock claimed. Processing...
+9335: TRANS 1000: Committing transaction 1000.
+9337: TRANS 1000: Unlocked resource 3 at server 2
+9339: TRANS 1000: Unlocked resource 9 at server 1
+9339: TRANS 1000: Unlocked resource 0 at server 1
+9340: TRANS 1000: Unlocked resource 8 at server 1
+9340: TRANS 1000: Transaction 1000 committed.
+9340: Transaction 1000 ended.
+9474: Transaction 1001 arrived.
+9474: TRANS 1001: Starting transaction 1001.
+9475: TRANS 1001: Trying to claim lock of resource 7 at server 1
+9475: TRANS 1001: Lock claimed. Processing...
+9540: TRANS 1001: Trying to claim lock of resource 7 at server 2
+9543: TRANS 1001: Lock claimed. Processing...
+9612: TRANS 1001: Trying to claim lock of resource 3 at server 1
+9613: TRANS 1001: Lock claimed. Processing...
+9671: TRANS 1001: Trying to claim lock of resource 8 at server 1
+9672: TRANS 1001: Lock claimed. Processing...
+9712: TRANS 1001: Trying to claim lock of resource 2 at server 2
+9717: TRANS 1001: Lock claimed. Processing...
+9809: TRANS 1001: Trying to claim lock of resource 1 at server 1
+9821: TRANS 1001: Lock claimed. Processing...
+9847: TRANS 1001: Trying to claim lock of resource 2 at server 1
+9848: TRANS 1001: Lock claimed. Processing...
+9891: TRANS 1001: Trying to claim lock of resource 8 at server 2
+9897: TRANS 1001: Lock claimed. Processing...
+9975: TRANS 1001: Committing transaction 1001.
+9979: TRANS 1001: Unlocked resource 7 at server 1
+9987: TRANS 1001: Unlocked resource 7 at server 2
+9988: TRANS 1001: Unlocked resource 3 at server 1
+9988: TRANS 1001: Unlocked resource 8 at server 1
+9996: TRANS 1001: Unlocked resource 2 at server 2
+9997: TRANS 1001: Unlocked resource 1 at server 1
+9997: TRANS 1001: Unlocked resource 2 at server 1
+10005: TRANS 1001: Unlocked resource 8 at server 2
+10005: TRANS 1001: Transaction 1001 committed.
+10005: Transaction 1001 ended.
+10073: Transaction 1002 arrived.
+10075: TRANS 1002: Starting transaction 1002.
+10077: TRANS 1002: Trying to claim lock of resource 2 at server 2
+10079: TRANS 1002: Lock claimed. Processing...
+10122: TRANS 1002: Trying to claim lock of resource 0 at server 1
+10123: TRANS 1002: Lock claimed. Processing...
+10148: TRANS 1000: Aborting transaction 1000.
+10148: TRANS 1000: Transaction 1000 aborted.
+10155: TRANS 1002: Trying to claim lock of resource 5 at server 1
+10155: TRANS 1002: Lock claimed. Processing...
+10243: TRANS 1002: Trying to claim lock of resource 7 at server 1
+10371: TRANS 1002: Lock claimed. Processing...
+10440: TRANS 1002: Trying to claim lock of resource 1 at server 2
+10442: TRANS 1002: Lock claimed. Processing...
+10476: TRANS 1001: Aborting transaction 1001.
+10476: TRANS 1001: Transaction 1001 aborted.
+10495: TRANS 1002: Trying to claim lock of resource 4 at server 2
+10497: TRANS 1002: Lock claimed. Processing...
+10538: TRANS 1002: Trying to claim lock of resource 2 at server 1
+10539: TRANS 1002: Lock claimed. Processing...
+10596: TRANS 1002: Trying to claim lock of resource 1 at server 1
+10597: TRANS 1002: Lock claimed. Processing...
+10657: TRANS 1002: Trying to claim lock of resource 8 at server 1
+59550: Server 1 was notified of the arrival of server 3
+61159: Server 1 was notified of the arrival of server 4
+==================================================================
+223: Server 1 started.
+2421: Server 1 was notified of the arrival of server 2
+3500: Server 1 was notified of the arrival of server 3
+7035: Server 1 started its transactions.
+7129: Transaction 1000 arrived.
+7131: TRANS 1000: Starting transaction 1000.
+7137: TRANS 1000: Trying to claim lock of resource 4 at server 2
+7144: TRANS 1000: Lock claimed. Processing...
+7210: TRANS 1000: Trying to claim lock of resource 3 at server 3
+7211: TRANS 1000: Lock claimed. Processing...
+7306: TRANS 1000: Trying to claim lock of resource 8 at server 1
+7307: TRANS 1000: Lock claimed. Processing...
+7393: TRANS 1000: Trying to claim lock of resource 9 at server 1
+7394: TRANS 1000: Lock claimed. Processing...
+7418: TRANS 1000: Trying to claim lock of resource 3 at server 2
+7420: TRANS 1000: Lock claimed. Processing...
+7462: TRANS 1000: Trying to claim lock of resource 0 at server 3
+7466: TRANS 1000: Lock claimed. Processing...
+7511: TRANS 1000: Trying to claim lock of resource 2 at server 3
+7514: TRANS 1000: Lock claimed. Processing...
+7580: TRANS 1000: Trying to claim lock of resource 8 at server 2
+7582: TRANS 1000: Lock claimed. Processing...
+7610: TRANS 1000: Committing transaction 1000.
+7611: TRANS 1000: Unlocked resource 4 at server 2
+7615: TRANS 1000: Unlocked resource 3 at server 3
+7615: TRANS 1000: Unlocked resource 8 at server 1
+7615: TRANS 1000: Unlocked resource 9 at server 1
+7617: TRANS 1000: Unlocked resource 3 at server 2
+7620: TRANS 1000: Unlocked resource 0 at server 3
+7621: TRANS 1000: Unlocked resource 2 at server 3
+7621: TRANS 1000: Unlocked resource 8 at server 2
+7622: TRANS 1000: Transaction 1000 committed.
+7622: Transaction 1000 ended.
+7810: Transaction 1001 arrived.
+7811: TRANS 1001: Starting transaction 1001.
+7812: TRANS 1001: Trying to claim lock of resource 4 at server 1
+7812: TRANS 1001: Lock claimed. Processing...
+7906: TRANS 1001: Trying to claim lock of resource 6 at server 3
+7908: TRANS 1001: Lock claimed. Processing...
+7987: TRANS 1001: Trying to claim lock of resource 8 at server 2
+7989: TRANS 1001: Lock claimed. Processing...
+8044: TRANS 1001: Trying to claim lock of resource 5 at server 2
+8223: TRANS 1001: Lock claimed. Processing...
+8304: TRANS 1001: Committing transaction 1001.
+8305: TRANS 1001: Unlocked resource 4 at server 1
+8317: TRANS 1001: Unlocked resource 6 at server 3
+8325: TRANS 1001: Unlocked resource 8 at server 2
+8329: TRANS 1001: Unlocked resource 5 at server 2
+8330: TRANS 1001: Transaction 1001 committed.
+8330: Transaction 1001 ended.
+8577: Transaction 1002 arrived.
+8577: TRANS 1002: Starting transaction 1002.
+8578: TRANS 1002: Trying to claim lock of resource 5 at server 1
+8578: TRANS 1002: Lock claimed. Processing...
+8632: TRANS 1002: Trying to claim lock of resource 3 at server 2
+8633: TRANS 1002: Lock claimed. Processing...
+8659: TRANS 1002: Trying to claim lock of resource 4 at server 1
+8660: TRANS 1002: Lock claimed. Processing...
+8738: TRANS 1002: Trying to claim lock of resource 6 at server 1
+8738: TRANS 1002: Lock claimed. Processing...
+8767: TRANS 1002: Trying to claim lock of resource 1 at server 2
+8770: TRANS 1002: Lock claimed. Processing...
+8839: TRANS 1002: Trying to claim lock of resource 4 at server 3
+8841: TRANS 1002: Lock claimed. Processing...
+8920: TRANS 1002: Trying to claim lock of resource 7 at server 1
+12137: TRANS 1000: Aborting transaction 1000.
+12137: TRANS 1000: Transaction 1000 aborted.
+12811: TRANS 1001: Aborting transaction 1001.
+12812: TRANS 1001: Transaction 1001 aborted.
+407251: Server 1 was notified of the arrival of server 4
+==================================================================
+227: Server 1 started.
+2671: Server 1 was notified of the arrival of server 2
+3676: Server 1 was notified of the arrival of server 3
+7389: Server 1 started its transactions.
+7435: Transaction 1000 arrived.
+7439: TRANS 1000: Starting transaction 1000.
+7440: TRANS 1000: Trying to claim lock of resource 7 at server 2
+7441: TRANS 1000: Lock claimed. Processing...
+7486: TRANS 1000: Trying to claim lock of resource 1 at server 1
+7763: TRANS 1000: Lock claimed. Processing...
+7819: TRANS 1000: Trying to claim lock of resource 4 at server 1
+8144: TRANS 1000: Lock claimed. Processing...
+8179: TRANS 1000: Trying to claim lock of resource 6 at server 3
+8184: TRANS 1000: Lock claimed. Processing...
+8258: TRANS 1000: Trying to claim lock of resource 6 at server 1
+8259: TRANS 1000: Lock claimed. Processing...
+8359: TRANS 1000: Trying to claim lock of resource 8 at server 3
+8361: TRANS 1000: Lock claimed. Processing...
+8438: TRANS 1000: Trying to claim lock of resource 0 at server 1
+8439: TRANS 1000: Lock claimed. Processing...
+8479: TRANS 1000: Trying to claim lock of resource 5 at server 2
+8482: TRANS 1000: Lock claimed. Processing...
+8510: TRANS 1000: Trying to claim lock of resource 0 at server 2
+8511: TRANS 1000: Lock claimed. Processing...
+8551: TRANS 1000: Trying to claim lock of resource 8 at server 2
+67058: Contact with server 2 was lost.
+==================================================================
+235: Server 1 started.
+3147: Server 1 was notified of the arrival of server 2
+==================================================================
+228: Server 1 started.
+2409: Server 1 was notified of the arrival of server 2
+3472: Server 1 was notified of the arrival of server 3
+6121: Server 1 started its transactions.
+6142: Transaction 1000 arrived.
+6143: TRANS 1000: Starting transaction 1000.
+6144: TRANS 1000: Trying to claim lock of resource 2 at server 3
+6154: TRANS 1000: Lock claimed. Processing...
+6228: TRANS 1000: Trying to claim lock of resource 7 at server 3
+6232: TRANS 1000: Lock claimed. Processing...
+6293: TRANS 1000: Trying to claim lock of resource 2 at server 2
+6296: TRANS 1000: Lock claimed. Processing...
+6379: TRANS 1000: Committing transaction 1000.
+6391: TRANS 1000: Unlocked resource 2 at server 3
+6407: TRANS 1000: Unlocked resource 7 at server 3
+6413: TRANS 1000: Unlocked resource 2 at server 2
+6413: TRANS 1000: Transaction 1000 committed.
+6413: Transaction 1000 ended.
+6689: Transaction 1001 arrived.
+6690: TRANS 1001: Starting transaction 1001.
+6690: TRANS 1001: Trying to claim lock of resource 9 at server 3
+6827: TRANS 1001: Lock claimed. Processing...
+6909: TRANS 1001: Trying to claim lock of resource 0 at server 2
+6913: TRANS 1001: Lock claimed. Processing...
+6994: TRANS 1001: Trying to claim lock of resource 3 at server 1
+6995: TRANS 1001: Lock claimed. Processing...
+7019: TRANS 1001: Trying to claim lock of resource 0 at server 3
+7021: TRANS 1001: Lock claimed. Processing...
+7080: TRANS 1001: Trying to claim lock of resource 2 at server 3
+7082: TRANS 1001: Lock claimed. Processing...
+7111: TRANS 1001: Trying to claim lock of resource 5 at server 1
+7112: TRANS 1001: Lock claimed. Processing...
+7178: TRANS 1001: Trying to claim lock of resource 0 at server 1
+==================================================================
+229: Server 1 started.
+3309: Server 1 was notified of the arrival of server 2
+5096: Server 1 started its transactions.
+5140: Transaction 1000 arrived.
+5142: TRANS 1000: Starting transaction 1000.
+5143: TRANS 1000: Trying to claim lock of resource 8 at server 2
+5169: TRANS 1000: Lock claimed. Processing...
+5192: TRANS 1000: Trying to claim lock of resource 4 at server 2
+5194: TRANS 1000: Lock claimed. Processing...
+5270: TRANS 1000: Trying to claim lock of resource 7 at server 1
+5708: TRANS 1000: Lock claimed. Processing...
+5780: TRANS 1000: Committing transaction 1000.
+5783: TRANS 1000: Unlocked resource 8 at server 2
+5787: TRANS 1000: Unlocked resource 4 at server 2
+5789: TRANS 1000: Unlocked resource 7 at server 1
+5790: TRANS 1000: Transaction 1000 committed.
+5794: Transaction 1000 ended.
+5991: Transaction 1001 arrived.
+5991: TRANS 1001: Starting transaction 1001.
+5992: TRANS 1001: Trying to claim lock of resource 0 at server 1
+5992: TRANS 1001: Lock claimed. Processing...
+6056: TRANS 1001: Trying to claim lock of resource 5 at server 1
+6056: TRANS 1001: Lock claimed. Processing...
+6100: TRANS 1001: Trying to claim lock of resource 2 at server 2
+6102: TRANS 1001: Lock claimed. Processing...
+6168: TRANS 1001: Trying to claim lock of resource 1 at server 2
+6170: TRANS 1001: Lock claimed. Processing...
+6250: TRANS 1001: Trying to claim lock of resource 6 at server 2
+6255: TRANS 1001: Lock claimed. Processing...
+6290: TRANS 1001: Trying to claim lock of resource 3 at server 2
+6295: TRANS 1001: Lock claimed. Processing...
+6341: TRANS 1001: Committing transaction 1001.
+6344: TRANS 1001: Unlocked resource 0 at server 1
+6347: TRANS 1001: Unlocked resource 5 at server 1
+6357: TRANS 1001: Unlocked resource 2 at server 2
+6365: TRANS 1001: Unlocked resource 1 at server 2
+6370: TRANS 1001: Unlocked resource 6 at server 2
+6371: TRANS 1001: Unlocked resource 3 at server 2
+6371: TRANS 1001: Transaction 1001 committed.
+6371: Transaction 1001 ended.
+6478: Transaction 1002 arrived.
+6479: TRANS 1002: Starting transaction 1002.
+6480: TRANS 1002: Trying to claim lock of resource 8 at server 2
+6489: TRANS 1002: Lock claimed. Processing...
+6546: TRANS 1002: Trying to claim lock of resource 7 at server 1
+6549: TRANS 1002: Lock claimed. Processing...
+6641: TRANS 1002: Trying to claim lock of resource 5 at server 2
+6650: TRANS 1002: Lock claimed. Processing...
+6690: TRANS 1002: Trying to claim lock of resource 0 at server 1
+6691: TRANS 1002: Lock claimed. Processing...
+6762: TRANS 1002: Trying to claim lock of resource 5 at server 1
+6763: TRANS 1002: Lock claimed. Processing...
+6853: TRANS 1002: Trying to claim lock of resource 0 at server 2
+6860: TRANS 1002: Lock claimed. Processing...
+6890: TRANS 1002: Committing transaction 1002.
+6894: TRANS 1002: Unlocked resource 8 at server 2
+6895: TRANS 1002: Unlocked resource 7 at server 1
+6899: TRANS 1002: Unlocked resource 5 at server 2
+6899: TRANS 1002: Unlocked resource 0 at server 1
+6900: TRANS 1002: Unlocked resource 5 at server 1
+6904: TRANS 1002: Unlocked resource 0 at server 2
+6904: TRANS 1002: Transaction 1002 committed.
+6904: Transaction 1002 ended.
+7001: Transaction 1003 arrived.
+7001: TRANS 1003: Starting transaction 1003.
+7002: TRANS 1003: Trying to claim lock of resource 8 at server 2
+7010: TRANS 1003: Lock claimed. Processing...
+7042: TRANS 1003: Trying to claim lock of resource 1 at server 1
+7043: TRANS 1003: Lock claimed. Processing...
+7098: TRANS 1003: Trying to claim lock of resource 6 at server 1
+7098: TRANS 1003: Lock claimed. Processing...
+7170: TRANS 1003: Trying to claim lock of resource 1 at server 2
+7176: TRANS 1003: Lock claimed. Processing...
+7239: TRANS 1003: Trying to claim lock of resource 8 at server 1
+7240: TRANS 1003: Lock claimed. Processing...
+7296: TRANS 1003: Trying to claim lock of resource 3 at server 2
+7301: TRANS 1003: Lock claimed. Processing...
+7370: TRANS 1003: Trying to claim lock of resource 2 at server 2
+7376: TRANS 1003: Lock claimed. Processing...
+7406: TRANS 1003: Committing transaction 1003.
+7408: TRANS 1003: Unlocked resource 8 at server 2
+7409: TRANS 1003: Unlocked resource 1 at server 1
+7409: TRANS 1003: Unlocked resource 6 at server 1
+7414: TRANS 1003: Unlocked resource 1 at server 2
+7417: TRANS 1003: Unlocked resource 8 at server 1
+7423: TRANS 1003: Unlocked resource 3 at server 2
+7428: TRANS 1003: Unlocked resource 2 at server 2
+7428: TRANS 1003: Transaction 1003 committed.
+7428: Transaction 1003 ended.
+7484: Transaction 1004 arrived.
+7484: TRANS 1004: Starting transaction 1004.
+7485: TRANS 1004: Trying to claim lock of resource 4 at server 1
+7485: TRANS 1004: Lock claimed. Processing...
+7515: TRANS 1004: Trying to claim lock of resource 3 at server 1
+7516: TRANS 1004: Lock claimed. Processing...
+7567: TRANS 1004: Trying to claim lock of resource 3 at server 2
+7568: TRANS 1004: Lock claimed. Processing...
+7631: TRANS 1004: Trying to claim lock of resource 8 at server 2
+7637: TRANS 1004: Lock claimed. Processing...
+7719: TRANS 1004: Trying to claim lock of resource 6 at server 2
+7727: TRANS 1004: Lock claimed. Processing...
+7747: TRANS 1004: Trying to claim lock of resource 2 at server 1
+7748: TRANS 1004: Lock claimed. Processing...
+7815: TRANS 1004: Trying to claim lock of resource 2 at server 2
+7821: TRANS 1004: Lock claimed. Processing...
+7865: TRANS 1004: Trying to claim lock of resource 1 at server 2
+7871: TRANS 1004: Lock claimed. Processing...
+7939: TRANS 1004: Committing transaction 1004.
+7940: TRANS 1004: Unlocked resource 4 at server 1
+7940: TRANS 1004: Unlocked resource 3 at server 1
+7941: TRANS 1004: Unlocked resource 3 at server 2
+7943: TRANS 1004: Unlocked resource 8 at server 2
+7945: TRANS 1004: Unlocked resource 6 at server 2
+7945: TRANS 1004: Unlocked resource 2 at server 1
+7946: TRANS 1004: Unlocked resource 2 at server 2
+7947: TRANS 1004: Unlocked resource 1 at server 2
+7947: TRANS 1004: Transaction 1004 committed.
+7948: Transaction 1004 ended.
+8152: Transaction 1005 arrived.
+8153: TRANS 1005: Starting transaction 1005.
+8153: TRANS 1005: Trying to claim lock of resource 5 at server 1
+8154: TRANS 1005: Lock claimed. Processing...
+8233: TRANS 1005: Trying to claim lock of resource 9 at server 2
+8234: TRANS 1005: Lock claimed. Processing...
+8267: TRANS 1005: Trying to claim lock of resource 3 at server 1
+8269: TRANS 1005: Lock claimed. Processing...
+8349: TRANS 1005: Trying to claim lock of resource 8 at server 1
+8350: TRANS 1005: Lock claimed. Processing...
+8397: TRANS 1005: Trying to claim lock of resource 1 at server 1
+8397: TRANS 1005: Lock claimed. Processing...
+8428: TRANS 1005: Trying to claim lock of resource 4 at server 1
+8428: TRANS 1005: Lock claimed. Processing...
+8464: TRANS 1005: Trying to claim lock of resource 2 at server 1
+8464: TRANS 1005: Lock claimed. Processing...
+8544: TRANS 1005: Committing transaction 1005.
+8549: TRANS 1005: Unlocked resource 5 at server 1
+8556: TRANS 1005: Unlocked resource 9 at server 2
+8557: TRANS 1005: Unlocked resource 3 at server 1
+8557: TRANS 1005: Unlocked resource 8 at server 1
+8558: TRANS 1005: Unlocked resource 1 at server 1
+8558: TRANS 1005: Unlocked resource 4 at server 1
+8558: TRANS 1005: Unlocked resource 2 at server 1
+8559: TRANS 1005: Transaction 1005 committed.
+8559: Transaction 1005 ended.
+8699: Transaction 1006 arrived.
+8699: TRANS 1006: Starting transaction 1006.
+8700: TRANS 1006: Trying to claim lock of resource 2 at server 2
+8715: TRANS 1006: Lock claimed. Processing...
+8743: TRANS 1006: Trying to claim lock of resource 9 at server 2
+==================================================================
+236: Server 1 started.
+2270: Server 1 was notified of the arrival of server 2
+3825: Server 1 started its transactions.
+3847: Transaction 1000 arrived.
+3848: TRANS 1000: Starting transaction 1000.
+3850: TRANS 1000: Trying to claim lock of resource 2 at server 2
+3855: TRANS 1000: Lock claimed. Processing...
+3924: TRANS 1000: Trying to claim lock of resource 6 at server 2
+3926: TRANS 1000: Lock claimed. Processing...
+4007: TRANS 1000: Trying to claim lock of resource 9 at server 1
+4008: TRANS 1000: Lock claimed. Processing...
+4077: TRANS 1000: Trying to claim lock of resource 0 at server 1
+4077: TRANS 1000: Lock claimed. Processing...
+4143: TRANS 1000: Trying to claim lock of resource 3 at server 2
+4145: TRANS 1000: Lock claimed. Processing...
+4172: TRANS 1000: Trying to claim lock of resource 4 at server 1
+==================================================================
+227: Server 1 started.
+2595: Server 1 was notified of the arrival of server 2
+4405: Server 1 started its transactions.
+4445: Transaction 1000 arrived.
+4458: TRANS 1000: Starting transaction 1000.
+4460: TRANS 1000: Trying to claim lock of resource 0 at server 2
+4464: TRANS 1000: Lock claimed. Processing...
+4536: TRANS 1000: Trying to claim lock of resource 1 at server 1
+4537: TRANS 1000: Lock claimed. Processing...
+4590: TRANS 1000: Trying to claim lock of resource 1 at server 2
+4594: TRANS 1000: Lock claimed. Processing...
+4655: TRANS 1000: Trying to claim lock of resource 6 at server 2
+4657: TRANS 1000: Lock claimed. Processing...
+4729: TRANS 1000: Trying to claim lock of resource 6 at server 1
+4838: TRANS 1000: Lock claimed. Processing...
+4918: TRANS 1000: Trying to claim lock of resource 8 at server 2
+4920: TRANS 1000: Lock claimed. Processing...
+4991: TRANS 1000: Trying to claim lock of resource 3 at server 2
+4993: TRANS 1000: Lock claimed. Processing...
+5090: TRANS 1000: Trying to claim lock of resource 2 at server 1
+5091: TRANS 1000: Lock claimed. Processing...
+5153: TRANS 1000: Trying to claim lock of resource 3 at server 1
+5154: TRANS 1000: Lock claimed. Processing...
+5185: TRANS 1000: Committing transaction 1000.
+5188: TRANS 1000: Unlocked resource 0 at server 2
+5188: TRANS 1000: Unlocked resource 1 at server 1
+5202: TRANS 1000: Unlocked resource 1 at server 2
+5204: TRANS 1000: Unlocked resource 6 at server 2
+5205: TRANS 1000: Unlocked resource 6 at server 1
+5216: TRANS 1000: Unlocked resource 8 at server 2
+5217: TRANS 1000: Unlocked resource 3 at server 2
+5217: TRANS 1000: Unlocked resource 2 at server 1
+5218: TRANS 1000: Unlocked resource 3 at server 1
+5218: TRANS 1000: Transaction 1000 committed.
+5218: Transaction 1000 ended.
+5399: Transaction 1001 arrived.
+5400: TRANS 1001: Starting transaction 1001.
+5401: TRANS 1001: Trying to claim lock of resource 3 at server 1
+5401: TRANS 1001: Lock claimed. Processing...
+5430: TRANS 1001: Trying to claim lock of resource 1 at server 2
+5432: TRANS 1001: Lock claimed. Processing...
+5491: TRANS 1001: Trying to claim lock of resource 5 at server 2
+5493: TRANS 1001: Lock claimed. Processing...
+5576: TRANS 1001: Trying to claim lock of resource 5 at server 1
+5577: TRANS 1001: Lock claimed. Processing...
+5633: TRANS 1001: Trying to claim lock of resource 0 at server 2
+5635: TRANS 1001: Lock claimed. Processing...
+5693: TRANS 1001: Trying to claim lock of resource 3 at server 2
+5695: TRANS 1001: Lock claimed. Processing...
+5767: TRANS 1001: Trying to claim lock of resource 7 at server 2
+5769: TRANS 1001: Lock claimed. Processing...
+5819: TRANS 1001: Trying to claim lock of resource 6 at server 1
+5820: TRANS 1001: Lock claimed. Processing...
+5897: TRANS 1001: Trying to claim lock of resource 4 at server 1
+7459: TRANS 1000: Aborting transaction 1000.
+7459: TRANS 1000: Transaction 1000 aborted.
+==================================================================
+235: Server 1 started.
+3653: Server 1 was notified of the arrival of server 2
+5491: Server 1 started its transactions.
+5547: Transaction 1000 arrived.
+5553: TRANS 1000: Starting transaction 1000.
+5555: TRANS 1000: Trying to claim lock of resource 9 at server 1
+5557: TRANS 1000: Lock claimed. Processing...
+5641: TRANS 1000: Trying to claim lock of resource 0 at server 2
+5645: TRANS 1000: Lock claimed. Processing...
+5706: TRANS 1000: Trying to claim lock of resource 4 at server 1
+5707: TRANS 1000: Lock claimed. Processing...
+5760: TRANS 1000: Committing transaction 1000.
+5761: TRANS 1000: Unlocked resource 9 at server 1
+5763: TRANS 1000: Unlocked resource 0 at server 2
+5764: TRANS 1000: Unlocked resource 4 at server 1
+5764: TRANS 1000: Transaction 1000 committed.
+5765: Transaction 1000 ended.
+6025: Transaction 1001 arrived.
+6029: TRANS 1001: Starting transaction 1001.
+6029: TRANS 1001: Trying to claim lock of resource 1 at server 1
+6030: TRANS 1001: Lock claimed. Processing...
+6108: TRANS 1001: Trying to claim lock of resource 6 at server 1
+6108: TRANS 1001: Lock claimed. Processing...
+6130: TRANS 1001: Trying to claim lock of resource 9 at server 1
+6131: TRANS 1001: Lock claimed. Processing...
+6200: TRANS 1001: Trying to claim lock of resource 9 at server 2
+6202: TRANS 1001: Lock claimed. Processing...
+6284: TRANS 1001: Committing transaction 1001.
+6284: TRANS 1001: Unlocked resource 1 at server 1
+6285: TRANS 1001: Unlocked resource 6 at server 1
+6285: TRANS 1001: Unlocked resource 9 at server 1
+6287: TRANS 1001: Unlocked resource 9 at server 2
+6287: TRANS 1001: Transaction 1001 committed.
+6288: Transaction 1001 ended.
+6409: Transaction 1002 arrived.
+6411: TRANS 1002: Starting transaction 1002.
+6411: TRANS 1002: Trying to claim lock of resource 7 at server 2
+6413: TRANS 1002: Lock claimed. Processing...
+6492: TRANS 1002: Trying to claim lock of resource 9 at server 2
+6496: TRANS 1002: Lock claimed. Processing...
+6553: TRANS 1000: Aborting transaction 1000.
+6554: TRANS 1000: Transaction 1000 aborted.
+6561: TRANS 1002: Trying to claim lock of resource 6 at server 1
+6562: TRANS 1002: Lock claimed. Processing...
+6660: TRANS 1002: Trying to claim lock of resource 5 at server 1
+6661: TRANS 1002: Lock claimed. Processing...
+6712: TRANS 1002: Committing transaction 1002.
+6713: TRANS 1002: Unlocked resource 7 at server 2
+6716: TRANS 1002: Unlocked resource 9 at server 2
+6716: TRANS 1002: Unlocked resource 6 at server 1
+6717: TRANS 1002: Unlocked resource 5 at server 1
+6717: TRANS 1002: Transaction 1002 committed.
+6717: Transaction 1002 ended.
+6885: Transaction 1003 arrived.
+6886: TRANS 1003: Starting transaction 1003.
+6886: TRANS 1003: Trying to claim lock of resource 6 at server 2
+6894: TRANS 1003: Lock claimed. Processing...
+6923: TRANS 1003: Trying to claim lock of resource 9 at server 2
+6939: TRANS 1003: Lock claimed. Processing...
+6990: TRANS 1003: Trying to claim lock of resource 0 at server 2
+7002: TRANS 1003: Lock claimed. Processing...
+7029: TRANS 1001: Aborting transaction 1001.
+7030: TRANS 1001: Transaction 1001 aborted.
+7079: TRANS 1003: Trying to claim lock of resource 7 at server 1
+7079: TRANS 1003: Lock claimed. Processing...
+7159: TRANS 1003: Trying to claim lock of resource 9 at server 1
+7160: TRANS 1003: Lock claimed. Processing...
+7223: TRANS 1003: Trying to claim lock of resource 1 at server 1
+7224: TRANS 1003: Lock claimed. Processing...
+7263: TRANS 1003: Trying to claim lock of resource 3 at server 2
+7265: TRANS 1003: Lock claimed. Processing...
+7303: TRANS 1003: Trying to claim lock of resource 4 at server 2
+7304: TRANS 1003: Lock claimed. Processing...
+7359: TRANS 1003: Trying to claim lock of resource 2 at server 1
+7360: TRANS 1003: Lock claimed. Processing...
+7411: TRANS 1002: Aborting transaction 1002.
+7411: TRANS 1002: Transaction 1002 aborted.
+7447: TRANS 1003: Trying to claim lock of resource 0 at server 1
+7448: TRANS 1003: Lock claimed. Processing...
+7542: TRANS 1003: Committing transaction 1003.
+7547: TRANS 1003: Unlocked resource 6 at server 2
+7552: TRANS 1003: Unlocked resource 9 at server 2
+7555: TRANS 1003: Unlocked resource 0 at server 2
+7555: TRANS 1003: Unlocked resource 7 at server 1
+7555: TRANS 1003: Unlocked resource 9 at server 1
+7556: TRANS 1003: Unlocked resource 1 at server 1
+7562: TRANS 1003: Unlocked resource 3 at server 2
+7568: TRANS 1003: Unlocked resource 4 at server 2
+7568: TRANS 1003: Unlocked resource 2 at server 1
+7568: TRANS 1003: Unlocked resource 0 at server 1
+7568: TRANS 1003: Transaction 1003 committed.
+7569: Transaction 1003 ended.
+7801: Transaction 1004 arrived.
+7803: TRANS 1004: Starting transaction 1004.
+7804: TRANS 1004: Trying to claim lock of resource 9 at server 1
+7804: TRANS 1004: Lock claimed. Processing...
+7858: TRANS 1004: Trying to claim lock of resource 5 at server 1
+7858: TRANS 1004: Lock claimed. Processing...
+7887: TRANS 1003: Aborting transaction 1003.
+7887: TRANS 1003: Transaction 1003 aborted.
+7925: TRANS 1004: Trying to claim lock of resource 4 at server 1
+7926: TRANS 1004: Lock claimed. Processing...
+8025: TRANS 1004: Trying to claim lock of resource 1 at server 2
+==================================================================
+232: Server 1 started.
+2630: Server 1 was notified of the arrival of server 2
+4332: Server 1 started its transactions.
+4345: Transaction 1000 arrived.
+4350: TRANS 1000: Starting transaction 1000.
+4352: TRANS 1000: Trying to claim lock of resource 1 at server 1
+4353: TRANS 1000: Lock claimed. Processing...
+4443: TRANS 1000: Trying to claim lock of resource 8 at server 2
+4759: TRANS 1000: Lock claimed. Processing...
+4787: TRANS 1000: Trying to claim lock of resource 7 at server 1
+4787: TRANS 1000: Lock claimed. Processing...
+4843: TRANS 1000: Trying to claim lock of resource 0 at server 2
+4845: TRANS 1000: Lock claimed. Processing...
+4928: TRANS 1000: Trying to claim lock of resource 3 at server 1
+4929: TRANS 1000: Lock claimed. Processing...
+5010: TRANS 1000: Trying to claim lock of resource 5 at server 1
+5011: TRANS 1000: Lock claimed. Processing...
+5096: TRANS 1000: Trying to claim lock of resource 2 at server 2
+5107: TRANS 1000: Lock claimed. Processing...
+5163: TRANS 1000: Trying to claim lock of resource 4 at server 1
+5163: TRANS 1000: Lock claimed. Processing...
+5193: TRANS 1000: Trying to claim lock of resource 3 at server 2
+5195: TRANS 1000: Lock claimed. Processing...
+5283: TRANS 1000: Trying to claim lock of resource 0 at server 1
+5284: TRANS 1000: Lock claimed. Processing...
+5339: TRANS 1000: Committing transaction 1000.
+5340: TRANS 1000: Unlocked resource 1 at server 1
+5352: TRANS 1000: Unlocked resource 8 at server 2
+5352: TRANS 1000: Unlocked resource 7 at server 1
+5363: TRANS 1000: Unlocked resource 0 at server 2
+5363: TRANS 1000: Unlocked resource 3 at server 1
+5363: TRANS 1000: Unlocked resource 5 at server 1
+5373: TRANS 1000: Unlocked resource 2 at server 2
+5373: TRANS 1000: Unlocked resource 4 at server 1
+5379: TRANS 1000: Unlocked resource 3 at server 2
+5380: TRANS 1000: Unlocked resource 0 at server 1
+5380: TRANS 1000: Transaction 1000 committed.
+5380: Transaction 1000 ended.
+5383: TRANS 1000: Aborting transaction 1000.
+5383: TRANS 1000: Transaction 1000 aborted.
+5383: TRANS 1000: Starting transaction 1000.
+5384: TRANS 1000: Trying to claim lock of resource 2 at server 2
+5385: TRANS 1000: Lock claimed. Processing...
+5443: TRANS 1000: Trying to claim lock of resource 3 at server 1
+5443: TRANS 1000: Lock claimed. Processing...
+5451: Transaction 1001 arrived.
+5452: TRANS 1001: Starting transaction 1001.
+5452: TRANS 1001: Trying to claim lock of resource 4 at server 1
+5452: TRANS 1001: Lock claimed. Processing...
+5485: TRANS 1001: Trying to claim lock of resource 8 at server 1
+5485: TRANS 1001: Lock claimed. Processing...
+5510: TRANS 1000: Trying to claim lock of resource 0 at server 1
+5510: TRANS 1000: Lock claimed. Processing...
+5544: TRANS 1001: Trying to claim lock of resource 3 at server 2
+5547: TRANS 1001: Lock claimed. Processing...
+5549: TRANS 1000: Trying to claim lock of resource 0 at server 2
+5644: TRANS 1001: Trying to claim lock of resource 9 at server 2
+5659: TRANS 1001: Lock claimed. Processing...
+5752: TRANS 1001: Trying to claim lock of resource 6 at server 2
+5754: TRANS 1001: Lock claimed. Processing...
+5811: TRANS 1001: Committing transaction 1001.
+5812: TRANS 1001: Unlocked resource 4 at server 1
+5812: TRANS 1001: Unlocked resource 8 at server 1
+5821: TRANS 1001: Unlocked resource 3 at server 2
+5830: TRANS 1001: Unlocked resource 9 at server 2
+5837: TRANS 1001: Unlocked resource 6 at server 2
+5838: TRANS 1001: Transaction 1001 committed.
+5838: Transaction 1001 ended.
+6106: Transaction 1002 arrived.
+6108: TRANS 1002: Starting transaction 1002.
+6108: TRANS 1002: Trying to claim lock of resource 1 at server 2
+6110: TRANS 1002: Lock claimed. Processing...
+6165: TRANS 1002: Trying to claim lock of resource 7 at server 2
+6452: TRANS 1001: Aborting transaction 1001.
+6452: TRANS 1001: Transaction 1001 aborted.
+6453: TRANS 1001: Starting transaction 1001.
+6454: TRANS 1001: Trying to claim lock of resource 3 at server 2
+6457: TRANS 1001: Lock claimed. Processing...
+6494: TRANS 1001: Trying to claim lock of resource 7 at server 2
+22937: Contact with server 2 was lost.
+22940: Contact with server 2 was lost.
+22941: Contact with server 2 was lost.
+23939: TRANS 1002: Contact was lost with a server hosting a resource involved in transaction 1002. Transaction must abort.
+23943: TRANS 1002: Contact was lost with a server hosting a resource involved in transaction 1002. Transaction must abort.
+23943: TRANS 1002: Contact was lost with a server hosting a resource involved in transaction 1002. Transaction must abort.
+23943: TRANS 1002: Aborting transaction 1002.
+23955: TRANS 1001: Aborting transaction 1001.
+23956: TRANS 1000: Aborting transaction 1000.
+24952: TRANS 1002: Failed to unlock resource 1 at server 2 due to communication failure.
+24953: TRANS 1002: Transaction 1002 aborted.
+24954: TRANS 1002: Aborting transaction 1002.
+24954: TRANS 1002: Transaction 1002 aborted.
+24954: Transaction 1002 ended.
+24955: TRANS 1000: Failed to unlock resource 2 at server 2 due to communication failure.
+24956: TRANS 1000: Unlocked resource 3 at server 1
+24957: TRANS 1000: Unlocked resource 0 at server 1
+24957: TRANS 1000: Transaction 1000 aborted.
+24957: TRANS 1000: Aborting transaction 1000.
+24958: TRANS 1000: Transaction 1000 aborted.
+24958: TRANS 1001: Failed to unlock resource 3 at server 2 due to communication failure.
+24959: TRANS 1001: Transaction 1001 aborted.
+24959: TRANS 1001: Aborting transaction 1001.
+24960: TRANS 1001: Transaction 1001 aborted.
+24960: TRANS 1002: Starting transaction 1002.
+24960: TRANS 1002: Trying to claim lock of resource 3 at server 1
+24961: TRANS 1002: Lock claimed. Processing...
+24961: TRANS 1001: Starting transaction 1001.
+24962: TRANS 1001: Trying to claim lock of resource 9 at server 1
+24962: TRANS 1001: Lock claimed. Processing...
+24965: TRANS 1000: Starting transaction 1000.
+24966: TRANS 1000: Trying to claim lock of resource 6 at server 1
+24966: TRANS 1000: Lock claimed. Processing...
+25001: TRANS 1000: Trying to claim lock of resource 1 at server 1
+25001: TRANS 1000: Lock claimed. Processing...
+25013: TRANS 1001: Trying to claim lock of resource 7 at server 1
+25013: TRANS 1001: Lock claimed. Processing...
+25027: TRANS 1000: Trying to claim lock of resource 2 at server 1
+25027: TRANS 1000: Lock claimed. Processing...
+25033: TRANS 1002: Trying to claim lock of resource 0 at server 1
+25033: TRANS 1002: Lock claimed. Processing...
+25040: TRANS 1001: Trying to claim lock of resource 6 at server 1
+25090: TRANS 1000: Trying to claim lock of resource 5 at server 1
+25091: TRANS 1000: Lock claimed. Processing...
+25096: TRANS 1002: Trying to claim lock of resource 2 at server 1
+25167: TRANS 1000: Trying to claim lock of resource 4 at server 1
+25168: TRANS 1000: Lock claimed. Processing...
+25232: TRANS 1000: Trying to claim lock of resource 0 at server 1
+25233: Transaction 1003 arrived.
+25233: TRANS 1003: Starting transaction 1003.
+25234: TRANS 1003: Trying to claim lock of resource 0 at server 1
+==================================================================
+231: Server 1 started.
+2737: Server 1 was notified of the arrival of server 2
+4320: Server 1 started its transactions.
+4341: Transaction 1000 arrived.
+4346: TRANS 1000: Starting transaction 1000.
+4348: TRANS 1000: Trying to claim lock of resource 1 at server 2
+4355: TRANS 1000: Lock claimed. Processing...
+4428: TRANS 1000: Trying to claim lock of resource 2 at server 2
+20077: Server 1 was notified of the arrival of server 3
+25531: Contact with server 2 was lost.
+27534: TRANS 1000: Contact was lost with a server hosting a resource involved in transaction 1000. Transaction must abort.
+27537: TRANS 1000: Aborting transaction 1000.
+==================================================================
+230: Server 1 started.
+1993: Server 1 was notified of the arrival of server 2
+3449: Server 1 started its transactions.
+3543: Transaction 1000 arrived.
+3552: TRANS 1000: Starting transaction 1000.
+3553: TRANS 1000: Trying to claim lock of resource 8 at server 1
+3553: TRANS 1000: Lock claimed. Processing...
+3627: TRANS 1000: Trying to claim lock of resource 3 at server 2
+3631: TRANS 1000: Lock claimed. Processing...
+3658: TRANS 1000: Trying to claim lock of resource 7 at server 1
+3659: TRANS 1000: Lock claimed. Processing...
+3714: TRANS 1000: Trying to claim lock of resource 1 at server 2
+3722: TRANS 1000: Lock claimed. Processing...
+3800: TRANS 1000: Trying to claim lock of resource 6 at server 1
+3801: TRANS 1000: Lock claimed. Processing...
+3881: TRANS 1000: Trying to claim lock of resource 9 at server 2
+3886: TRANS 1000: Lock claimed. Processing...
+3947: TRANS 1000: Trying to claim lock of resource 4 at server 1
+3948: TRANS 1000: Lock claimed. Processing...
+4029: TRANS 1000: Trying to claim lock of resource 3 at server 1
+4030: TRANS 1000: Lock claimed. Processing...
+4098: TRANS 1000: Trying to claim lock of resource 8 at server 2
+4103: TRANS 1000: Lock claimed. Processing...
+4139: TRANS 1000: Committing transaction 1000.
+4145: TRANS 1000: Unlocked resource 8 at server 1
+4154: TRANS 1000: Unlocked resource 3 at server 2
+4156: TRANS 1000: Unlocked resource 7 at server 1
+4166: TRANS 1000: Unlocked resource 1 at server 2
+4167: TRANS 1000: Unlocked resource 6 at server 1
+4175: TRANS 1000: Unlocked resource 9 at server 2
+4176: TRANS 1000: Unlocked resource 4 at server 1
+4177: TRANS 1000: Unlocked resource 3 at server 1
+4178: TRANS 1000: Unlocked resource 8 at server 2
+4178: TRANS 1000: Transaction 1000 committed.
+4178: Transaction 1000 ended.
+4445: Transaction 1001 arrived.
+4446: TRANS 1001: Starting transaction 1001.
+4446: TRANS 1001: Trying to claim lock of resource 1 at server 2
+4447: TRANS 1001: Lock claimed. Processing...
+4521: TRANS 1001: Trying to claim lock of resource 2 at server 1
+4522: TRANS 1001: Lock claimed. Processing...
+4552: TRANS 1000: Aborting transaction 1000.
+4553: TRANS 1000: Transaction 1000 aborted.
+4554: TRANS 1000: Starting transaction 1000.
+4554: TRANS 1000: Trying to claim lock of resource 9 at server 2
+4556: TRANS 1000: Lock claimed. Processing...
+4575: TRANS 1001: Trying to claim lock of resource 0 at server 1
+4575: TRANS 1001: Lock claimed. Processing...
+4605: TRANS 1000: Trying to claim lock of resource 8 at server 2
+4606: TRANS 1000: Lock claimed. Processing...
+4619: TRANS 1001: Trying to claim lock of resource 2 at server 2
+4620: TRANS 1001: Lock claimed. Processing...
+4629: TRANS 1000: Trying to claim lock of resource 7 at server 1
+4629: TRANS 1000: Lock claimed. Processing...
+4651: TRANS 1001: Trying to claim lock of resource 3 at server 1
+4651: TRANS 1001: Lock claimed. Processing...
+4672: TRANS 1000: Trying to claim lock of resource 6 at server 1
+4672: TRANS 1000: Lock claimed. Processing...
+4692: TRANS 1000: Trying to claim lock of resource 8 at server 1
+4692: TRANS 1000: Lock claimed. Processing...
+4723: TRANS 1000: Trying to claim lock of resource 9 at server 1
+4723: TRANS 1000: Lock claimed. Processing...
+4729: TRANS 1001: Trying to claim lock of resource 9 at server 1
+4819: TRANS 1000: Trying to claim lock of resource 7 at server 2
+4821: TRANS 1000: Lock claimed. Processing...
+4854: TRANS 1000: Trying to claim lock of resource 5 at server 2
+4856: TRANS 1000: Lock claimed. Processing...
+4934: TRANS 1000: Trying to claim lock of resource 4 at server 1
+4935: TRANS 1000: Lock claimed. Processing...
+5031: TRANS 1000: Committing transaction 1000.
+5033: TRANS 1000: Unlocked resource 9 at server 2
+5035: TRANS 1000: Unlocked resource 8 at server 2
+5035: TRANS 1000: Unlocked resource 7 at server 1
+5036: TRANS 1000: Unlocked resource 6 at server 1
+5036: TRANS 1000: Unlocked resource 8 at server 1
+5037: TRANS 1000: Unlocked resource 9 at server 1
+5042: TRANS 1001: Lock claimed. Processing...
+5047: TRANS 1000: Unlocked resource 7 at server 2
+5052: TRANS 1000: Unlocked resource 5 at server 2
+5052: TRANS 1000: Unlocked resource 4 at server 1
+5053: TRANS 1000: Transaction 1000 committed.
+5090: TRANS 1001: Trying to claim lock of resource 7 at server 2
+5092: TRANS 1001: Lock claimed. Processing...
+5185: TRANS 1001: Trying to claim lock of resource 9 at server 2
+5190: TRANS 1001: Lock claimed. Processing...
+5223: TRANS 1001: Trying to claim lock of resource 6 at server 2
+5225: TRANS 1001: Lock claimed. Processing...
+5257: TRANS 1001: Committing transaction 1001.
+5259: TRANS 1001: Unlocked resource 1 at server 2
+5260: TRANS 1001: Unlocked resource 2 at server 1
+5260: TRANS 1001: Unlocked resource 0 at server 1
+5280: TRANS 1001: Unlocked resource 2 at server 2
+5280: TRANS 1001: Unlocked resource 3 at server 1
+5286: TRANS 1001: Unlocked resource 9 at server 1
+5288: TRANS 1001: Unlocked resource 7 at server 2
+5289: TRANS 1001: Unlocked resource 9 at server 2
+5289: TRANS 1001: Unlocked resource 6 at server 2
+5290: TRANS 1001: Transaction 1001 committed.
+5290: Transaction 1001 ended.
+5445: Transaction 1002 arrived.
+5447: TRANS 1002: Starting transaction 1002.
+5447: TRANS 1001: Aborting transaction 1001.
+5447: TRANS 1002: Trying to claim lock of resource 0 at server 2
+5447: TRANS 1001: Transaction 1001 aborted.
+5448: TRANS 1001: Starting transaction 1001.
+5449: TRANS 1001: Trying to claim lock of resource 9 at server 2
+5453: TRANS 1001: Lock claimed. Processing...
+5500: TRANS 1001: Trying to claim lock of resource 3 at server 2
+5503: TRANS 1001: Lock claimed. Processing...
+5553: TRANS 1000: Aborting transaction 1000.
+5554: TRANS 1000: Transaction 1000 aborted.
+5555: TRANS 1000: Starting transaction 1000.
+5555: TRANS 1000: Trying to claim lock of resource 5 at server 2
+5557: TRANS 1000: Lock claimed. Processing...
+5563: TRANS 1001: Trying to claim lock of resource 5 at server 1
+5583: TRANS 1001: Lock claimed. Processing...
+5587: TRANS 1002: Lock claimed. Processing...
+5593: TRANS 1000: Trying to claim lock of resource 0 at server 2
+5636: TRANS 1001: Trying to claim lock of resource 9 at server 1
+5636: TRANS 1001: Lock claimed. Processing...
+5675: TRANS 1002: Trying to claim lock of resource 2 at server 1
+5717: TRANS 1001: Trying to claim lock of resource 3 at server 1
+5717: TRANS 1001: Lock claimed. Processing...
+5785: TRANS 1001: Committing transaction 1001.
+5787: TRANS 1001: Unlocked resource 9 at server 2
+5788: TRANS 1001: Unlocked resource 3 at server 2
+5789: TRANS 1001: Unlocked resource 5 at server 1
+5790: TRANS 1001: Unlocked resource 9 at server 1
+5790: TRANS 1001: Unlocked resource 3 at server 1
+5791: TRANS 1001: Transaction 1001 committed.
+6448: TRANS 1001: Aborting transaction 1001.
+6448: TRANS 1001: Transaction 1001 aborted.
+6449: TRANS 1001: Starting transaction 1001.
+6450: TRANS 1001: Trying to claim lock of resource 2 at server 2
+146555: Server 1 was notified of the arrival of server 3
+147603: Server 1 was notified of the arrival of server 4
+155525: Contact with server 2 was lost.
+155532: Contact with server 2 was lost.
+==================================================================
+226: Server 1 started.
+4471: Server 1 was notified of the arrival of server 2
+6103: Server 1 started its transactions.
+6138: Transaction 1000 arrived.
+6144: TRANS 1000: Starting transaction 1000.
+6145: TRANS 1000: Trying to claim lock of resource 8 at server 2
+6150: TRANS 1000: Lock claimed. Processing...
+6217: TRANS 1000: Trying to claim lock of resource 4 at server 2
+6222: TRANS 1000: Lock claimed. Processing...
+6288: TRANS 1000: Trying to claim lock of resource 7 at server 2
+6292: TRANS 1000: Lock claimed. Processing...
+6325: TRANS 1000: Trying to claim lock of resource 8 at server 1
+6326: TRANS 1000: Lock claimed. Processing...
+6400: TRANS 1000: Trying to claim lock of resource 6 at server 1
+6401: TRANS 1000: Lock claimed. Processing...
+6465: TRANS 1000: Trying to claim lock of resource 6 at server 2
+6471: TRANS 1000: Lock claimed. Processing...
+6499: TRANS 1000: Trying to claim lock of resource 0 at server 1
+==================================================================
+229: Server 1 started.
+2108: Server 1 was notified of the arrival of server 2
+5678: Server 1 started its transactions.
+5736: Transaction 1000 arrived.
+5742: TRANS 1000: Starting transaction 1000.
+5745: TRANS 1000: Trying to claim lock of resource 8 at server 2
+5761: TRANS 1000: Lock claimed. Processing...
+5844: TRANS 1000: Trying to claim lock of resource 7 at server 2
+5848: TRANS 1000: Lock claimed. Processing...
+5888: TRANS 1000: Trying to claim lock of resource 3 at server 1
+5889: TRANS 1000: Lock claimed. Processing...
+5951: TRANS 1000: Trying to claim lock of resource 9 at server 1
+5952: TRANS 1000: Lock claimed. Processing...
+6052: TRANS 1000: Trying to claim lock of resource 3 at server 2
+6062: TRANS 1000: Lock claimed. Processing...
+6156: TRANS 1000: Trying to claim lock of resource 1 at server 1
+6156: TRANS 1000: Lock claimed. Processing...
+6192: TRANS 1000: Trying to claim lock of resource 6 at server 1
+==================================================================
+232: Server 1 started.
+2648: Server 1 was notified of the arrival of server 2
+4093: Server 1 started its transactions.
+4138: Transaction 1000 arrived.
+4141: TRANS 1000: Starting transaction 1000.
+4142: TRANS 1000: Trying to claim lock of resource 8 at server 2
+4145: TRANS 1000: Lock claimed. Processing...
+4227: TRANS 1000: Trying to claim lock of resource 2 at server 1
+4228: TRANS 1000: Lock claimed. Processing...
+4285: TRANS 1000: Trying to claim lock of resource 0 at server 2
+4327: TRANS 1000: Lock claimed. Processing...
+4367: TRANS 1000: Trying to claim lock of resource 3 at server 1
+4367: TRANS 1000: Lock claimed. Processing...
+4416: TRANS 1000: Committing transaction 1000.
+4426: TRANS 1000: Unlocked resource 8 at server 2
+4426: TRANS 1000: Unlocked resource 2 at server 1
+4428: TRANS 1000: Unlocked resource 0 at server 2
+4428: TRANS 1000: Unlocked resource 3 at server 1
+4429: TRANS 1000: Transaction 1000 committed.
+4429: Transaction 1000 ended.
+4487: Transaction 1001 arrived.
+4487: TRANS 1001: Starting transaction 1001.
+4487: TRANS 1001: Trying to claim lock of resource 5 at server 2
+4492: TRANS 1001: Lock claimed. Processing...
+4554: TRANS 1001: Trying to claim lock of resource 4 at server 2
+4557: TRANS 1001: Lock claimed. Processing...
+4600: TRANS 1001: Trying to claim lock of resource 2 at server 2
+4604: TRANS 1001: Lock claimed. Processing...
+4666: TRANS 1001: Trying to claim lock of resource 8 at server 2
+4667: TRANS 1001: Lock claimed. Processing...
+4759: TRANS 1001: Trying to claim lock of resource 9 at server 2
+4762: TRANS 1001: Lock claimed. Processing...
+4782: TRANS 1001: Committing transaction 1001.
+4788: TRANS 1001: Unlocked resource 5 at server 2
+4793: TRANS 1001: Unlocked resource 4 at server 2
+4799: TRANS 1001: Unlocked resource 2 at server 2
+4804: TRANS 1001: Unlocked resource 8 at server 2
+4818: TRANS 1001: Unlocked resource 9 at server 2
+4818: TRANS 1001: Transaction 1001 committed.
+4818: Transaction 1001 ended.
+5015: Transaction 1002 arrived.
+5016: TRANS 1002: Starting transaction 1002.
+5017: TRANS 1002: Trying to claim lock of resource 1 at server 2
+5019: TRANS 1002: Lock claimed. Processing...
+5052: TRANS 1002: Trying to claim lock of resource 7 at server 1
+5085: TRANS 1002: Lock claimed. Processing...
+5175: TRANS 1002: Trying to claim lock of resource 9 at server 1
+5176: TRANS 1002: Lock claimed. Processing...
+5259: TRANS 1002: Trying to claim lock of resource 4 at server 2
+5260: TRANS 1002: Lock claimed. Processing...
+5308: TRANS 1002: Trying to claim lock of resource 1 at server 1
+5309: TRANS 1002: Lock claimed. Processing...
+5347: TRANS 1002: Trying to claim lock of resource 6 at server 2
+5350: TRANS 1002: Lock claimed. Processing...
+5439: TRANS 1002: Committing transaction 1002.
+5449: TRANS 1002: Unlocked resource 1 at server 2
+5450: TRANS 1002: Unlocked resource 7 at server 1
+5450: TRANS 1002: Unlocked resource 9 at server 1
+5475: TRANS 1002: Unlocked resource 4 at server 2
+5476: TRANS 1002: Unlocked resource 1 at server 1
+5484: TRANS 1002: Unlocked resource 6 at server 2
+5484: TRANS 1002: Transaction 1002 committed.
+5485: Transaction 1002 ended.
+5767: Transaction 1003 arrived.
+5768: TRANS 1003: Starting transaction 1003.
+5768: TRANS 1003: Trying to claim lock of resource 8 at server 2
+5772: TRANS 1003: Lock claimed. Processing...
+5798: TRANS 1003: Trying to claim lock of resource 8 at server 1
+5798: TRANS 1003: Lock claimed. Processing...
+5836: TRANS 1003: Trying to claim lock of resource 2 at server 2
+5838: TRANS 1003: Lock claimed. Processing...
+5878: TRANS 1003: Trying to claim lock of resource 9 at server 1
+5879: TRANS 1003: Lock claimed. Processing...
+5976: TRANS 1003: Trying to claim lock of resource 5 at server 1
+5977: TRANS 1003: Lock claimed. Processing...
+5999: TRANS 1003: Trying to claim lock of resource 1 at server 1
+5999: TRANS 1003: Lock claimed. Processing...
+6039: TRANS 1003: Trying to claim lock of resource 3 at server 1
+6039: TRANS 1003: Lock claimed. Processing...
+6109: TRANS 1003: Trying to claim lock of resource 5 at server 2
+9142: TRANS 1000: Aborting transaction 1000.
+9143: TRANS 1000: Transaction 1000 aborted.
+9143: TRANS 1000: Starting transaction 1000.
+9144: TRANS 1000: Trying to claim lock of resource 4 at server 1
+9144: TRANS 1000: Lock claimed. Processing...
+9221: TRANS 1000: Trying to claim lock of resource 2 at server 1
+9488: TRANS 1001: Aborting transaction 1001.
+9488: TRANS 1001: Transaction 1001 aborted.
+9489: TRANS 1001: Starting transaction 1001.
+9489: TRANS 1001: Trying to claim lock of resource 3 at server 2
+9493: TRANS 1001: Lock claimed. Processing...
+9584: TRANS 1001: Trying to claim lock of resource 9 at server 2
+9586: TRANS 1001: Lock claimed. Processing...
+9651: TRANS 1001: Trying to claim lock of resource 4 at server 1
+10017: TRANS 1002: Aborting transaction 1002.
+10017: TRANS 1002: Transaction 1002 aborted.
+10018: TRANS 1002: Starting transaction 1002.
+10018: TRANS 1002: Trying to claim lock of resource 9 at server 1
+==================================================================
+231: Server 1 started.
+2013: Server 1 started its transactions.
+2043: Transaction 1000 arrived.
+2048: TRANS 1000: Starting transaction 1000.
+2051: TRANS 1000: Trying to claim lock of resource 3 at server 1
+2053: TRANS 1000: Lock claimed. Processing...
+2104: TRANS 1000: Trying to claim lock of resource 8 at server 1
+2105: TRANS 1000: Lock claimed. Processing...
+2159: TRANS 1000: Trying to claim lock of resource 5 at server 1
+2160: TRANS 1000: Lock claimed. Processing...
+2218: TRANS 1000: Trying to claim lock of resource 1 at server 1
+2219: TRANS 1000: Lock claimed. Processing...
+2259: TRANS 1000: Trying to claim lock of resource 9 at server 1
+2260: TRANS 1000: Lock claimed. Processing...
+2294: TRANS 1000: Trying to claim lock of resource 0 at server 1
+2295: TRANS 1000: Lock claimed. Processing...
+2320: TRANS 1000: Trying to claim lock of resource 2 at server 1
+2321: TRANS 1000: Lock claimed. Processing...
+2416: TRANS 1000: Committing transaction 1000.
+2418: TRANS 1000: Unlocked resource 3 at server 1
+2418: TRANS 1000: Unlocked resource 8 at server 1
+2419: TRANS 1000: Unlocked resource 5 at server 1
+2419: TRANS 1000: Unlocked resource 1 at server 1
+2420: TRANS 1000: Unlocked resource 9 at server 1
+2420: TRANS 1000: Unlocked resource 0 at server 1
+2421: TRANS 1000: Unlocked resource 2 at server 1
+2421: TRANS 1000: Transaction 1000 committed.
+2421: Transaction 1000 ended.
+2574: Transaction 1001 arrived.
+2575: TRANS 1001: Starting transaction 1001.
+2575: TRANS 1001: Trying to claim lock of resource 1 at server 1
+2576: TRANS 1001: Lock claimed. Processing...
+2631: TRANS 1001: Trying to claim lock of resource 5 at server 1
+2632: TRANS 1001: Lock claimed. Processing...
+2724: TRANS 1001: Trying to claim lock of resource 7 at server 1
+2725: TRANS 1001: Lock claimed. Processing...
+2774: TRANS 1001: Trying to claim lock of resource 4 at server 1
+2775: TRANS 1001: Lock claimed. Processing...
+2815: TRANS 1001: Trying to claim lock of resource 2 at server 1
+2816: TRANS 1001: Lock claimed. Processing...
+2843: TRANS 1001: Trying to claim lock of resource 3 at server 1
+2844: TRANS 1001: Lock claimed. Processing...
+2921: TRANS 1001: Trying to claim lock of resource 0 at server 1
+2922: TRANS 1001: Lock claimed. Processing...
+2967: TRANS 1001: Trying to claim lock of resource 9 at server 1
+2968: TRANS 1001: Lock claimed. Processing...
+2996: TRANS 1001: Trying to claim lock of resource 8 at server 1
+2997: TRANS 1001: Lock claimed. Processing...
+3020: TRANS 1001: Committing transaction 1001.
+3021: TRANS 1001: Unlocked resource 1 at server 1
+3021: TRANS 1001: Unlocked resource 5 at server 1
+3021: TRANS 1001: Unlocked resource 7 at server 1
+3022: TRANS 1001: Unlocked resource 4 at server 1
+3022: TRANS 1001: Unlocked resource 2 at server 1
+3024: TRANS 1001: Unlocked resource 3 at server 1
+3024: TRANS 1001: Unlocked resource 0 at server 1
+3026: TRANS 1001: Unlocked resource 9 at server 1
+3026: TRANS 1001: Unlocked resource 8 at server 1
+3027: TRANS 1001: Transaction 1001 committed.
+3027: Transaction 1001 ended.
+3109: Transaction 1002 arrived.
+3114: TRANS 1002: Starting transaction 1002.
+3115: TRANS 1002: Trying to claim lock of resource 9 at server 1
+3115: TRANS 1002: Lock claimed. Processing...
+3163: TRANS 1002: Trying to claim lock of resource 5 at server 1
+3163: TRANS 1002: Lock claimed. Processing...
+3195: TRANS 1002: Trying to claim lock of resource 0 at server 1
+3195: TRANS 1002: Lock claimed. Processing...
+3289: TRANS 1002: Trying to claim lock of resource 6 at server 1
+3290: TRANS 1002: Lock claimed. Processing...
+3363: TRANS 1002: Trying to claim lock of resource 7 at server 1
+3364: TRANS 1002: Lock claimed. Processing...
+3455: TRANS 1002: Trying to claim lock of resource 3 at server 1
+3456: TRANS 1002: Lock claimed. Processing...
+3482: TRANS 1002: Trying to claim lock of resource 1 at server 1
+3483: TRANS 1002: Lock claimed. Processing...
+3541: TRANS 1002: Trying to claim lock of resource 8 at server 1
+3542: TRANS 1002: Lock claimed. Processing...
+3594: TRANS 1002: Trying to claim lock of resource 4 at server 1
+3595: TRANS 1002: Lock claimed. Processing...
+3648: TRANS 1002: Trying to claim lock of resource 2 at server 1
+3649: TRANS 1002: Lock claimed. Processing...
+3725: TRANS 1002: Committing transaction 1002.
+3726: TRANS 1002: Unlocked resource 9 at server 1
+3726: TRANS 1002: Unlocked resource 5 at server 1
+3727: TRANS 1002: Unlocked resource 0 at server 1
+3727: TRANS 1002: Unlocked resource 6 at server 1
+3727: TRANS 1002: Unlocked resource 7 at server 1
+3729: TRANS 1002: Unlocked resource 3 at server 1
+3729: TRANS 1002: Unlocked resource 1 at server 1
+3730: TRANS 1002: Unlocked resource 8 at server 1
+3730: TRANS 1002: Unlocked resource 4 at server 1
+3731: TRANS 1002: Unlocked resource 2 at server 1
+3731: TRANS 1002: Transaction 1002 committed.
+3731: Transaction 1002 ended.
+==================================================================
+229: Server 1 started.
+2661: Server 1 was notified of the arrival of server 2
+==================================================================
+230: Server 1 started.
+2287: Server 1 was notified of the arrival of server 2
+3358: Server 1 was notified of the arrival of server 3
+5243: Server 1 started its transactions.
+5337: Transaction 1000 arrived.
+5342: TRANS 1000: Starting transaction 1000.
+5343: TRANS 1000: Trying to claim lock of resource 5 at server 3
+5344: TRANS 1000: Lock claimed. Processing...
+5427: TRANS 1000: Trying to claim lock of resource 9 at server 2
+5430: TRANS 1000: Lock claimed. Processing...
+5486: TRANS 1000: Trying to claim lock of resource 6 at server 3
+5489: TRANS 1000: Lock claimed. Processing...
+5545: TRANS 1000: Trying to claim lock of resource 6 at server 2
+5550: TRANS 1000: Lock claimed. Processing...
+5571: TRANS 1000: Trying to claim lock of resource 4 at server 1
+5719: TRANS 1000: Lock claimed. Processing...
+5794: TRANS 1000: Trying to claim lock of resource 9 at server 1
+5795: TRANS 1000: Lock claimed. Processing...
+5831: TRANS 1000: Trying to claim lock of resource 2 at server 1
+5831: TRANS 1000: Lock claimed. Processing...
+5877: TRANS 1000: Committing transaction 1000.
+5879: TRANS 1000: Unlocked resource 5 at server 3
+5884: TRANS 1000: Unlocked resource 9 at server 2
+5890: TRANS 1000: Unlocked resource 6 at server 3
+5893: TRANS 1000: Unlocked resource 6 at server 2
+5893: TRANS 1000: Unlocked resource 4 at server 1
+5896: TRANS 1000: Unlocked resource 9 at server 1
+5896: TRANS 1000: Unlocked resource 2 at server 1
+5896: TRANS 1000: Transaction 1000 committed.
+5896: Transaction 1000 ended.
+6137: Transaction 1001 arrived.
+6138: TRANS 1001: Starting transaction 1001.
+6138: TRANS 1001: Trying to claim lock of resource 0 at server 1
+6160: TRANS 1001: Lock claimed. Processing...
+6185: TRANS 1001: Trying to claim lock of resource 8 at server 1
+6185: TRANS 1001: Lock claimed. Processing...
+6285: TRANS 1001: Trying to claim lock of resource 6 at server 2
+6288: TRANS 1001: Lock claimed. Processing...
+6375: TRANS 1001: Trying to claim lock of resource 7 at server 1
+6375: TRANS 1001: Lock claimed. Processing...
+6468: TRANS 1001: Trying to claim lock of resource 9 at server 2
+6484: TRANS 1001: Lock claimed. Processing...
+6537: TRANS 1001: Trying to claim lock of resource 2 at server 2
+6542: TRANS 1001: Lock claimed. Processing...
+6580: TRANS 1001: Committing transaction 1001.
+6580: TRANS 1001: Unlocked resource 0 at server 1
+6580: TRANS 1001: Unlocked resource 8 at server 1
+6582: TRANS 1001: Unlocked resource 6 at server 2
+6582: TRANS 1001: Unlocked resource 7 at server 1
+6582: TRANS 1001: Unlocked resource 9 at server 2
+6583: TRANS 1001: Unlocked resource 2 at server 2
+6583: TRANS 1001: Transaction 1001 committed.
+6584: Transaction 1001 ended.
+6733: Transaction 1002 arrived.
+6734: TRANS 1002: Starting transaction 1002.
+6734: TRANS 1002: Trying to claim lock of resource 6 at server 3
+7194: TRANS 1002: Lock claimed. Processing...
+7222: TRANS 1002: Trying to claim lock of resource 1 at server 1
+7222: TRANS 1002: Lock claimed. Processing...
+7294: TRANS 1002: Trying to claim lock of resource 0 at server 3
+7296: TRANS 1002: Lock claimed. Processing...
+7347: TRANS 1002: Trying to claim lock of resource 5 at server 1
+7348: TRANS 1002: Lock claimed. Processing...
+7368: TRANS 1002: Trying to claim lock of resource 0 at server 2
+7369: TRANS 1002: Lock claimed. Processing...
+7459: TRANS 1002: Trying to claim lock of resource 3 at server 2
+7461: TRANS 1002: Lock claimed. Processing...
+7501: TRANS 1002: Trying to claim lock of resource 4 at server 2
+7507: TRANS 1002: Lock claimed. Processing...
+7531: TRANS 1002: Trying to claim lock of resource 7 at server 3
+7534: TRANS 1002: Lock claimed. Processing...
+7570: TRANS 1002: Trying to claim lock of resource 8 at server 3
+7573: TRANS 1002: Lock claimed. Processing...
+7651: TRANS 1002: Trying to claim lock of resource 1 at server 2
+7653: TRANS 1002: Lock claimed. Processing...
+7723: TRANS 1002: Committing transaction 1002.
+7726: TRANS 1002: Unlocked resource 6 at server 3
+7726: TRANS 1002: Unlocked resource 1 at server 1
+7727: TRANS 1002: Unlocked resource 0 at server 3
+7728: TRANS 1002: Unlocked resource 5 at server 1
+7729: TRANS 1002: Unlocked resource 0 at server 2
+7730: TRANS 1002: Unlocked resource 3 at server 2
+7731: TRANS 1002: Unlocked resource 4 at server 2
+7732: TRANS 1002: Unlocked resource 7 at server 3
+7746: TRANS 1002: Unlocked resource 8 at server 3
+7747: TRANS 1002: Unlocked resource 1 at server 2
+7748: TRANS 1002: Transaction 1002 committed.
+7748: Transaction 1002 ended.
+7821: Transaction 1003 arrived.
+7821: TRANS 1003: Starting transaction 1003.
+7821: TRANS 1003: Trying to claim lock of resource 0 at server 2
+7826: TRANS 1003: Lock claimed. Processing...
+7893: TRANS 1003: Trying to claim lock of resource 8 at server 2
+7894: TRANS 1003: Lock claimed. Processing...
+7993: TRANS 1003: Trying to claim lock of resource 5 at server 3
+8153: TRANS 1003: Lock claimed. Processing...
+8225: TRANS 1003: Trying to claim lock of resource 2 at server 1
+8225: TRANS 1003: Lock claimed. Processing...
+8309: TRANS 1003: Trying to claim lock of resource 7 at server 1
+8310: TRANS 1003: Lock claimed. Processing...
+8361: TRANS 1003: Trying to claim lock of resource 2 at server 2
+8363: TRANS 1003: Lock claimed. Processing...
+8420: TRANS 1003: Trying to claim lock of resource 3 at server 3
+8503: TRANS 1003: Lock claimed. Processing...
+8595: TRANS 1003: Trying to claim lock of resource 2 at server 3
+8603: TRANS 1003: Lock claimed. Processing...
+8682: TRANS 1003: Trying to claim lock of resource 9 at server 3
+10342: TRANS 1000: Aborting transaction 1000.
+10343: TRANS 1000: Transaction 1000 aborted.
+10343: TRANS 1000: Starting transaction 1000.
+10344: TRANS 1000: Trying to claim lock of resource 6 at server 1
+10344: TRANS 1000: Lock claimed. Processing...
+10400: TRANS 1000: Trying to claim lock of resource 4 at server 3
+10404: TRANS 1000: Lock claimed. Processing...
+10463: TRANS 1000: Trying to claim lock of resource 8 at server 3
+10464: TRANS 1000: Lock claimed. Processing...
+10519: TRANS 1000: Trying to claim lock of resource 8 at server 2
+11139: TRANS 1001: Aborting transaction 1001.
+11139: TRANS 1001: Transaction 1001 aborted.
+11140: TRANS 1001: Starting transaction 1001.
+11141: TRANS 1001: Trying to claim lock of resource 7 at server 3
+11142: TRANS 1001: Lock claimed. Processing...
+11192: TRANS 1001: Trying to claim lock of resource 4 at server 2
+11196: TRANS 1001: Lock claimed. Processing...
+11227: TRANS 1001: Trying to claim lock of resource 0 at server 1
+11228: TRANS 1001: Lock claimed. Processing...
+11269: TRANS 1001: Trying to claim lock of resource 3 at server 3
+11735: TRANS 1002: Aborting transaction 1002.
+11735: TRANS 1002: Transaction 1002 aborted.
+11736: TRANS 1002: Starting transaction 1002.
+11737: TRANS 1002: Trying to claim lock of resource 0 at server 2
+91577: Contact with server 3 was lost.
+91589: Server 1 was notified of the departure of server 3 by server 2.
+91601: Contact with server 3 was lost.
+91603: Server 1 was notified of the departure of server 3 by server 2.
+95905: Contact with server 2 was lost.
+95908: TRANS 1003: Contact was lost with a server hosting a resource involved in transaction 1003. Transaction must abort.
+95920: Contact with server 2 was lost.
+95920: TRANS 1003: Contact was lost with a server hosting a resource involved in transaction 1003. Transaction must abort.
+95922: TRANS 1003: Aborting transaction 1003.
+95930: TRANS 1001: Aborting transaction 1001.
+96929: TRANS 1003: Failed to unlock resource 0 at server 2 due to communication failure.
+96934: TRANS 1001: Failed to unlock resource 7 at server 3 due to communication failure.
+97930: TRANS 1003: Failed to unlock resource 8 at server 2 due to communication failure.
+97938: TRANS 1001: Failed to unlock resource 4 at server 2 due to communication failure.
+97938: TRANS 1001: Unlocked resource 0 at server 1
+97939: TRANS 1001: Transaction 1001 aborted.
+97940: TRANS 1001: Starting transaction 1001.
+97940: TRANS 1001: Aborting transaction 1001.
+97941: TRANS 1001: Transaction 1001 aborted.
+==================================================================
+236: Server 1 started.
+2334: Server 1 was notified of the arrival of server 2
+3365: Server 1 was notified of the arrival of server 3
+4925: Server 1 started its transactions.
+4945: Transaction 1000 arrived.
+4949: TRANS 1000: Starting transaction 1000.
+4950: TRANS 1000: Trying to claim lock of resource 4 at server 3
+4952: TRANS 1000: Lock claimed. Processing...
+4994: TRANS 1000: Trying to claim lock of resource 6 at server 1
+4994: TRANS 1000: Lock claimed. Processing...
+5031: TRANS 1000: Trying to claim lock of resource 5 at server 1
+5031: TRANS 1000: Lock claimed. Processing...
+5061: TRANS 1000: Trying to claim lock of resource 2 at server 1
+5061: TRANS 1000: Lock claimed. Processing...
+5154: TRANS 1000: Trying to claim lock of resource 8 at server 2
+5166: TRANS 1000: Lock claimed. Processing...
+5227: TRANS 1000: Trying to claim lock of resource 4 at server 1
+5228: TRANS 1000: Lock claimed. Processing...
+5318: TRANS 1000: Trying to claim lock of resource 1 at server 2
+5327: TRANS 1000: Lock claimed. Processing...
+5354: TRANS 1000: Trying to claim lock of resource 9 at server 1
+5354: TRANS 1000: Lock claimed. Processing...
+5434: TRANS 1000: Trying to claim lock of resource 1 at server 1
+5435: TRANS 1000: Lock claimed. Processing...
+5482: TRANS 1000: Trying to claim lock of resource 7 at server 2
+5484: TRANS 1000: Lock claimed. Processing...
+5525: TRANS 1000: Committing transaction 1000.
+5532: TRANS 1000: Unlocked resource 4 at server 3
+5532: TRANS 1000: Unlocked resource 6 at server 1
+5533: TRANS 1000: Unlocked resource 5 at server 1
+5533: TRANS 1000: Unlocked resource 2 at server 1
+5544: TRANS 1000: Unlocked resource 8 at server 2
+5545: TRANS 1000: Unlocked resource 4 at server 1
+5545: TRANS 1000: Unlocked resource 1 at server 2
+5546: TRANS 1000: Unlocked resource 9 at server 1
+5546: TRANS 1000: Unlocked resource 1 at server 1
+5547: TRANS 1000: Unlocked resource 7 at server 2
+5547: TRANS 1000: Transaction 1000 committed.
+5547: Transaction 1000 ended.
+5640: Transaction 1001 arrived.
+5642: TRANS 1001: Starting transaction 1001.
+5642: TRANS 1001: Trying to claim lock of resource 2 at server 1
+5643: TRANS 1001: Lock claimed. Processing...
+5708: TRANS 1001: Trying to claim lock of resource 7 at server 2
+5718: TRANS 1001: Lock claimed. Processing...
+5739: TRANS 1001: Trying to claim lock of resource 8 at server 3
+5741: TRANS 1001: Lock claimed. Processing...
+5802: TRANS 1001: Trying to claim lock of resource 7 at server 3
+5812: TRANS 1001: Lock claimed. Processing...
+5847: TRANS 1001: Trying to claim lock of resource 6 at server 3
+5852: TRANS 1001: Lock claimed. Processing...
+5914: TRANS 1001: Trying to claim lock of resource 4 at server 3
+5916: TRANS 1001: Lock claimed. Processing...
+6001: TRANS 1001: Trying to claim lock of resource 1 at server 2
+6020: TRANS 1001: Lock claimed. Processing...
+6041: TRANS 1001: Trying to claim lock of resource 2 at server 2
+6042: TRANS 1001: Lock claimed. Processing...
+6063: TRANS 1001: Trying to claim lock of resource 5 at server 1
+6063: TRANS 1001: Lock claimed. Processing...
+6144: TRANS 1001: Committing transaction 1001.
+6145: TRANS 1001: Unlocked resource 2 at server 1
+6147: TRANS 1001: Unlocked resource 7 at server 2
+6149: TRANS 1001: Unlocked resource 8 at server 3
+6151: TRANS 1001: Unlocked resource 7 at server 3
+6168: TRANS 1001: Unlocked resource 6 at server 3
+6170: TRANS 1001: Unlocked resource 4 at server 3
+6176: TRANS 1001: Unlocked resource 1 at server 2
+6177: TRANS 1001: Unlocked resource 2 at server 2
+6178: TRANS 1001: Unlocked resource 5 at server 1
+6178: TRANS 1001: Transaction 1001 committed.
+6178: Transaction 1001 ended.
+6294: Transaction 1002 arrived.
+6295: TRANS 1002: Starting transaction 1002.
+6296: TRANS 1002: Trying to claim lock of resource 5 at server 2
+6297: TRANS 1002: Lock claimed. Processing...
+6390: TRANS 1002: Trying to claim lock of resource 9 at server 1
+38061: Server 1 was notified of the departure of server 2 by server 3.
+==================================================================
+230: Server 1 started.
+2358: Server 1 was notified of the arrival of server 2
+3338: Server 1 was notified of the arrival of server 3
+5836: Server 1 started its transactions.
+5937: Transaction 1000 arrived.
+5939: TRANS 1000: Starting transaction 1000.
+5941: TRANS 1000: Trying to claim lock of resource 7 at server 1
+5942: TRANS 1000: Lock claimed. Processing...
+6004: TRANS 1000: Trying to claim lock of resource 0 at server 2
+6005: TRANS 1000: Lock claimed. Processing...
+6041: TRANS 1000: Trying to claim lock of resource 6 at server 2
+6161: TRANS 1000: Lock claimed. Processing...
+6204: TRANS 1000: Committing transaction 1000.
+6205: TRANS 1000: Unlocked resource 7 at server 1
+6206: TRANS 1000: Unlocked resource 0 at server 2
+6208: TRANS 1000: Unlocked resource 6 at server 2
+6208: TRANS 1000: Transaction 1000 committed.
+6209: Transaction 1000 ended.
+6281: Transaction 1001 arrived.
+6282: TRANS 1001: Starting transaction 1001.
+6283: TRANS 1001: Trying to claim lock of resource 3 at server 1
+6284: TRANS 1001: Lock claimed. Processing...
+6334: TRANS 1001: Trying to claim lock of resource 5 at server 1
+6334: TRANS 1001: Lock claimed. Processing...
+6392: TRANS 1001: Trying to claim lock of resource 3 at server 2
+6396: TRANS 1001: Lock claimed. Processing...
+6460: TRANS 1001: Trying to claim lock of resource 0 at server 3
+6462: TRANS 1001: Lock claimed. Processing...
+6561: TRANS 1001: Trying to claim lock of resource 9 at server 3
+6563: TRANS 1001: Lock claimed. Processing...
+6620: TRANS 1001: Trying to claim lock of resource 9 at server 1
+6621: TRANS 1001: Lock claimed. Processing...
+6662: TRANS 1001: Trying to claim lock of resource 0 at server 2
+6664: TRANS 1001: Lock claimed. Processing...
+6698: TRANS 1001: Trying to claim lock of resource 4 at server 3
+6700: TRANS 1001: Lock claimed. Processing...
+6758: TRANS 1001: Committing transaction 1001.
+6758: TRANS 1001: Unlocked resource 3 at server 1
+6759: TRANS 1001: Unlocked resource 5 at server 1
+6761: TRANS 1001: Unlocked resource 3 at server 2
+6766: TRANS 1001: Unlocked resource 0 at server 3
+6768: TRANS 1001: Unlocked resource 9 at server 3
+6768: TRANS 1001: Unlocked resource 9 at server 1
+6772: TRANS 1001: Unlocked resource 0 at server 2
+6776: TRANS 1001: Unlocked resource 4 at server 3
+6776: TRANS 1001: Transaction 1001 committed.
+6777: Transaction 1001 ended.
+6851: Transaction 1002 arrived.
+6852: TRANS 1002: Starting transaction 1002.
+6853: TRANS 1002: Trying to claim lock of resource 3 at server 2
+6854: TRANS 1002: Lock claimed. Processing...
+6927: TRANS 1002: Trying to claim lock of resource 2 at server 3
+6930: TRANS 1002: Lock claimed. Processing...
+6988: TRANS 1002: Trying to claim lock of resource 7 at server 3
+6996: TRANS 1002: Lock claimed. Processing...
+7045: TRANS 1002: Trying to claim lock of resource 7 at server 1
+7045: TRANS 1002: Lock claimed. Processing...
+7106: TRANS 1002: Committing transaction 1002.
+7108: TRANS 1002: Unlocked resource 3 at server 2
+7117: TRANS 1002: Unlocked resource 2 at server 3
+7118: TRANS 1002: Unlocked resource 7 at server 3
+7119: TRANS 1002: Unlocked resource 7 at server 1
+7119: TRANS 1002: Transaction 1002 committed.
+7119: Transaction 1002 ended.
+7340: Transaction 1003 arrived.
+7341: TRANS 1003: Starting transaction 1003.
+7342: TRANS 1003: Trying to claim lock of resource 9 at server 2
+7530: TRANS 1003: Lock claimed. Processing...
+7554: TRANS 1003: Trying to claim lock of resource 0 at server 3
+7555: TRANS 1003: Lock claimed. Processing...
+7649: TRANS 1003: Trying to claim lock of resource 4 at server 1
+7650: TRANS 1003: Lock claimed. Processing...
+7698: TRANS 1003: Trying to claim lock of resource 6 at server 3
+7700: TRANS 1003: Lock claimed. Processing...
+7738: TRANS 1003: Trying to claim lock of resource 3 at server 3
+7739: TRANS 1003: Lock claimed. Processing...
+7796: TRANS 1003: Trying to claim lock of resource 1 at server 2
+7797: TRANS 1003: Lock claimed. Processing...
+7890: TRANS 1003: Trying to claim lock of resource 4 at server 2
+7893: TRANS 1003: Lock claimed. Processing...
+7979: TRANS 1003: Trying to claim lock of resource 8 at server 1
+7980: TRANS 1003: Lock claimed. Processing...
+8024: TRANS 1003: Committing transaction 1003.
+8028: TRANS 1003: Unlocked resource 9 at server 2
+8030: TRANS 1003: Unlocked resource 0 at server 3
+8030: TRANS 1003: Unlocked resource 4 at server 1
+8032: TRANS 1003: Unlocked resource 6 at server 3
+8033: TRANS 1003: Unlocked resource 3 at server 3
+8039: TRANS 1003: Unlocked resource 1 at server 2
+8048: TRANS 1003: Unlocked resource 4 at server 2
+8048: TRANS 1003: Unlocked resource 8 at server 1
+8049: TRANS 1003: Transaction 1003 committed.
+8049: Transaction 1003 ended.
+8304: Transaction 1004 arrived.
+8305: TRANS 1004: Starting transaction 1004.
+8306: TRANS 1004: Trying to claim lock of resource 8 at server 3
+==================================================================
+249: Server 1 started.
+4085: Server 1 was notified of the arrival of server 2
+7254: Server 1 started its transactions.
+7359: Transaction 1000 arrived.
+7365: TRANS 1000: Starting transaction 1000.
+7366: TRANS 1000: Trying to claim lock of resource 6 at server 2
+7369: TRANS 1000: Lock claimed. Processing...
+7437: TRANS 1000: Trying to claim lock of resource 4 at server 1
+7972: TRANS 1000: Lock claimed. Processing...
+8007: TRANS 1000: Trying to claim lock of resource 4 at server 2
+8008: TRANS 1000: Lock claimed. Processing...
+8080: TRANS 1000: Trying to claim lock of resource 0 at server 2
+8082: TRANS 1000: Lock claimed. Processing...
+8146: TRANS 1000: Trying to claim lock of resource 9 at server 1
+8147: TRANS 1000: Lock claimed. Processing...
+8240: TRANS 1000: Trying to claim lock of resource 9 at server 2
+8242: TRANS 1000: Lock claimed. Processing...
+8289: TRANS 1000: Trying to claim lock of resource 5 at server 2
+8291: TRANS 1000: Lock claimed. Processing...
+8322: TRANS 1000: Trying to claim lock of resource 6 at server 1
+==================================================================
+238: Server 1 started.
+2327: Server 1 was notified of the arrival of server 2
+5848: Server 1 started its transactions.
+5949: Transaction 1000 arrived.
+5955: TRANS 1000: Starting transaction 1000.
+5957: TRANS 1000: Trying to claim lock of resource 8 at server 1
+6069: TRANS 1000: Lock claimed. Processing...
+6099: TRANS 1000: Trying to claim lock of resource 9 at server 2
+6101: TRANS 1000: Lock claimed. Processing...
+6144: TRANS 1000: Trying to claim lock of resource 1 at server 1
+6145: TRANS 1000: Lock claimed. Processing...
+6206: TRANS 1000: Trying to claim lock of resource 0 at server 1
+6206: TRANS 1000: Lock claimed. Processing...
+6300: TRANS 1000: Trying to claim lock of resource 6 at server 1
+6956: TRANS 1000: Aborting transaction 1000.
+==================================================================
+224: Server 1 started.
+3023: Server 1 was notified of the arrival of server 2
+6416: Server 1 started its transactions.
+6435: Transaction 1000 arrived.
+6440: TRANS 1000: Starting transaction 1000.
+6442: TRANS 1000: Trying to claim lock of resource 0 at server 2
+6448: TRANS 1000: Lock claimed. Processing...
+6477: TRANS 1000: Trying to claim lock of resource 5 at server 1
+6477: TRANS 1000: Lock claimed. Processing...
+6534: TRANS 1000: Trying to claim lock of resource 8 at server 2
+6538: TRANS 1000: Lock claimed. Processing...
+6622: TRANS 1000: Trying to claim lock of resource 6 at server 2
+6625: TRANS 1000: Lock claimed. Processing...
+6682: TRANS 1000: Trying to claim lock of resource 4 at server 2
+6685: TRANS 1000: Lock claimed. Processing...
+6735: TRANS 1000: Trying to claim lock of resource 9 at server 1
+6735: TRANS 1000: Lock claimed. Processing...
+6801: TRANS 1000: Trying to claim lock of resource 5 at server 2
+6803: TRANS 1000: Lock claimed. Processing...
+6835: TRANS 1000: Trying to claim lock of resource 2 at server 2
+6837: TRANS 1000: Lock claimed. Processing...
+6935: TRANS 1000: Trying to claim lock of resource 8 at server 1
+6936: TRANS 1000: Lock claimed. Processing...
+7019: TRANS 1000: Committing transaction 1000.
+7024: TRANS 1000: Unlocked resource 0 at server 2
+7025: TRANS 1000: Unlocked resource 5 at server 1
+7030: TRANS 1000: Unlocked resource 8 at server 2
+7037: TRANS 1000: Unlocked resource 6 at server 2
+7051: TRANS 1000: Unlocked resource 4 at server 2
+7051: TRANS 1000: Unlocked resource 9 at server 1
+7054: TRANS 1000: Unlocked resource 5 at server 2
+7057: TRANS 1000: Unlocked resource 2 at server 2
+7057: TRANS 1000: Unlocked resource 8 at server 1
+7057: TRANS 1000: Transaction 1000 committed.
+7058: Transaction 1000 ended.
+7198: Transaction 1001 arrived.
+7198: TRANS 1001: Starting transaction 1001.
+7199: TRANS 1001: Trying to claim lock of resource 1 at server 1
+7199: TRANS 1001: Lock claimed. Processing...
+7261: TRANS 1001: Trying to claim lock of resource 7 at server 2
+7263: TRANS 1001: Lock claimed. Processing...
+7309: TRANS 1001: Trying to claim lock of resource 7 at server 1
+7310: TRANS 1001: Lock claimed. Processing...
+7341: TRANS 1001: Committing transaction 1001.
+7341: TRANS 1001: Unlocked resource 1 at server 1
+7344: TRANS 1001: Unlocked resource 7 at server 2
+7345: TRANS 1001: Unlocked resource 7 at server 1
+7345: TRANS 1001: Transaction 1001 committed.
+7345: Transaction 1001 ended.
+7449: Transaction 1002 arrived.
+7450: TRANS 1002: Starting transaction 1002.
+7450: TRANS 1002: Trying to claim lock of resource 7 at server 2
+7453: TRANS 1002: Lock claimed. Processing...
+7500: TRANS 1002: Trying to claim lock of resource 5 at server 1
+7500: TRANS 1002: Lock claimed. Processing...
+7521: TRANS 1002: Trying to claim lock of resource 9 at server 1
+225402: Server 1 was notified of the arrival of server 3
+==================================================================
+236: Server 1 started.
+7312: Server 1 was notified of the arrival of server 2
+9323: Server 1 started its transactions.
+9346: Transaction 1000 arrived.
+9349: TRANS 1000: Starting transaction 1000.
+9352: TRANS 1000: Trying to claim lock of resource 2 at server 1
+9353: TRANS 1000: Lock claimed. Processing...
+9386: TRANS 1000: Trying to claim lock of resource 1 at server 1
+9772: TRANS 1000: Lock claimed. Processing...
+9801: TRANS 1000: Trying to claim lock of resource 1 at server 2
+9803: TRANS 1000: Lock claimed. Processing...
+9839: TRANS 1000: Committing transaction 1000.
+9839: TRANS 1000: Unlocked resource 2 at server 1
+9839: TRANS 1000: Unlocked resource 1 at server 1
+9841: TRANS 1000: Unlocked resource 1 at server 2
+9841: TRANS 1000: Transaction 1000 committed.
+9841: Transaction 1000 ended.
+10029: Transaction 1001 arrived.
+10031: TRANS 1001: Starting transaction 1001.
+10031: TRANS 1001: Trying to claim lock of resource 4 at server 2
+10033: TRANS 1001: Lock claimed. Processing...
+10087: TRANS 1001: Trying to claim lock of resource 3 at server 1
+10087: TRANS 1001: Lock claimed. Processing...
+10163: TRANS 1001: Trying to claim lock of resource 2 at server 1
+10164: TRANS 1001: Lock claimed. Processing...
+10216: TRANS 1001: Trying to claim lock of resource 7 at server 2
+10218: TRANS 1001: Lock claimed. Processing...
+10279: TRANS 1001: Trying to claim lock of resource 5 at server 1
+10280: TRANS 1001: Lock claimed. Processing...
+10327: TRANS 1001: Trying to claim lock of resource 7 at server 1
+10328: TRANS 1001: Lock claimed. Processing...
+10412: TRANS 1001: Trying to claim lock of resource 1 at server 2
+10414: TRANS 1001: Lock claimed. Processing...
+10503: TRANS 1001: Committing transaction 1001.
+10506: TRANS 1001: Unlocked resource 4 at server 2
+10507: TRANS 1001: Unlocked resource 3 at server 1
+10509: TRANS 1001: Unlocked resource 2 at server 1
+10512: TRANS 1001: Unlocked resource 7 at server 2
+10514: TRANS 1001: Unlocked resource 5 at server 1
+10522: TRANS 1001: Unlocked resource 7 at server 1
+10532: TRANS 1001: Unlocked resource 1 at server 2
+10532: TRANS 1001: Transaction 1001 committed.
+10533: Transaction 1001 ended.
+10670: Transaction 1002 arrived.
+10672: TRANS 1002: Starting transaction 1002.
+10672: TRANS 1002: Trying to claim lock of resource 9 at server 1
+10673: TRANS 1002: Lock claimed. Processing...
+10699: TRANS 1002: Trying to claim lock of resource 0 at server 2
+10704: TRANS 1002: Lock claimed. Processing...
+10784: TRANS 1002: Trying to claim lock of resource 3 at server 1
+10793: TRANS 1002: Lock claimed. Processing...
+10875: TRANS 1002: Trying to claim lock of resource 0 at server 1
+10876: TRANS 1002: Lock claimed. Processing...
+10968: TRANS 1002: Trying to claim lock of resource 6 at server 2
+10978: TRANS 1002: Lock claimed. Processing...
+11016: TRANS 1002: Committing transaction 1002.
+11022: TRANS 1002: Unlocked resource 9 at server 1
+11030: TRANS 1002: Unlocked resource 0 at server 2
+11030: TRANS 1002: Unlocked resource 3 at server 1
+11031: TRANS 1002: Unlocked resource 0 at server 1
+11054: TRANS 1002: Unlocked resource 6 at server 2
+11054: TRANS 1002: Transaction 1002 committed.
+11054: Transaction 1002 ended.
+11211: Transaction 1003 arrived.
+11212: TRANS 1003: Starting transaction 1003.
+11213: TRANS 1003: Trying to claim lock of resource 4 at server 2
+11215: TRANS 1003: Lock claimed. Processing...
+11270: TRANS 1003: Trying to claim lock of resource 3 at server 1
+11407: TRANS 1003: Lock claimed. Processing...
+11469: TRANS 1003: Trying to claim lock of resource 2 at server 1
+11469: TRANS 1003: Lock claimed. Processing...
+11532: TRANS 1003: Trying to claim lock of resource 4 at server 1
+11533: TRANS 1003: Lock claimed. Processing...
+11576: TRANS 1003: Trying to claim lock of resource 9 at server 1
+11583: TRANS 1003: Lock claimed. Processing...
+11677: TRANS 1003: Trying to claim lock of resource 2 at server 2
+11680: TRANS 1003: Lock claimed. Processing...
+11732: TRANS 1003: Trying to claim lock of resource 8 at server 1
+11733: TRANS 1003: Lock claimed. Processing...
+11825: TRANS 1003: Trying to claim lock of resource 8 at server 2
+11829: TRANS 1003: Lock claimed. Processing...
+11913: TRANS 1003: Trying to claim lock of resource 1 at server 1
+12213: TRANS 1003: Starting transaction 1003.
+13213: TRANS 1003: Starting transaction 1003.
+14212: TRANS 1003: Starting transaction 1003.
+15213: TRANS 1003: Starting transaction 1003.
+16213: TRANS 1003: Starting transaction 1003.
+17212: TRANS 1003: Starting transaction 1003.
+18213: TRANS 1003: Starting transaction 1003.
+19213: TRANS 1003: Starting transaction 1003.
+20213: TRANS 1003: Starting transaction 1003.
+21213: TRANS 1003: Starting transaction 1003.
+22213: TRANS 1003: Starting transaction 1003.
+==================================================================
+229: Server 1 started.
+2821: Server 1 was notified of the arrival of server 2
+4874: Server 1 started its transactions.
+4941: Transaction 1000 arrived.
+4947: TRANS 1000: Starting transaction 1000.
+4948: TRANS 1000: Trying to claim lock of resource 3 at server 1
+4949: TRANS 1000: Lock claimed. Processing...
+4987: TRANS 1000: Trying to claim lock of resource 8 at server 2
+4988: TRANS 1000: Lock claimed. Processing...
+5026: TRANS 1000: Trying to claim lock of resource 0 at server 2
+5027: TRANS 1000: Lock claimed. Processing...
+5072: TRANS 1000: Trying to claim lock of resource 7 at server 2
+5074: TRANS 1000: Lock claimed. Processing...
+5112: TRANS 1000: Trying to claim lock of resource 4 at server 1
+5112: TRANS 1000: Lock claimed. Processing...
+5210: TRANS 1000: Trying to claim lock of resource 0 at server 1
+5211: TRANS 1000: Lock claimed. Processing...
+5247: TRANS 1000: Trying to claim lock of resource 2 at server 2
+5249: TRANS 1000: Lock claimed. Processing...
+5285: TRANS 1000: Committing transaction 1000.
+5287: TRANS 1000: Unlocked resource 3 at server 1
+5289: TRANS 1000: Unlocked resource 8 at server 2
+5290: TRANS 1000: Unlocked resource 0 at server 2
+5292: TRANS 1000: Unlocked resource 7 at server 2
+5293: TRANS 1000: Unlocked resource 4 at server 1
+5293: TRANS 1000: Unlocked resource 0 at server 1
+5294: TRANS 1000: Unlocked resource 2 at server 2
+5294: TRANS 1000: Transaction 1000 committed.
+5295: Transaction 1000 ended.
+5483: Transaction 1001 arrived.
+5484: TRANS 1001: Starting transaction 1001.
+5484: TRANS 1001: Trying to claim lock of resource 4 at server 1
+5485: TRANS 1001: Lock claimed. Processing...
+5506: TRANS 1001: Trying to claim lock of resource 4 at server 2
+5507: TRANS 1001: Lock claimed. Processing...
+5603: TRANS 1001: Trying to claim lock of resource 2 at server 1
+5603: TRANS 1001: Lock claimed. Processing...
+5673: TRANS 1001: Trying to claim lock of resource 8 at server 2
+5675: TRANS 1001: Lock claimed. Processing...
+5720: TRANS 1001: Trying to claim lock of resource 9 at server 2
+5722: TRANS 1001: Lock claimed. Processing...
+5803: TRANS 1001: Trying to claim lock of resource 1 at server 2
+5809: TRANS 1001: Lock claimed. Processing...
+5851: TRANS 1001: Trying to claim lock of resource 9 at server 1
+5852: TRANS 1001: Lock claimed. Processing...
+5937: TRANS 1001: Trying to claim lock of resource 6 at server 2
+5942: TRANS 1001: Lock claimed. Processing...
+6028: TRANS 1001: Trying to claim lock of resource 0 at server 1
+6029: TRANS 1001: Lock claimed. Processing...
+6097: TRANS 1001: Trying to claim lock of resource 7 at server 2
+6104: TRANS 1001: Lock claimed. Processing...
+6141: TRANS 1001: Committing transaction 1001.
+6142: TRANS 1001: Unlocked resource 4 at server 1
+6150: TRANS 1001: Unlocked resource 4 at server 2
+6151: TRANS 1001: Unlocked resource 2 at server 1
+6167: TRANS 1001: Unlocked resource 8 at server 2
+6169: TRANS 1001: Unlocked resource 9 at server 2
+6180: TRANS 1001: Unlocked resource 1 at server 2
+6180: TRANS 1001: Unlocked resource 9 at server 1
+6185: TRANS 1001: Unlocked resource 6 at server 2
+6185: TRANS 1001: Unlocked resource 0 at server 1
+6186: TRANS 1001: Unlocked resource 7 at server 2
+6186: TRANS 1001: Transaction 1001 committed.
+6187: Transaction 1001 ended.
+6461: Transaction 1002 arrived.
+6462: TRANS 1002: Starting transaction 1002.
+6464: TRANS 1002: Trying to claim lock of resource 9 at server 2
+6469: TRANS 1002: Lock claimed. Processing...
+6530: TRANS 1002: Trying to claim lock of resource 5 at server 2
+6531: TRANS 1002: Lock claimed. Processing...
+6566: TRANS 1002: Trying to claim lock of resource 2 at server 2
+6569: TRANS 1002: Lock claimed. Processing...
+6614: TRANS 1002: Trying to claim lock of resource 1 at server 2
+6616: TRANS 1002: Lock claimed. Processing...
+6688: TRANS 1002: Trying to claim lock of resource 7 at server 2
+6690: TRANS 1002: Lock claimed. Processing...
+6724: TRANS 1002: Trying to claim lock of resource 5 at server 1
+6724: TRANS 1002: Lock claimed. Processing...
+6757: TRANS 1002: Trying to claim lock of resource 6 at server 1
+6758: TRANS 1002: Lock claimed. Processing...
+6843: TRANS 1002: Trying to claim lock of resource 0 at server 2
+==================================================================
+236: Server 1 started.
+2505: Server 1 was notified of the arrival of server 2
+4670: Server 1 started its transactions.
+4747: Transaction 1000 arrived.
+4755: TRANS 1000: Starting transaction 1000.
+4757: TRANS 1000: Trying to claim lock of resource 2 at server 2
+4763: TRANS 1000: Lock claimed. Processing...
+4823: TRANS 1000: Trying to claim lock of resource 6 at server 1
+4823: TRANS 1000: Lock claimed. Processing...
+4870: TRANS 1000: Trying to claim lock of resource 8 at server 1
+4871: TRANS 1000: Lock claimed. Processing...
+4915: TRANS 1000: Committing transaction 1000.
+4918: TRANS 1000: Unlocked resource 2 at server 2
+4918: TRANS 1000: Unlocked resource 6 at server 1
+4919: TRANS 1000: Unlocked resource 8 at server 1
+4920: TRANS 1000: Transaction 1000 committed.
+4921: Transaction 1000 ended.
+5181: Transaction 1001 arrived.
+5189: TRANS 1001: Starting transaction 1001.
+5189: TRANS 1001: Trying to claim lock of resource 7 at server 2
+5196: TRANS 1001: Lock claimed. Processing...
+5273: TRANS 1001: Trying to claim lock of resource 2 at server 1
+5274: TRANS 1001: Lock claimed. Processing...
+5317: TRANS 1001: Trying to claim lock of resource 6 at server 1
+5317: TRANS 1001: Lock claimed. Processing...
+5374: TRANS 1001: Trying to claim lock of resource 8 at server 1
+6182: TRANS 1001: Starting transaction 1001.
+7182: TRANS 1001: Starting transaction 1001.
+8182: TRANS 1001: Starting transaction 1001.
+9182: TRANS 1001: Starting transaction 1001.
+10182: TRANS 1001: Starting transaction 1001.
+11182: TRANS 1001: Starting transaction 1001.
+12182: TRANS 1001: Starting transaction 1001.
+13182: TRANS 1001: Starting transaction 1001.
+14183: TRANS 1001: Starting transaction 1001.
+15183: TRANS 1001: Starting transaction 1001.
+16183: TRANS 1001: Starting transaction 1001.
+17183: TRANS 1001: Starting transaction 1001.
+18184: TRANS 1001: Starting transaction 1001.
+==================================================================
+246: Server 1 started.
+2960: Server 1 was notified of the arrival of server 2
+6401: Server 1 started its transactions.
+6457: Transaction 1000 arrived.
+6461: TRANS 1000: Starting transaction 1000.
+6461: TRANS 1000: Trying to claim lock of resource 6 at server 1
+6462: TRANS 1000: Lock claimed. Processing...
+6499: TRANS 1000: Trying to claim lock of resource 3 at server 1
+6499: TRANS 1000: Lock claimed. Processing...
+6551: TRANS 1000: Trying to claim lock of resource 0 at server 2
+6567: TRANS 1000: Lock claimed. Processing...
+6590: TRANS 1000: Trying to claim lock of resource 7 at server 1
+6590: TRANS 1000: Lock claimed. Processing...
+6690: TRANS 1000: Committing transaction 1000.
+6691: TRANS 1000: Unlocked resource 6 at server 1
+6692: TRANS 1000: Unlocked resource 3 at server 1
+6694: TRANS 1000: Unlocked resource 0 at server 2
+6694: TRANS 1000: Unlocked resource 7 at server 1
+6694: TRANS 1000: Transaction 1000 committed.
+6695: Transaction 1000 ended.
+6991: Transaction 1001 arrived.
+6992: TRANS 1001: Starting transaction 1001.
+6993: TRANS 1001: Trying to claim lock of resource 3 at server 2
+6998: TRANS 1001: Lock claimed. Processing...
+7050: TRANS 1001: Trying to claim lock of resource 2 at server 1
+7050: TRANS 1001: Lock claimed. Processing...
+7136: TRANS 1001: Trying to claim lock of resource 7 at server 2
+7137: TRANS 1001: Lock claimed. Processing...
+7206: TRANS 1001: Trying to claim lock of resource 0 at server 1
+==================================================================
+247: Server 1 started.
+3199: Server 1 was notified of the arrival of server 2
+6910: Server 1 started its transactions.
+6957: Transaction 1000 arrived.
+6958: TRANS 1000: Starting transaction 1000.
+6959: TRANS 1000: Trying to claim lock of resource 5 at server 1
+6960: TRANS 1000: Lock claimed. Processing...
+7055: TRANS 1000: Trying to claim lock of resource 5 at server 2
+7058: TRANS 1000: Lock claimed. Processing...
+7143: TRANS 1000: Trying to claim lock of resource 3 at server 1
+7144: TRANS 1000: Lock claimed. Processing...
+7195: TRANS 1000: Committing transaction 1000.
+7197: TRANS 1000: Unlocked resource 5 at server 1
+7200: TRANS 1000: Unlocked resource 5 at server 2
+7200: TRANS 1000: Unlocked resource 3 at server 1
+7201: TRANS 1000: Transaction 1000 committed.
+7201: Transaction 1000 ended.
+7377: Transaction 1001 arrived.
+7378: TRANS 1001: Starting transaction 1001.
+7378: TRANS 1001: Trying to claim lock of resource 7 at server 2
+7390: TRANS 1001: Lock claimed. Processing...
+7467: TRANS 1001: Trying to claim lock of resource 3 at server 2
+7470: TRANS 1001: Lock claimed. Processing...
+7567: TRANS 1001: Trying to claim lock of resource 8 at server 1
+7568: TRANS 1001: Lock claimed. Processing...
+7623: TRANS 1001: Trying to claim lock of resource 5 at server 2
+7625: TRANS 1001: Lock claimed. Processing...
+7673: TRANS 1001: Trying to claim lock of resource 1 at server 2
+7675: TRANS 1001: Lock claimed. Processing...
+7774: TRANS 1001: Trying to claim lock of resource 4 at server 2
+7780: TRANS 1001: Lock claimed. Processing...
+7871: TRANS 1001: Trying to claim lock of resource 1 at server 1
+7872: TRANS 1001: Lock claimed. Processing...
+7935: TRANS 1001: Trying to claim lock of resource 9 at server 2
+7937: TRANS 1001: Lock claimed. Processing...
+8020: TRANS 1001: Trying to claim lock of resource 7 at server 1
+8021: TRANS 1001: Lock claimed. Processing...
+8119: TRANS 1001: Committing transaction 1001.
+8125: TRANS 1001: Unlocked resource 7 at server 2
+8127: TRANS 1001: Unlocked resource 3 at server 2
+8127: TRANS 1001: Unlocked resource 8 at server 1
+8138: TRANS 1001: Unlocked resource 5 at server 2
+8145: TRANS 1001: Unlocked resource 1 at server 2
+8152: TRANS 1001: Unlocked resource 4 at server 2
+8153: TRANS 1001: Unlocked resource 1 at server 1
+8154: TRANS 1001: Unlocked resource 9 at server 2
+8155: TRANS 1001: Unlocked resource 7 at server 1
+8155: TRANS 1001: Transaction 1001 committed.
+8155: Transaction 1001 ended.
+8381: Transaction 1002 arrived.
+8381: TRANS 1002: Starting transaction 1002.
+8382: TRANS 1002: Trying to claim lock of resource 4 at server 1
+8382: TRANS 1002: Lock claimed. Processing...
+8413: TRANS 1002: Trying to claim lock of resource 7 at server 2
+8415: TRANS 1002: Lock claimed. Processing...
+8449: TRANS 1002: Trying to claim lock of resource 2 at server 1
+8449: TRANS 1002: Lock claimed. Processing...
+8532: TRANS 1002: Trying to claim lock of resource 9 at server 2
+8534: TRANS 1002: Lock claimed. Processing...
+8615: TRANS 1002: Trying to claim lock of resource 1 at server 1
+8616: TRANS 1002: Lock claimed. Processing...
+8657: TRANS 1002: Trying to claim lock of resource 6 at server 2
+8663: TRANS 1002: Lock claimed. Processing...
+8726: TRANS 1002: Committing transaction 1002.
+8727: TRANS 1002: Unlocked resource 4 at server 1
+8728: TRANS 1002: Unlocked resource 7 at server 2
+8729: TRANS 1002: Unlocked resource 2 at server 1
+8750: TRANS 1002: Unlocked resource 9 at server 2
+8751: TRANS 1002: Unlocked resource 1 at server 1
+8754: TRANS 1002: Unlocked resource 6 at server 2
+8754: TRANS 1002: Transaction 1002 committed.
+8755: Transaction 1002 ended.
+8980: Transaction 1003 arrived.
+8981: TRANS 1003: Starting transaction 1003.
+8981: TRANS 1003: Trying to claim lock of resource 3 at server 1
+8982: TRANS 1003: Lock claimed. Processing...
+9023: TRANS 1003: Trying to claim lock of resource 4 at server 2
+9026: TRANS 1003: Lock claimed. Processing...
+9077: TRANS 1003: Trying to claim lock of resource 5 at server 1
+9078: TRANS 1003: Lock claimed. Processing...
+9170: TRANS 1003: Trying to claim lock of resource 9 at server 1
+9171: TRANS 1003: Lock claimed. Processing...
+9224: TRANS 1003: Trying to claim lock of resource 9 at server 2
+9228: TRANS 1003: Lock claimed. Processing...
+9251: TRANS 1003: Trying to claim lock of resource 6 at server 2
+9252: TRANS 1003: Lock claimed. Processing...
+9287: TRANS 1003: Committing transaction 1003.
+9288: TRANS 1003: Unlocked resource 3 at server 1
+9289: TRANS 1003: Unlocked resource 4 at server 2
+9289: TRANS 1003: Unlocked resource 5 at server 1
+9290: TRANS 1003: Unlocked resource 9 at server 1
+9307: TRANS 1003: Unlocked resource 9 at server 2
+9319: TRANS 1003: Unlocked resource 6 at server 2
+9320: TRANS 1003: Transaction 1003 committed.
+9320: Transaction 1003 ended.
+9456: Transaction 1004 arrived.
+9456: TRANS 1004: Starting transaction 1004.
+9457: TRANS 1004: Trying to claim lock of resource 0 at server 2
+9458: TRANS 1004: Lock claimed. Processing...
+9505: TRANS 1004: Trying to claim lock of resource 2 at server 1
+9506: TRANS 1004: Lock claimed. Processing...
+9562: TRANS 1004: Trying to claim lock of resource 3 at server 1
+9563: TRANS 1004: Lock claimed. Processing...
+9646: TRANS 1004: Trying to claim lock of resource 0 at server 1
+9647: TRANS 1004: Lock claimed. Processing...
+9743: TRANS 1004: Trying to claim lock of resource 2 at server 2
+==================================================================
+234: Server 1 started.
+3790: Server 1 was notified of the arrival of server 2
+5673: Server 1 started its transactions.
+5760: Transaction 1000 arrived.
+5762: TRANS 1000: Starting transaction 1000.
+5763: TRANS 1000: Trying to claim lock of resource 1 at server 2
+5765: TRANS 1000: Lock claimed. Processing...
+5837: TRANS 1000: Trying to claim lock of resource 2 at server 2
+5840: TRANS 1000: Lock claimed. Processing...
+5926: TRANS 1000: Trying to claim lock of resource 8 at server 1
+5927: TRANS 1000: Lock claimed. Processing...
+6018: TRANS 1000: Trying to claim lock of resource 0 at server 1
+6019: TRANS 1000: Lock claimed. Processing...
+6095: TRANS 1000: Trying to claim lock of resource 4 at server 1
+6095: TRANS 1000: Lock claimed. Processing...
+6136: TRANS 1000: Committing transaction 1000.
+6141: TRANS 1000: Unlocked resource 1 at server 2
+6145: TRANS 1000: Unlocked resource 2 at server 2
+6145: TRANS 1000: Unlocked resource 8 at server 1
+6146: TRANS 1000: Unlocked resource 0 at server 1
+6146: TRANS 1000: Unlocked resource 4 at server 1
+6146: TRANS 1000: Transaction 1000 committed.
+6146: Transaction 1000 ended.
+6384: Transaction 1001 arrived.
+6384: TRANS 1001: Starting transaction 1001.
+6384: TRANS 1001: Trying to claim lock of resource 3 at server 2
+6675: TRANS 1001: Aborting transaction 1001.
+6676: TRANS 1001: Transaction 1001 aborted.
+6676: Transaction 1001 ended.
+6803: Transaction 1002 arrived.
+6804: TRANS 1002: Starting transaction 1002.
+6804: TRANS 1002: Trying to claim lock of resource 8 at server 1
+6806: TRANS 1002: Lock claimed. Processing...
+6876: TRANS 1002: Trying to claim lock of resource 2 at server 1
+6876: TRANS 1002: Lock claimed. Processing...
+6909: TRANS 1002: Trying to claim lock of resource 4 at server 2
+6912: TRANS 1002: Lock claimed. Processing...
+6948: TRANS 1002: Trying to claim lock of resource 1 at server 2
+6950: TRANS 1002: Lock claimed. Processing...
+7034: TRANS 1002: Committing transaction 1002.
+7035: TRANS 1002: Unlocked resource 8 at server 1
+7035: TRANS 1002: Unlocked resource 2 at server 1
+7055: TRANS 1002: Unlocked resource 4 at server 2
+7057: TRANS 1002: Unlocked resource 1 at server 2
+7057: TRANS 1002: Transaction 1002 committed.
+7057: Transaction 1002 ended.
+7162: Transaction 1003 arrived.
+7162: TRANS 1003: Starting transaction 1003.
+7163: TRANS 1003: Trying to claim lock of resource 4 at server 2
+7168: TRANS 1003: Lock claimed. Processing...
+7210: TRANS 1003: Trying to claim lock of resource 9 at server 2
+7213: TRANS 1003: Lock claimed. Processing...
+7302: TRANS 1003: Trying to claim lock of resource 3 at server 1
+7303: TRANS 1003: Lock claimed. Processing...
+7337: TRANS 1003: Trying to claim lock of resource 0 at server 2
+7340: TRANS 1003: Lock claimed. Processing...
+7374: TRANS 1003: Trying to claim lock of resource 8 at server 2
+7382: TRANS 1003: Lock claimed. Processing...
+7458: TRANS 1003: Trying to claim lock of resource 7 at server 1
+7459: TRANS 1003: Lock claimed. Processing...
+7551: TRANS 1003: Trying to claim lock of resource 5 at server 2
+7553: TRANS 1003: Lock claimed. Processing...
+7608: TRANS 1003: Committing transaction 1003.
+7611: TRANS 1003: Unlocked resource 4 at server 2
+7619: TRANS 1003: Unlocked resource 9 at server 2
+7619: TRANS 1003: Unlocked resource 3 at server 1
+7635: TRANS 1003: Unlocked resource 0 at server 2
+7640: TRANS 1003: Unlocked resource 8 at server 2
+7640: TRANS 1003: Unlocked resource 7 at server 1
+7643: TRANS 1003: Unlocked resource 5 at server 2
+7644: TRANS 1003: Transaction 1003 committed.
+7644: Transaction 1003 ended.
+7954: Transaction 1004 arrived.
+7955: TRANS 1004: Starting transaction 1004.
+7955: TRANS 1004: Trying to claim lock of resource 9 at server 1
+7956: TRANS 1004: Lock claimed. Processing...
+8018: TRANS 1004: Trying to claim lock of resource 6 at server 1
+8018: TRANS 1004: Lock claimed. Processing...
+8102: TRANS 1004: Trying to claim lock of resource 2 at server 2
+8109: TRANS 1004: Lock claimed. Processing...
+8198: TRANS 1004: Trying to claim lock of resource 5 at server 1
+8199: TRANS 1004: Lock claimed. Processing...
+8271: TRANS 1004: Trying to claim lock of resource 1 at server 2
+8280: TRANS 1004: Lock claimed. Processing...
+8369: TRANS 1004: Trying to claim lock of resource 2 at server 1
+9129: TRANS 1004: Aborting transaction 1004.
+9129: TRANS 1004: Unlocked resource 9 at server 1
+9129: TRANS 1004: Unlocked resource 6 at server 1
+9143: TRANS 1004: Unlocked resource 2 at server 2
+9143: TRANS 1004: Unlocked resource 5 at server 1
+9156: TRANS 1004: Unlocked resource 1 at server 2
+9156: TRANS 1004: Transaction 1004 aborted.
+9157: Transaction 1004 ended.
+9211: Transaction 1005 arrived.
+9211: TRANS 1005: Starting transaction 1005.
+9211: TRANS 1005: Trying to claim lock of resource 5 at server 1
+9212: TRANS 1005: Lock claimed. Processing...
+9265: TRANS 1005: Trying to claim lock of resource 0 at server 1
+9265: TRANS 1005: Lock claimed. Processing...
+9286: TRANS 1005: Trying to claim lock of resource 3 at server 2
+9287: TRANS 1005: Lock claimed. Processing...
+9343: TRANS 1005: Trying to claim lock of resource 5 at server 2
+9345: TRANS 1005: Lock claimed. Processing...
+9412: TRANS 1005: Trying to claim lock of resource 2 at server 1
+9413: TRANS 1005: Lock claimed. Processing...
+9450: TRANS 1005: Trying to claim lock of resource 3 at server 1
+9450: TRANS 1005: Lock claimed. Processing...
+9524: TRANS 1005: Trying to claim lock of resource 4 at server 1
+10454: TRANS 1005: Aborting transaction 1005.
+10455: TRANS 1005: Unlocked resource 5 at server 1
+10455: TRANS 1005: Unlocked resource 0 at server 1
+10479: TRANS 1005: Unlocked resource 3 at server 2
+10480: TRANS 1005: Unlocked resource 5 at server 2
+10480: TRANS 1005: Unlocked resource 2 at server 1
+10480: TRANS 1005: Unlocked resource 3 at server 1
+10481: TRANS 1005: Transaction 1005 aborted.
+10481: Transaction 1005 ended.
+10613: Transaction 1006 arrived.
+10613: TRANS 1006: Starting transaction 1006.
+10614: TRANS 1006: Trying to claim lock of resource 1 at server 1
+10696: TRANS 1006: Aborting transaction 1006.
+10696: TRANS 1006: Transaction 1006 aborted.
+10696: Transaction 1006 ended.
+10880: Transaction 1007 arrived.
+10880: TRANS 1007: Starting transaction 1007.
+10880: TRANS 1007: Trying to claim lock of resource 7 at server 1
+10880: TRANS 1007: Lock claimed. Processing...
+10978: TRANS 1007: Trying to claim lock of resource 2 at server 2
+10982: TRANS 1007: Lock claimed. Processing...
+11059: TRANS 1007: Trying to claim lock of resource 1 at server 1
+11060: TRANS 1007: Lock claimed. Processing...
+11112: TRANS 1007: Trying to claim lock of resource 3 at server 1
+11113: TRANS 1007: Lock claimed. Processing...
+11167: TRANS 1007: Trying to claim lock of resource 9 at server 2
+11170: TRANS 1007: Lock claimed. Processing...
+11203: TRANS 1007: Trying to claim lock of resource 0 at server 1
+11204: TRANS 1007: Lock claimed. Processing...
+11280: TRANS 1007: Trying to claim lock of resource 0 at server 2
+11287: TRANS 1007: Lock claimed. Processing...
+11318: TRANS 1007: Committing transaction 1007.
+11319: TRANS 1007: Unlocked resource 7 at server 1
+11326: TRANS 1007: Unlocked resource 2 at server 2
+11327: TRANS 1007: Unlocked resource 1 at server 1
+11327: TRANS 1007: Unlocked resource 3 at server 1
+11334: TRANS 1007: Unlocked resource 9 at server 2
+11335: TRANS 1007: Unlocked resource 0 at server 1
+11343: TRANS 1007: Unlocked resource 0 at server 2
+11344: TRANS 1007: Transaction 1007 committed.
+11344: Transaction 1007 ended.
+11566: Transaction 1008 arrived.
+11566: TRANS 1008: Starting transaction 1008.
+11567: TRANS 1008: Trying to claim lock of resource 6 at server 2
+11569: TRANS 1008: Lock claimed. Processing...
+11640: TRANS 1008: Trying to claim lock of resource 0 at server 1
+11641: TRANS 1008: Lock claimed. Processing...
+11691: TRANS 1008: Trying to claim lock of resource 4 at server 2
+11692: TRANS 1008: Lock claimed. Processing...
+11779: TRANS 1008: Trying to claim lock of resource 8 at server 1
+12779: TRANS 1008: Aborting transaction 1008.
+12787: TRANS 1008: Unlocked resource 6 at server 2
+12788: TRANS 1008: Unlocked resource 0 at server 1
+12794: TRANS 1008: Unlocked resource 4 at server 2
+12794: TRANS 1008: Transaction 1008 aborted.
+12794: Transaction 1008 ended.
+13076: Transaction 1009 arrived.
+13077: TRANS 1009: Starting transaction 1009.
+13077: TRANS 1009: Trying to claim lock of resource 0 at server 1
+13077: TRANS 1009: Lock claimed. Processing...
+13103: TRANS 1009: Trying to claim lock of resource 3 at server 1
+13103: TRANS 1009: Lock claimed. Processing...
+13125: TRANS 1009: Trying to claim lock of resource 4 at server 2
+14126: TRANS 1009: Aborting transaction 1009.
+14126: TRANS 1009: Unlocked resource 0 at server 1
+14127: TRANS 1009: Unlocked resource 3 at server 1
+14127: TRANS 1009: Transaction 1009 aborted.
+14129: Transaction 1009 ended.
+14274: Transaction 1010 arrived.
+14274: TRANS 1010: Starting transaction 1010.
+14285: TRANS 1010: Trying to claim lock of resource 4 at server 1
+14291: TRANS 1010: Lock claimed. Processing...
+14381: TRANS 1010: Trying to claim lock of resource 9 at server 2
+14383: TRANS 1010: Lock claimed. Processing...
+14437: TRANS 1010: Trying to claim lock of resource 8 at server 2
+15440: TRANS 1010: Aborting transaction 1010.
+15444: TRANS 1010: Unlocked resource 4 at server 1
+15459: TRANS 1010: Unlocked resource 9 at server 2
+15460: TRANS 1010: Transaction 1010 aborted.
+15460: Transaction 1010 ended.
+15584: Transaction 1011 arrived.
+15585: TRANS 1011: Starting transaction 1011.
+15585: TRANS 1011: Trying to claim lock of resource 3 at server 2
+15586: TRANS 1011: Lock claimed. Processing...
+15685: TRANS 1011: Trying to claim lock of resource 1 at server 1
+15686: TRANS 1011: Lock claimed. Processing...
+15723: TRANS 1011: Trying to claim lock of resource 2 at server 2
+15725: TRANS 1011: Lock claimed. Processing...
+15793: TRANS 1011: Trying to claim lock of resource 8 at server 1
+15793: TRANS 1011: Lock claimed. Processing...
+15855: TRANS 1011: Trying to claim lock of resource 8 at server 2
+15857: TRANS 1011: Lock claimed. Processing...
+15937: TRANS 1011: Trying to claim lock of resource 0 at server 2
+15941: TRANS 1011: Lock claimed. Processing...
+16032: TRANS 1011: Trying to claim lock of resource 9 at server 1
+16033: TRANS 1011: Lock claimed. Processing...
+16115: TRANS 1011: Trying to claim lock of resource 4 at server 2
+16117: TRANS 1011: Lock claimed. Processing...
+16211: TRANS 1011: Committing transaction 1011.
+16214: TRANS 1011: Unlocked resource 3 at server 2
+16217: TRANS 1011: Unlocked resource 1 at server 1
+16223: TRANS 1011: Unlocked resource 2 at server 2
+16228: TRANS 1011: Unlocked resource 8 at server 1
+16231: TRANS 1011: Unlocked resource 8 at server 2
+16233: TRANS 1011: Unlocked resource 0 at server 2
+16244: TRANS 1011: Unlocked resource 9 at server 1
+16245: TRANS 1011: Unlocked resource 4 at server 2
+16245: TRANS 1011: Transaction 1011 committed.
+16246: Transaction 1011 ended.
+16318: Transaction 1012 arrived.
+16318: TRANS 1012: Starting transaction 1012.
+16319: TRANS 1012: Trying to claim lock of resource 7 at server 2
+16322: TRANS 1012: Lock claimed. Processing...
+16404: TRANS 1012: Trying to claim lock of resource 6 at server 1
+16405: TRANS 1012: Lock claimed. Processing...
+16468: TRANS 1012: Trying to claim lock of resource 9 at server 1
+16469: TRANS 1012: Lock claimed. Processing...
+16493: TRANS 1012: Trying to claim lock of resource 1 at server 1
+16494: TRANS 1012: Lock claimed. Processing...
+16584: TRANS 1012: Trying to claim lock of resource 2 at server 1
+16585: TRANS 1012: Lock claimed. Processing...
+16617: TRANS 1012: Trying to claim lock of resource 8 at server 1
+16617: TRANS 1012: Lock claimed. Processing...
+16698: TRANS 1012: Committing transaction 1012.
+16700: TRANS 1012: Unlocked resource 7 at server 2
+16700: TRANS 1012: Unlocked resource 6 at server 1
+16700: TRANS 1012: Unlocked resource 9 at server 1
+16701: TRANS 1012: Unlocked resource 1 at server 1
+16701: TRANS 1012: Unlocked resource 2 at server 1
+16701: TRANS 1012: Unlocked resource 8 at server 1
+16702: TRANS 1012: Transaction 1012 committed.
+16702: Transaction 1012 ended.
+16881: Transaction 1013 arrived.
+16881: TRANS 1013: Starting transaction 1013.
+16881: TRANS 1013: Trying to claim lock of resource 2 at server 2
+16884: TRANS 1013: Lock claimed. Processing...
+16932: TRANS 1013: Trying to claim lock of resource 8 at server 1
+16933: TRANS 1013: Lock claimed. Processing...
+16980: TRANS 1013: Trying to claim lock of resource 4 at server 2
+17059: TRANS 1013: Aborting transaction 1013.
+17060: TRANS 1013: Unlocked resource 2 at server 2
+17060: TRANS 1013: Unlocked resource 8 at server 1
+17061: TRANS 1013: Transaction 1013 aborted.
+17061: Transaction 1013 ended.
+17353: Transaction 1014 arrived.
+17354: TRANS 1014: Starting transaction 1014.
+17354: TRANS 1014: Trying to claim lock of resource 1 at server 2
+17356: TRANS 1014: Lock claimed. Processing...
+17387: TRANS 1014: Trying to claim lock of resource 1 at server 1
+17387: TRANS 1014: Lock claimed. Processing...
+17407: TRANS 1014: Trying to claim lock of resource 9 at server 1
+17408: TRANS 1014: Lock claimed. Processing...
+17503: TRANS 1014: Trying to claim lock of resource 5 at server 2
+18494: TRANS 1014: Aborting transaction 1014.
+18498: TRANS 1014: Unlocked resource 1 at server 2
+18502: TRANS 1014: Unlocked resource 1 at server 1
+18508: TRANS 1014: Unlocked resource 9 at server 1
+18509: TRANS 1014: Transaction 1014 aborted.
+18515: Transaction 1014 ended.
+18762: Transaction 1015 arrived.
+18763: TRANS 1015: Starting transaction 1015.
+18763: TRANS 1015: Trying to claim lock of resource 6 at server 2
+18764: TRANS 1015: Lock claimed. Processing...
+18849: TRANS 1015: Trying to claim lock of resource 8 at server 2
+18851: TRANS 1015: Lock claimed. Processing...
+18913: TRANS 1015: Trying to claim lock of resource 2 at server 2
+18914: TRANS 1015: Lock claimed. Processing...
+18963: TRANS 1015: Trying to claim lock of resource 3 at server 2
+18965: TRANS 1015: Lock claimed. Processing...
+19064: TRANS 1015: Trying to claim lock of resource 4 at server 1
+19065: TRANS 1015: Lock claimed. Processing...
+19090: TRANS 1015: Trying to claim lock of resource 9 at server 2
+19092: TRANS 1015: Lock claimed. Processing...
+19164: TRANS 1015: Committing transaction 1015.
+19166: TRANS 1015: Unlocked resource 6 at server 2
+19170: TRANS 1015: Unlocked resource 8 at server 2
+19173: TRANS 1015: Unlocked resource 2 at server 2
+19174: TRANS 1015: Unlocked resource 3 at server 2
+19174: TRANS 1015: Unlocked resource 4 at server 1
+19175: TRANS 1015: Unlocked resource 9 at server 2
+19175: TRANS 1015: Transaction 1015 committed.
+19175: Transaction 1015 ended.
+19322: Transaction 1016 arrived.
+19322: TRANS 1016: Starting transaction 1016.
+19322: TRANS 1016: Trying to claim lock of resource 7 at server 1
+19322: TRANS 1016: Lock claimed. Processing...
+19349: TRANS 1016: Trying to claim lock of resource 6 at server 2
+19350: TRANS 1016: Lock claimed. Processing...
+19440: TRANS 1016: Trying to claim lock of resource 4 at server 1
+19441: TRANS 1016: Lock claimed. Processing...
+19467: TRANS 1016: Trying to claim lock of resource 9 at server 1
+20467: TRANS 1016: Aborting transaction 1016.
+20468: TRANS 1016: Unlocked resource 7 at server 1
+20469: TRANS 1016: Unlocked resource 6 at server 2
+20469: TRANS 1016: Unlocked resource 4 at server 1
+20470: TRANS 1016: Transaction 1016 aborted.
+20470: Transaction 1016 ended.
+==================================================================
+242: Server 1 started.
+3016: Server 1 was notified of the arrival of server 2
+5880: Server 1 started its transactions.
+5953: Transaction 1000 arrived.
+5954: TRANS 1000: Starting transaction 1000.
+5956: TRANS 1000: Trying to claim lock of resource 9 at server 2
+5960: TRANS 1000: Lock claimed. Processing...
+5987: TRANS 1000: Trying to claim lock of resource 8 at server 1
+5987: TRANS 1000: Lock claimed. Processing...
+6060: TRANS 1000: Trying to claim lock of resource 4 at server 1
+6061: TRANS 1000: Lock claimed. Processing...
+6113: TRANS 1000: Trying to claim lock of resource 9 at server 1
+6114: TRANS 1000: Lock claimed. Processing...
+6178: TRANS 1000: Trying to claim lock of resource 0 at server 2
+6185: TRANS 1000: Lock claimed. Processing...
+6215: TRANS 1000: Committing transaction 1000.
+6241: TRANS 1000: Unlocked resource 9 at server 2
+6241: TRANS 1000: Unlocked resource 8 at server 1
+6242: TRANS 1000: Unlocked resource 4 at server 1
+6242: TRANS 1000: Unlocked resource 9 at server 1
+6243: TRANS 1000: Unlocked resource 0 at server 2
+6243: TRANS 1000: Transaction 1000 committed.
+6243: Transaction 1000 ended.
+6367: Transaction 1001 arrived.
+6367: TRANS 1001: Starting transaction 1001.
+6368: TRANS 1001: Trying to claim lock of resource 7 at server 1
+6368: TRANS 1001: Lock claimed. Processing...
+6446: TRANS 1001: Trying to claim lock of resource 3 at server 2
+6450: TRANS 1001: Lock claimed. Processing...
+6473: TRANS 1001: Trying to claim lock of resource 5 at server 2
+6476: TRANS 1001: Lock claimed. Processing...
+6526: TRANS 1001: Trying to claim lock of resource 1 at server 2
+6527: TRANS 1001: Lock claimed. Processing...
+6609: TRANS 1001: Trying to claim lock of resource 8 at server 1
+7612: TRANS 1001: Aborting transaction 1001.
+7613: TRANS 1001: Unlocked resource 7 at server 1
+7621: TRANS 1001: Unlocked resource 3 at server 2
+7630: TRANS 1001: Unlocked resource 5 at server 2
+7641: TRANS 1001: Unlocked resource 1 at server 2
+7641: TRANS 1001: Transaction 1001 aborted.
+7641: Transaction 1001 ended.
+7825: Transaction 1002 arrived.
+7826: TRANS 1002: Starting transaction 1002.
+7826: TRANS 1002: Trying to claim lock of resource 2 at server 2
+7828: TRANS 1002: Lock claimed. Processing...
+7912: TRANS 1002: Trying to claim lock of resource 4 at server 2
+8206: TRANS 1002: Aborting transaction 1002.
+8209: TRANS 1002: Unlocked resource 2 at server 2
+8209: TRANS 1002: Transaction 1002 aborted.
+8209: Transaction 1002 ended.
+8477: Transaction 1003 arrived.
+8477: TRANS 1003: Starting transaction 1003.
+8478: TRANS 1003: Trying to claim lock of resource 8 at server 1
+8478: TRANS 1003: Lock claimed. Processing...
+8531: TRANS 1003: Trying to claim lock of resource 5 at server 1
+8531: TRANS 1003: Lock claimed. Processing...
+8564: TRANS 1003: Trying to claim lock of resource 6 at server 1
+8592: TRANS 1003: Aborting transaction 1003.
+8593: TRANS 1003: Unlocked resource 8 at server 1
+8593: TRANS 1003: Unlocked resource 5 at server 1
+8594: TRANS 1003: Transaction 1003 aborted.
+8594: Transaction 1003 ended.
+8786: Transaction 1004 arrived.
+8787: TRANS 1004: Starting transaction 1004.
+8788: TRANS 1004: Trying to claim lock of resource 4 at server 2
+8789: TRANS 1004: Lock claimed. Processing...
+8847: TRANS 1004: Trying to claim lock of resource 1 at server 1
+8848: TRANS 1004: Lock claimed. Processing...
+8939: TRANS 1004: Trying to claim lock of resource 3 at server 2
+8941: TRANS 1004: Lock claimed. Processing...
+9011: TRANS 1004: Trying to claim lock of resource 9 at server 1
+9012: TRANS 1004: Lock claimed. Processing...
+9062: TRANS 1004: Trying to claim lock of resource 6 at server 2
+9063: TRANS 1004: Lock claimed. Processing...
+9119: TRANS 1004: Trying to claim lock of resource 2 at server 2
+9124: TRANS 1004: Lock claimed. Processing...
+9171: TRANS 1004: Trying to claim lock of resource 1 at server 2
+9176: TRANS 1004: Lock claimed. Processing...
+9211: TRANS 1004: Trying to claim lock of resource 8 at server 1
+9212: TRANS 1004: Lock claimed. Processing...
+9250: TRANS 1004: Committing transaction 1004.
+9256: TRANS 1004: Unlocked resource 4 at server 2
+9257: TRANS 1004: Unlocked resource 1 at server 1
+9265: TRANS 1004: Unlocked resource 3 at server 2
+9266: TRANS 1004: Unlocked resource 9 at server 1
+9281: TRANS 1004: Unlocked resource 6 at server 2
+9290: TRANS 1004: Unlocked resource 2 at server 2
+9291: TRANS 1004: Unlocked resource 1 at server 2
+9291: TRANS 1004: Unlocked resource 8 at server 1
+9291: TRANS 1004: Transaction 1004 committed.
+9291: Transaction 1004 ended.
+9364: Transaction 1005 arrived.
+9365: TRANS 1005: Starting transaction 1005.
+9365: TRANS 1005: Trying to claim lock of resource 3 at server 1
+9366: TRANS 1005: Lock claimed. Processing...
+9406: TRANS 1005: Trying to claim lock of resource 8 at server 2
+9410: TRANS 1005: Lock claimed. Processing...
+9471: TRANS 1005: Trying to claim lock of resource 9 at server 2
+9473: TRANS 1005: Lock claimed. Processing...
+9545: TRANS 1005: Trying to claim lock of resource 1 at server 1
+9545: TRANS 1005: Lock claimed. Processing...
+9641: TRANS 1005: Trying to claim lock of resource 9 at server 1
+9642: TRANS 1005: Lock claimed. Processing...
+9695: TRANS 1005: Trying to claim lock of resource 2 at server 1
+10668: TRANS 1005: Aborting transaction 1005.
+10668: TRANS 1005: Unlocked resource 3 at server 1
+10677: TRANS 1005: Unlocked resource 8 at server 2
+10679: TRANS 1005: Unlocked resource 9 at server 2
+10680: TRANS 1005: Unlocked resource 1 at server 1
+10680: TRANS 1005: Unlocked resource 9 at server 1
+10680: TRANS 1005: Transaction 1005 aborted.
+10680: Transaction 1005 ended.
+10910: Transaction 1006 arrived.
+10910: TRANS 1006: Starting transaction 1006.
+10910: TRANS 1006: Trying to claim lock of resource 8 at server 1
+10911: TRANS 1006: Lock claimed. Processing...
+10963: TRANS 1006: Trying to claim lock of resource 1 at server 1
+10963: TRANS 1006: Lock claimed. Processing...
+11007: TRANS 1006: Trying to claim lock of resource 7 at server 1
+11008: TRANS 1006: Lock claimed. Processing...
+11039: TRANS 1006: Committing transaction 1006.
+11039: TRANS 1006: Unlocked resource 8 at server 1
+11040: TRANS 1006: Unlocked resource 1 at server 1
+11040: TRANS 1006: Unlocked resource 7 at server 1
+11040: TRANS 1006: Transaction 1006 committed.
+11040: Transaction 1006 ended.
+11343: Transaction 1007 arrived.
+11343: TRANS 1007: Starting transaction 1007.
+11344: TRANS 1007: Trying to claim lock of resource 9 at server 2
+11345: TRANS 1007: Lock claimed. Processing...
+11427: TRANS 1007: Trying to claim lock of resource 9 at server 1
+11430: TRANS 1007: Lock claimed. Processing...
+11503: TRANS 1007: Trying to claim lock of resource 7 at server 2
+11504: TRANS 1007: Lock claimed. Processing...
+11565: TRANS 1007: Trying to claim lock of resource 4 at server 1
+11566: TRANS 1007: Lock claimed. Processing...
+11650: TRANS 1007: Trying to claim lock of resource 1 at server 1
+11651: TRANS 1007: Lock claimed. Processing...
+11671: TRANS 1007: Trying to claim lock of resource 4 at server 2
+11673: TRANS 1007: Lock claimed. Processing...
+11701: TRANS 1007: Trying to claim lock of resource 0 at server 2
+11702: TRANS 1007: Lock claimed. Processing...
+11774: TRANS 1007: Trying to claim lock of resource 5 at server 1
+11775: TRANS 1007: Lock claimed. Processing...
+11854: TRANS 1007: Trying to claim lock of resource 3 at server 2
+12549: TRANS 1007: Aborting transaction 1007.
+12551: TRANS 1007: Unlocked resource 9 at server 2
+12552: TRANS 1007: Unlocked resource 9 at server 1
+12553: TRANS 1007: Unlocked resource 7 at server 2
+12553: TRANS 1007: Unlocked resource 4 at server 1
+12555: TRANS 1007: Unlocked resource 1 at server 1
+12557: TRANS 1007: Unlocked resource 4 at server 2
+12568: TRANS 1007: Unlocked resource 0 at server 2
+12568: TRANS 1007: Unlocked resource 5 at server 1
+12568: TRANS 1007: Transaction 1007 aborted.
+12569: Transaction 1007 ended.
+12840: Transaction 1008 arrived.
+12840: TRANS 1008: Starting transaction 1008.
+12840: TRANS 1008: Trying to claim lock of resource 6 at server 1
+12841: TRANS 1008: Lock claimed. Processing...
+12900: TRANS 1008: Trying to claim lock of resource 7 at server 1
+12901: TRANS 1008: Lock claimed. Processing...
+12951: TRANS 1008: Trying to claim lock of resource 9 at server 2
+13028: TRANS 1008: Aborting transaction 1008.
+13028: TRANS 1008: Unlocked resource 6 at server 1
+13028: TRANS 1008: Unlocked resource 7 at server 1
+13029: TRANS 1008: Transaction 1008 aborted.
+13029: Transaction 1008 ended.
+13109: Transaction 1009 arrived.
+13109: TRANS 1009: Starting transaction 1009.
+13109: TRANS 1009: Trying to claim lock of resource 0 at server 2
+13110: TRANS 1009: Lock claimed. Processing...
+13157: TRANS 1009: Trying to claim lock of resource 4 at server 1
+13157: TRANS 1009: Lock claimed. Processing...
+13227: TRANS 1009: Trying to claim lock of resource 2 at server 2
+13618: TRANS 1009: Aborting transaction 1009.
+13645: TRANS 1009: Unlocked resource 0 at server 2
+13646: TRANS 1009: Unlocked resource 4 at server 1
+13646: TRANS 1009: Transaction 1009 aborted.
+13646: Transaction 1009 ended.
+13879: Transaction 1010 arrived.
+13880: TRANS 1010: Starting transaction 1010.
+13880: TRANS 1010: Trying to claim lock of resource 8 at server 1
+13880: TRANS 1010: Lock claimed. Processing...
+13972: TRANS 1010: Trying to claim lock of resource 3 at server 2
+13973: TRANS 1010: Lock claimed. Processing...
+14002: TRANS 1010: Trying to claim lock of resource 7 at server 2
+14004: TRANS 1010: Lock claimed. Processing...
+14075: TRANS 1010: Committing transaction 1010.
+14076: TRANS 1010: Unlocked resource 8 at server 1
+14084: TRANS 1010: Unlocked resource 3 at server 2
+14091: TRANS 1010: Unlocked resource 7 at server 2
+14092: TRANS 1010: Transaction 1010 committed.
+14092: Transaction 1010 ended.
+14351: Transaction 1011 arrived.
+14352: TRANS 1011: Starting transaction 1011.
+14353: TRANS 1011: Trying to claim lock of resource 7 at server 2
+14362: TRANS 1011: Lock claimed. Processing...
+14435: TRANS 1011: Trying to claim lock of resource 7 at server 1
+14435: TRANS 1011: Lock claimed. Processing...
+14497: TRANS 1011: Trying to claim lock of resource 5 at server 1
+14498: TRANS 1011: Lock claimed. Processing...
+14541: TRANS 1011: Trying to claim lock of resource 0 at server 2
+14543: TRANS 1011: Lock claimed. Processing...
+14601: TRANS 1011: Trying to claim lock of resource 1 at server 2
+14602: TRANS 1011: Lock claimed. Processing...
+14625: TRANS 1011: Trying to claim lock of resource 8 at server 1
+14625: TRANS 1011: Lock claimed. Processing...
+14724: TRANS 1011: Trying to claim lock of resource 5 at server 2
+14726: TRANS 1011: Lock claimed. Processing...
+14786: TRANS 1011: Trying to claim lock of resource 2 at server 1
+14787: TRANS 1011: Lock claimed. Processing...
+14865: TRANS 1011: Trying to claim lock of resource 4 at server 1
+14866: TRANS 1011: Lock claimed. Processing...
+14892: TRANS 1011: Trying to claim lock of resource 3 at server 1
+14893: TRANS 1011: Lock claimed. Processing...
+14963: TRANS 1011: Committing transaction 1011.
+14965: TRANS 1011: Unlocked resource 7 at server 2
+14966: TRANS 1011: Unlocked resource 7 at server 1
+14966: TRANS 1011: Unlocked resource 5 at server 1
+14978: TRANS 1011: Unlocked resource 0 at server 2
+14981: TRANS 1011: Unlocked resource 1 at server 2
+14981: TRANS 1011: Unlocked resource 8 at server 1
+14988: TRANS 1011: Unlocked resource 5 at server 2
+14989: TRANS 1011: Unlocked resource 2 at server 1
+14989: TRANS 1011: Unlocked resource 4 at server 1
+14989: TRANS 1011: Unlocked resource 3 at server 1
+14989: TRANS 1011: Transaction 1011 committed.
+14989: Transaction 1011 ended.
+15214: Transaction 1012 arrived.
+15214: TRANS 1012: Starting transaction 1012.
+15215: TRANS 1012: Trying to claim lock of resource 2 at server 2
+15216: TRANS 1012: Lock claimed. Processing...
+15276: TRANS 1012: Trying to claim lock of resource 6 at server 1
+15276: TRANS 1012: Lock claimed. Processing...
+15365: TRANS 1012: Trying to claim lock of resource 7 at server 2
+15367: TRANS 1012: Lock claimed. Processing...
+15450: TRANS 1012: Trying to claim lock of resource 1 at server 2
+15451: TRANS 1012: Lock claimed. Processing...
+15489: TRANS 1012: Trying to claim lock of resource 4 at server 2
+15491: TRANS 1012: Lock claimed. Processing...
+15581: TRANS 1012: Trying to claim lock of resource 0 at server 2
+15583: TRANS 1012: Lock claimed. Processing...
+15609: TRANS 1012: Trying to claim lock of resource 9 at server 2
+16610: TRANS 1012: Aborting transaction 1012.
+16613: TRANS 1012: Unlocked resource 2 at server 2
+16613: TRANS 1012: Unlocked resource 6 at server 1
+16637: TRANS 1012: Unlocked resource 7 at server 2
+16656: TRANS 1012: Unlocked resource 1 at server 2
+16658: TRANS 1012: Unlocked resource 4 at server 2
+16659: TRANS 1012: Unlocked resource 0 at server 2
+16659: TRANS 1012: Transaction 1012 aborted.
+16659: Transaction 1012 ended.
+16922: Transaction 1013 arrived.
+16922: TRANS 1013: Starting transaction 1013.
+16922: TRANS 1013: Trying to claim lock of resource 6 at server 2
+16925: TRANS 1013: Lock claimed. Processing...
+16966: TRANS 1013: Trying to claim lock of resource 9 at server 2
+16968: TRANS 1013: Lock claimed. Processing...
+17031: TRANS 1013: Trying to claim lock of resource 8 at server 1
+17031: TRANS 1013: Lock claimed. Processing...
+17056: TRANS 1013: Trying to claim lock of resource 2 at server 2
+17058: TRANS 1013: Lock claimed. Processing...
+17106: TRANS 1013: Trying to claim lock of resource 8 at server 2
+17107: TRANS 1013: Lock claimed. Processing...
+17189: TRANS 1013: Trying to claim lock of resource 1 at server 1
+17190: TRANS 1013: Lock claimed. Processing...
+17236: TRANS 1013: Committing transaction 1013.
+17238: TRANS 1013: Unlocked resource 6 at server 2
+17240: TRANS 1013: Unlocked resource 9 at server 2
+17240: TRANS 1013: Unlocked resource 8 at server 1
+17244: TRANS 1013: Unlocked resource 2 at server 2
+17249: TRANS 1013: Unlocked resource 8 at server 2
+17250: TRANS 1013: Unlocked resource 1 at server 1
+17250: TRANS 1013: Transaction 1013 committed.
+17250: Transaction 1013 ended.
+17477: Transaction 1014 arrived.
+17478: TRANS 1014: Starting transaction 1014.
+17478: TRANS 1014: Trying to claim lock of resource 0 at server 1
+17479: TRANS 1014: Lock claimed. Processing...
+17515: TRANS 1014: Trying to claim lock of resource 7 at server 2
+17517: TRANS 1014: Lock claimed. Processing...
+17611: TRANS 1014: Trying to claim lock of resource 5 at server 1
+17611: TRANS 1014: Lock claimed. Processing...
+17635: TRANS 1014: Trying to claim lock of resource 6 at server 2
+17636: TRANS 1014: Lock claimed. Processing...
+17697: TRANS 1014: Trying to claim lock of resource 6 at server 1
+17698: TRANS 1014: Lock claimed. Processing...
+17745: TRANS 1014: Trying to claim lock of resource 2 at server 1
+17745: TRANS 1014: Lock claimed. Processing...
+17838: TRANS 1014: Trying to claim lock of resource 9 at server 1
+17839: TRANS 1014: Lock claimed. Processing...
+17883: TRANS 1014: Trying to claim lock of resource 7 at server 1
+17884: TRANS 1014: Lock claimed. Processing...
+17952: TRANS 1014: Committing transaction 1014.
+17952: TRANS 1014: Unlocked resource 0 at server 1
+17954: TRANS 1014: Unlocked resource 7 at server 2
+17954: TRANS 1014: Unlocked resource 5 at server 1
+17956: TRANS 1014: Unlocked resource 6 at server 2
+17957: TRANS 1014: Unlocked resource 6 at server 1
+17957: TRANS 1014: Unlocked resource 2 at server 1
+17957: TRANS 1014: Unlocked resource 9 at server 1
+17957: TRANS 1014: Unlocked resource 7 at server 1
+17957: TRANS 1014: Transaction 1014 committed.
+17957: Transaction 1014 ended.
+18253: Transaction 1015 arrived.
+18254: TRANS 1015: Starting transaction 1015.
+18254: TRANS 1015: Trying to claim lock of resource 8 at server 2
+18436: TRANS 1015: Aborting transaction 1015.
+18437: TRANS 1015: Transaction 1015 aborted.
+18437: Transaction 1015 ended.
+18594: Transaction 1016 arrived.
+18594: TRANS 1016: Starting transaction 1016.
+18594: TRANS 1016: Trying to claim lock of resource 0 at server 1
+18595: TRANS 1016: Lock claimed. Processing...
+18643: TRANS 1016: Trying to claim lock of resource 8 at server 1
+18643: TRANS 1016: Lock claimed. Processing...
+18712: TRANS 1016: Trying to claim lock of resource 1 at server 1
+18712: TRANS 1016: Lock claimed. Processing...
+18778: TRANS 1016: Trying to claim lock of resource 1 at server 2
+18780: TRANS 1016: Lock claimed. Processing...
+18858: TRANS 1016: Trying to claim lock of resource 4 at server 2
+18859: TRANS 1016: Lock claimed. Processing...
+18885: TRANS 1016: Trying to claim lock of resource 3 at server 1
+18885: TRANS 1016: Lock claimed. Processing...
+18966: TRANS 1016: Trying to claim lock of resource 8 at server 2
+19915: TRANS 1016: Aborting transaction 1016.
+19916: TRANS 1016: Unlocked resource 0 at server 1
+19916: TRANS 1016: Unlocked resource 8 at server 1
+19916: TRANS 1016: Unlocked resource 1 at server 1
+19919: TRANS 1016: Unlocked resource 1 at server 2
+19921: TRANS 1016: Unlocked resource 4 at server 2
+19921: TRANS 1016: Unlocked resource 3 at server 1
+19922: TRANS 1016: Transaction 1016 aborted.
+19922: Transaction 1016 ended.
+20154: Transaction 1017 arrived.
+20155: TRANS 1017: Starting transaction 1017.
+20155: TRANS 1017: Trying to claim lock of resource 0 at server 1
+20155: TRANS 1017: Lock claimed. Processing...
+20177: TRANS 1017: Trying to claim lock of resource 7 at server 2
+20265: TRANS 1017: Aborting transaction 1017.
+20265: TRANS 1017: Unlocked resource 0 at server 1
+20265: TRANS 1017: Transaction 1017 aborted.
+20266: Transaction 1017 ended.
+20505: Transaction 1018 arrived.
+20506: TRANS 1018: Starting transaction 1018.
+20506: TRANS 1018: Trying to claim lock of resource 3 at server 1
+20506: TRANS 1018: Lock claimed. Processing...
+20602: TRANS 1018: Trying to claim lock of resource 6 at server 1
+20851: TRANS 1018: Aborting transaction 1018.
+20855: TRANS 1018: Unlocked resource 3 at server 1
+20855: TRANS 1018: Transaction 1018 aborted.
+20856: Transaction 1018 ended.
+21000: Transaction 1019 arrived.
+21001: TRANS 1019: Starting transaction 1019.
+21001: TRANS 1019: Trying to claim lock of resource 7 at server 1
+21001: TRANS 1019: Lock claimed. Processing...
+21050: TRANS 1019: Trying to claim lock of resource 2 at server 1
+21050: TRANS 1019: Lock claimed. Processing...
+21098: TRANS 1019: Trying to claim lock of resource 7 at server 2
+21099: TRANS 1019: Lock claimed. Processing...
+21124: TRANS 1019: Committing transaction 1019.
+21124: TRANS 1019: Unlocked resource 7 at server 1
+21125: TRANS 1019: Unlocked resource 2 at server 1
+21126: TRANS 1019: Unlocked resource 7 at server 2
+21126: TRANS 1019: Transaction 1019 committed.
+21126: Transaction 1019 ended.
+21204: Transaction 1020 arrived.
+21204: TRANS 1020: Starting transaction 1020.
+21205: TRANS 1020: Trying to claim lock of resource 9 at server 1
+21205: TRANS 1020: Lock claimed. Processing...
+21271: TRANS 1020: Trying to claim lock of resource 5 at server 1
+22222: TRANS 1020: Aborting transaction 1020.
+22224: TRANS 1020: Unlocked resource 9 at server 1
+22225: TRANS 1020: Transaction 1020 aborted.
+22226: Transaction 1020 ended.
+22316: Transaction 1021 arrived.
+22319: TRANS 1021: Starting transaction 1021.
+22319: TRANS 1021: Trying to claim lock of resource 1 at server 1
+22320: TRANS 1021: Lock claimed. Processing...
+22355: TRANS 1021: Trying to claim lock of resource 5 at server 2
+22356: TRANS 1021: Lock claimed. Processing...
+22397: TRANS 1021: Trying to claim lock of resource 8 at server 1
+22398: TRANS 1021: Lock claimed. Processing...
+22441: TRANS 1021: Committing transaction 1021.
+22443: TRANS 1021: Unlocked resource 1 at server 1
+22444: TRANS 1021: Unlocked resource 5 at server 2
+22445: TRANS 1021: Unlocked resource 8 at server 1
+22445: TRANS 1021: Transaction 1021 committed.
+22445: Transaction 1021 ended.
+22634: Transaction 1022 arrived.
+22635: TRANS 1022: Starting transaction 1022.
+22635: TRANS 1022: Trying to claim lock of resource 9 at server 2
+22637: TRANS 1022: Lock claimed. Processing...
+22661: TRANS 1022: Trying to claim lock of resource 4 at server 1
+22661: TRANS 1022: Lock claimed. Processing...
+22758: TRANS 1022: Trying to claim lock of resource 2 at server 2
+22760: TRANS 1022: Lock claimed. Processing...
+22824: TRANS 1022: Trying to claim lock of resource 0 at server 2
+22826: TRANS 1022: Lock claimed. Processing...
+22877: TRANS 1022: Trying to claim lock of resource 6 at server 2
+22955: TRANS 1022: Aborting transaction 1022.
+22959: TRANS 1022: Unlocked resource 9 at server 2
+22959: TRANS 1022: Unlocked resource 4 at server 1
+22960: TRANS 1022: Unlocked resource 2 at server 2
+22961: TRANS 1022: Unlocked resource 0 at server 2
+22961: TRANS 1022: Transaction 1022 aborted.
+22961: Transaction 1022 ended.
+23180: Transaction 1023 arrived.
+23180: TRANS 1023: Starting transaction 1023.
+23180: TRANS 1023: Trying to claim lock of resource 1 at server 1
+23400: TRANS 1023: Aborting transaction 1023.
+23401: TRANS 1023: Transaction 1023 aborted.
+23407: Transaction 1023 ended.
+23636: Transaction 1024 arrived.
+23637: TRANS 1024: Starting transaction 1024.
+23637: TRANS 1024: Trying to claim lock of resource 8 at server 1
+23637: TRANS 1024: Lock claimed. Processing...
+23673: TRANS 1024: Trying to claim lock of resource 7 at server 2
+23676: TRANS 1024: Lock claimed. Processing...
+23746: TRANS 1024: Trying to claim lock of resource 6 at server 2
+23747: TRANS 1024: Lock claimed. Processing...
+23837: TRANS 1024: Trying to claim lock of resource 4 at server 1
+23838: TRANS 1024: Lock claimed. Processing...
+23899: TRANS 1024: Trying to claim lock of resource 7 at server 1
+23899: TRANS 1024: Lock claimed. Processing...
+23935: TRANS 1024: Trying to claim lock of resource 4 at server 2
+23936: TRANS 1024: Lock claimed. Processing...
+23971: TRANS 1024: Trying to claim lock of resource 2 at server 2
+23974: TRANS 1024: Lock claimed. Processing...
+24068: TRANS 1024: Committing transaction 1024.
+24068: TRANS 1024: Unlocked resource 8 at server 1
+24071: TRANS 1024: Unlocked resource 7 at server 2
+24072: TRANS 1024: Unlocked resource 6 at server 2
+24072: TRANS 1024: Unlocked resource 4 at server 1
+24073: TRANS 1024: Unlocked resource 7 at server 1
+24075: TRANS 1024: Unlocked resource 4 at server 2
+24079: TRANS 1024: Unlocked resource 2 at server 2
+24081: TRANS 1024: Transaction 1024 committed.
+24081: Transaction 1024 ended.
+24290: Transaction 1025 arrived.
+24291: TRANS 1025: Starting transaction 1025.
+24291: TRANS 1025: Trying to claim lock of resource 7 at server 1
+24291: TRANS 1025: Lock claimed. Processing...
+24374: TRANS 1025: Trying to claim lock of resource 4 at server 2
+24375: TRANS 1025: Lock claimed. Processing...
+24412: TRANS 1025: Trying to claim lock of resource 9 at server 2
+24413: TRANS 1025: Lock claimed. Processing...
+24512: TRANS 1025: Trying to claim lock of resource 8 at server 2
+24514: TRANS 1025: Lock claimed. Processing...
+24612: TRANS 1025: Trying to claim lock of resource 8 at server 1
+24612: TRANS 1025: Lock claimed. Processing...
+24673: TRANS 1025: Trying to claim lock of resource 1 at server 2
+24674: TRANS 1025: Lock claimed. Processing...
+24733: TRANS 1025: Trying to claim lock of resource 2 at server 1
+24733: TRANS 1025: Lock claimed. Processing...
+24825: TRANS 1025: Trying to claim lock of resource 6 at server 1
+24825: TRANS 1025: Lock claimed. Processing...
+24870: TRANS 1025: Trying to claim lock of resource 6 at server 2
+24872: TRANS 1025: Lock claimed. Processing...
+24904: TRANS 1025: Committing transaction 1025.
+24906: TRANS 1025: Unlocked resource 7 at server 1
+24912: TRANS 1025: Unlocked resource 4 at server 2
+24914: TRANS 1025: Unlocked resource 9 at server 2
+24917: TRANS 1025: Unlocked resource 8 at server 2
+24918: TRANS 1025: Unlocked resource 8 at server 1
+24919: TRANS 1025: Unlocked resource 1 at server 2
+24919: TRANS 1025: Unlocked resource 2 at server 1
+24920: TRANS 1025: Unlocked resource 6 at server 1
+24921: TRANS 1025: Unlocked resource 6 at server 2
+24921: TRANS 1025: Transaction 1025 committed.
+24921: Transaction 1025 ended.

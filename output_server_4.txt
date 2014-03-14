@@ -40,3 +40,9 @@
 2037: TRANS 4001: Lock claimed. Processing...
 2068: TRANS 4001: Trying to claim lock of resource 0 at server 3
 15533: Contact with server 3 was lost.
+==================================================================
+227: Server 4 started.
+==================================================================
+223: Server 4 started.
+==================================================================
+231: Server 4 started.

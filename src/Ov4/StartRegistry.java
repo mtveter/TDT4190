@@ -1,4 +1,5 @@
 package Ov4;
+
 import java.rmi.registry.*;
 
 public class StartRegistry
@@ -12,11 +13,11 @@ public class StartRegistry
    */
   public static void main(String[] args)
   {
-    if (true) {
+    if (args.length > 0) {
       try {
-        Registry r = LocateRegistry.createRegistry(Integer.parseInt("1111"));
+        Registry r = LocateRegistry.createRegistry(Integer.parseInt(args[0]));
         r.bind("RegistryProxy", new RegistryProxyImpl());
-        System.out.println("RMI registry is now running on port " + "1111" + '.');
+        System.out.println("RMI registry is now running on port " + args[0] + '.');
       } catch (Exception re) {
       }
     }

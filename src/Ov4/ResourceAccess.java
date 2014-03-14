@@ -1,4 +1,5 @@
 package Ov4;
+
 /**
  * Data structure describing the server and ID of a resource in the distributed
  * transaction system.
