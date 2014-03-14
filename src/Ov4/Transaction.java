@@ -25,7 +25,7 @@ class Transaction
    */
   private final List<ResourceAccess> lockedResources;
   /**
-   * Signalling variable used to exchange messages between different threads operating on this transaction
+   * Signaling variable used to exchange messages between different threads operating on this transaction
    */
   private boolean abortTransaction;
   /**
