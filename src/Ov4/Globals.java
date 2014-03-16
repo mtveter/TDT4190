@@ -1,4 +1,5 @@
 package Ov4;
+
 /**
  * A collection of globally available constants
  * and static methods.
@@ -10,16 +11,11 @@ class Globals
   /**
    * The number of milliseconds to wait for a lock before a timeout is declared.
    */
-  static long TIMEOUT_INTERVAL = 1000; // Timeouts disabled
-  /**
-   * The number of milliseconds for a transaction to wait before trying to acquire locks 
-   * after discovering a deadlock
-   */
-  static long TRANSACTION_WAIT = 5000; // Timeouts disabled
+  static long TIMEOUT_INTERVAL = 2000; // Timeouts disabled
   /**
    * Whether or not to use edge chasing to detect deadlocks
    */
-  static boolean PROBING_ENABLED = true;
+  static boolean PROBING_ENABLED = false;
   /**
    * The number of local resources on each server
    */

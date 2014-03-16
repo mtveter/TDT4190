@@ -1,22 +1,17 @@
 package Ov4;
 
+
 /**
  * A resource with an associated lock that can be held by only one transaction at a time.
  */
 class Resource
 {
-	/**
-	 * The clock which specifies how long a resource can be locked, and performs time out
-	 */
-	private Clock clock = null;
-	
   static final int NOT_LOCKED = -1;
 
   /**
    * The transaction currently holding the lock to this resource
    */
   private int lockOwner;
-  
 
   /**
    * Creates a new resource.
@@ -30,29 +25,40 @@ class Resource
    * Gives the lock of this resource to the requesting transaction. Blocks
    * the caller until the lock could be acquired.
    *
-   * Each time a lock is acquired, a new clock is initiated with the given timeout interval
-   * and assigned to the clock of this resource
-   *
    * @param transactionId The ID of the transaction that wants the lock.
    * @return Whether or not the lock could be acquired.
    */
   synchronized boolean lock(int transactionId)
   {
-
     if (lockOwner == transactionId) {
       System.err.println("Error: Transaction " + transactionId + " tried to lock a resource it already has locked!");
       return false;
     }
-    
-    while (lockOwner != NOT_LOCKED) {
-      try {
-        wait();
-      } catch (InterruptedException ie) {
-      }
+    if(!Globals.PROBING_ENABLED){
+    	while (lockOwner != NOT_LOCKED) {
+    		try {
+    			wait((long) (Globals.TIMEOUT_INTERVAL+ Math.random()*1000));
+    		} catch (InterruptedException ie) {
+    	  break;
+    		}
+    		if(lockOwner != NOT_LOCKED){
+    			return false;
+    		}
+    		else{
+    			break;
+    		}
+    	}
     }
-
+    else{
+        while (lockOwner != NOT_LOCKED) {
+            try {
+              wait();
+            } catch (InterruptedException ie) {
+            }
+          }
+    }
+    
     lockOwner = transactionId;
-	this.clock = new Clock(Globals.TIMEOUT_INTERVAL, this);
     return true;
   }
 
@@ -64,19 +70,17 @@ class Resource
    *                      error message is displayed.
    * @return Whether or not the lock could be released.
    */
-  synchronized int unlock(int transactionId)
+  synchronized boolean unlock(int transactionId)
   {
-    if (lockOwner == NOT_LOCKED) {
-      //System.err.println("Error: Transaction " + transactionId + " tried to unlock a resource without owning the lock!");
-      return 0;
-    } else if (lockOwner != transactionId) {
-    	return -1;
+    if (lockOwner == NOT_LOCKED || lockOwner != transactionId) {
+      System.err.println("Error: Transaction " + transactionId + " tried to unlock a resource without owning the lock!");
+      return false;
     }
 
     lockOwner = NOT_LOCKED;
     // Notify a waiting thread that it can acquire the lock
     notifyAll();
-    return 1;
+    return true;
   }
 
   /**

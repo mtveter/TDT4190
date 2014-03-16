@@ -1,4 +1,5 @@
 package Ov4;
+
 import java.rmi.*;
 import java.util.*;
 
@@ -12,6 +13,8 @@ import com.sun.xml.internal.bind.v2.schemagen.xmlschema.NoFixedFacet;
  */
 class Transaction
 {
+	boolean commited;
+	Clock clock;
   /**
    * The ID of this transaction
    */
@@ -80,37 +83,23 @@ class Transaction
     }
 
     // Perform the accesses
-    while(true){
-	    for (int i = 0; i < nofAccesses; i++) {
-	      ResourceAccess nextResource = getNextResource();
-	      abortTransaction = !acquireLock(nextResource);
-	      if (abortTransaction) {
-	        // Transaction should abort due to a communication failure
-	        abort();
-	      }
-	      else {
-	        owner.println("Lock claimed. Processing...", transactionId);
-	        processResource();
-	      }
-	    }
-	    if (allLocksAcquired(nofAccesses)){
-	    	commit();
-	    	return true;
-	    } else {
-	    	releaseLocks();
-	    	try {
-	            wait(Globals.TRANSACTION_WAIT);
-	          } catch (InterruptedException ie) {
-	        }
-	    }
-    }
-  }
-  
-  public boolean allLocksAcquired(int nofAccesses){
-	  return true;
-	  // i dunno wat i am doing
-  }
 
+    for (int i = 0; i < nofAccesses; i++) {
+      ResourceAccess nextResource = getNextResource();
+      abortTransaction = !acquireLock(nextResource);
+      if (abortTransaction) {
+        // Transaction should abort due to a communication failure
+        abort();
+        return false;
+      }
+      else {
+        owner.println("Lock claimed. Processing...", transactionId);
+        processResource();
+      }
+    }
+    commit();
+    return true;
+  }
   /**
    * Processes a resource that the transaction has acquired the lock to.
    * No actual processing is done, but some milliseconds are spent sleeping
@@ -181,6 +170,8 @@ class Transaction
     waitingForResource = resourceAccess;
     owner.println("Trying to claim lock of resource " + resourceAccess.resourceId + " at server " + resourceAccess.serverId, transactionId);
     try {
+    	if(Globals.PROBING_ENABLED)
+    		new Probe(owner,this).start();
       if (resourceAccess.server.lockResource(transactionId, resourceAccess.resourceId)) {
         lockedResources.add(resourceAccess);
         waitingForResource = null;
@@ -190,14 +181,15 @@ class Transaction
       owner.lostContactWithServer(resourceAccess.serverId);
     }
     waitingForResource = null;
-    System.err.println("We didn't get the lock we wanted! How can that happen?");
     return false;
   }
-
+  public int getId(){
+	  return this.transactionId;
+  }
   /**
    * Aborts this transaction, releasing all the locks held by it.
    */
-  private synchronized void abort()
+  public synchronized void abort()
   {
     owner.println("Aborting transaction " + transactionId + '.', transactionId);
     releaseLocks();
@@ -237,10 +229,8 @@ class Transaction
    */
   private synchronized void releaseLocks()
   {
-    for (ResourceAccess lockedResource : lockedResources){
+    for (ResourceAccess lockedResource : lockedResources)
       releaseLock(lockedResource);
-      //System.out.println("Resource " + lockedResource.resourceId + " is released from server " + lockedResource.serverId);
-    }
     lockedResources.clear();
 
     if (input != null) {
@@ -259,13 +249,11 @@ class Transaction
   private void releaseLock(ResourceAccess resource)
   {
     try {
-      if (resource.server.releaseLock(transactionId, resource.resourceId) == 1) {
+      if (resource.server.releaseLock(transactionId, resource.resourceId)) {
         owner.println("Unlocked resource " + resource.resourceId + " at server " + resource.serverId, transactionId);
-      } else if (resource.server.releaseLock(transactionId, resource.resourceId) == -1) {
-          owner.println("Failed to unlock resource " + resource.resourceId + " at server " + resource.serverId + " because lock is acquired by another transaction!", transactionId);
       }
       else {
-        owner.println("Failed to unlock resource " + resource.resourceId + " at server " + resource.serverId + " because of timeout", transactionId);
+        owner.println("Failed to unlock resource " + resource.resourceId + " at server " + resource.serverId, transactionId);
       }
     } catch (RemoteException re) {
       owner.println("Failed to unlock resource " + resource.resourceId + " at server " + resource.serverId + " due to communication failure.", transactionId);
