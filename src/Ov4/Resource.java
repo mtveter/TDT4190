@@ -34,13 +34,28 @@ class Resource
       System.err.println("Error: Transaction " + transactionId + " tried to lock a resource it already has locked!");
       return false;
     }
-    while (lockOwner != NOT_LOCKED) {
-      try {
-        wait(Globals.TIMEOUT_INTERVAL);
-      } catch (InterruptedException ie) {
-    	  continue;
-      }
-      return false;
+    if(!Globals.PROBING_ENABLED){
+    	while (lockOwner != NOT_LOCKED) {
+    		try {
+    			wait((long) (Globals.TIMEOUT_INTERVAL+ Math.random()*1000));
+    		} catch (InterruptedException ie) {
+    	  break;
+    		}
+    		if(lockOwner != NOT_LOCKED){
+    			return false;
+    		}
+    		else{
+    			break;
+    		}
+    	}
+    }
+    else{
+        while (lockOwner != NOT_LOCKED) {
+            try {
+              wait();
+            } catch (InterruptedException ie) {
+            }
+          }
     }
     
     lockOwner = transactionId;

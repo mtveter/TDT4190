@@ -167,6 +167,8 @@ class Transaction
     waitingForResource = resourceAccess;
     owner.println("Trying to claim lock of resource " + resourceAccess.resourceId + " at server " + resourceAccess.serverId, transactionId);
     try {
+    	if(Globals.PROBING_ENABLED)
+    		new Probe(owner,this).start();
       if (resourceAccess.server.lockResource(transactionId, resourceAccess.resourceId)) {
         lockedResources.add(resourceAccess);
         waitingForResource = null;
@@ -176,10 +178,11 @@ class Transaction
       owner.lostContactWithServer(resourceAccess.serverId);
     }
     waitingForResource = null;
-    System.err.println("We didn't get the lock we wanted! How can that happen?");
     return false;
   }
-
+  public int getId(){
+	  return this.transactionId;
+  }
   /**
    * Aborts this transaction, releasing all the locks held by it.
    */

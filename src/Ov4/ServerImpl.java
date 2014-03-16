@@ -588,8 +588,8 @@ public class ServerImpl extends UnicastRemoteObject implements Server
    */
   public static void main(String[] args)
   {
-    String registryAddress = "localhost:1111";
-    String portNumber = "1111";
+    String registryAddress = "localhost:1112";
+    String portNumber = "1112";
     String[] temp = new String[1];
     temp[0] = portNumber;
     StartRegistry.main(temp);
