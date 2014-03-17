@@ -604,4 +604,34 @@ public class ServerImpl extends UnicastRemoteObject implements Server
       re.printStackTrace();
     }
   }
+  
+  @Override
+  public void receiveProbe(ArrayList<Integer> ints) throws RemoteException{
+	  if(this.activeTransaction != null){
+		  ResourceAccess ra = this.activeTransaction.getWaitingForResource();
+		  if(ra != null){
+			  if(ints.contains(this.serverId)){
+				  //Deadlock
+				  ints.add(this.serverId);
+				  println("Deadlock", this.activeTransaction.getId());
+				  println(ints.toString(), this.activeTransaction.getId());
+				  this.activeTransaction.setAbort();
+			  }
+			  else{
+				  ints.add(this.serverId);
+				  println(ints.toString(), this.activeTransaction.getId());
+				  if(this.activeTransaction.getWaitingForResource() != null){
+					  this.activeTransaction.getWaitingForResource().server.receiveProbe(ints);
+				  }
+			  }
+		  }
+	  }
+  }
+  private String arrayToString(ArrayList<Integer> list){
+	  String temp = "";
+	  for (int i = 0; i < list.size(); i++) {
+		temp += list.get(i) + ", ";
+	  }
+	  return temp;
+  }
 }

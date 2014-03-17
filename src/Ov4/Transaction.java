@@ -56,7 +56,9 @@ class Transaction
     waitingForResource = null;
     lockedResources = new ArrayList<ResourceAccess>();
   }
-
+  public void setAbort(){
+	  abortTransaction = true;
+  }
   /**
    * Executes this transaction. This method blocks the calling thread
    * until the transaction has completed, which may take a while.
@@ -183,6 +185,11 @@ class Transaction
     waitingForResource = null;
     return false;
   }
+  
+  public ResourceAccess getWaitingForResource(){
+	  return this.waitingForResource;
+  }
+  
   public int getId(){
 	  return this.transactionId;
   }

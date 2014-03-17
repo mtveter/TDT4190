@@ -1,6 +1,7 @@
 package Ov4;
 
 import java.rmi.*;
+import java.util.ArrayList;
 
 /**
  * Remote interface specifying the functionality
@@ -53,4 +54,6 @@ public interface Server extends Remote
    * Called by another server to ask this server to start its transactions.
    */
   void startTransactions() throws RemoteException;
+  
+  void receiveProbe(ArrayList<Integer> ints) throws RemoteException;
 }

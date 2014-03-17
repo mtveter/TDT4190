@@ -1163,3 +1163,1947 @@
 19304: TRANS 1012: Lock claimed. Processing...
 19351: TRANS 1012: Trying to claim lock of resource 1 at server 2
 19352: TRANS 1012: Lock claimed. Processing...
+==================================================================
+252: Server 1 started.
+3294: Server 1 was notified of the arrival of server 2
+5775: Server 1 started its transactions.
+5798: Transaction 1000 arrived.
+5800: TRANS 1000: Starting transaction 1000.
+5818: TRANS 1000: Trying to claim lock of resource 3 at server 2
+5821: TRANS 1000: Heihei. Jeg er en probe
+5823: TRANS 1000: Lock claimed. Processing...
+5878: TRANS 1000: Trying to claim lock of resource 4 at server 1
+5878: TRANS 1000: Heihei. Jeg er en probe
+5879: TRANS 1000: Lock claimed. Processing...
+5910: TRANS 1000: Trying to claim lock of resource 7 at server 1
+5910: TRANS 1000: Heihei. Jeg er en probe
+5911: TRANS 1000: Lock claimed. Processing...
+5990: TRANS 1000: Trying to claim lock of resource 8 at server 1
+5990: TRANS 1000: Heihei. Jeg er en probe
+5991: TRANS 1000: Lock claimed. Processing...
+6086: TRANS 1000: Committing transaction 1000.
+6089: TRANS 1000: Unlocked resource 3 at server 2
+6092: TRANS 1000: Unlocked resource 4 at server 1
+6093: TRANS 1000: Unlocked resource 7 at server 1
+6094: TRANS 1000: Unlocked resource 8 at server 1
+6094: TRANS 1000: Transaction 1000 committed.
+6094: Transaction 1000 ended.
+6193: Transaction 1001 arrived.
+6193: TRANS 1001: Starting transaction 1001.
+6194: TRANS 1001: Trying to claim lock of resource 0 at server 2
+6194: TRANS 1001: Heihei. Jeg er en probe
+6196: TRANS 1001: Lock claimed. Processing...
+6276: TRANS 1001: Trying to claim lock of resource 2 at server 2
+6277: TRANS 1001: Heihei. Jeg er en probe
+6279: TRANS 1001: Lock claimed. Processing...
+6300: TRANS 1001: Trying to claim lock of resource 4 at server 2
+6301: TRANS 1001: Heihei. Jeg er en probe
+6302: TRANS 1001: Lock claimed. Processing...
+6395: TRANS 1001: Trying to claim lock of resource 8 at server 2
+6395: TRANS 1001: Heihei. Jeg er en probe
+6396: TRANS 1001: Lock claimed. Processing...
+6492: TRANS 1001: Trying to claim lock of resource 5 at server 1
+6493: TRANS 1001: Heihei. Jeg er en probe
+6493: TRANS 1001: Lock claimed. Processing...
+6531: TRANS 1001: Trying to claim lock of resource 0 at server 1
+6532: TRANS 1001: Heihei. Jeg er en probe
+6533: TRANS 1001: Lock claimed. Processing...
+6568: TRANS 1001: Committing transaction 1001.
+6573: TRANS 1001: Unlocked resource 0 at server 2
+6575: TRANS 1001: Unlocked resource 2 at server 2
+6576: TRANS 1001: Unlocked resource 4 at server 2
+6577: TRANS 1001: Unlocked resource 8 at server 2
+6577: TRANS 1001: Unlocked resource 5 at server 1
+6577: TRANS 1001: Unlocked resource 0 at server 1
+6578: TRANS 1001: Transaction 1001 committed.
+6578: Transaction 1001 ended.
+6796: Transaction 1002 arrived.
+6797: TRANS 1002: Starting transaction 1002.
+6797: TRANS 1002: Trying to claim lock of resource 0 at server 1
+6798: TRANS 1002: Heihei. Jeg er en probe
+6804: TRANS 1002: Lock claimed. Processing...
+6872: TRANS 1002: Trying to claim lock of resource 5 at server 2
+6873: TRANS 1002: Heihei. Jeg er en probe
+6877: TRANS 1002: Lock claimed. Processing...
+6977: TRANS 1002: Trying to claim lock of resource 2 at server 2
+6978: TRANS 1002: Heihei. Jeg er en probe
+6987: TRANS 1002: Lock claimed. Processing...
+7063: TRANS 1002: Trying to claim lock of resource 5 at server 1
+7063: TRANS 1002: Heihei. Jeg er en probe
+==================================================================
+268: Server 1 started.
+2657: Server 1 was notified of the arrival of server 2
+5845: Server 1 started its transactions.
+5880: Transaction 1000 arrived.
+5882: TRANS 1000: Starting transaction 1000.
+5884: TRANS 1000: Trying to claim lock of resource 6 at server 1
+5890: TRANS 1000: Heihei. Jeg er en probe
+5893: TRANS 1000: Lock claimed. Processing...
+5936: TRANS 1000: Trying to claim lock of resource 4 at server 1
+5936: TRANS 1000: Heihei. Jeg er en probe
+5936: TRANS 1000: Lock claimed. Processing...
+5967: TRANS 1000: Trying to claim lock of resource 3 at server 2
+5967: TRANS 1000: Heihei. Jeg er en probe
+5970: TRANS 1000: []
+5971: TRANS 1000: Lock claimed. Processing...
+6032: TRANS 1000: Trying to claim lock of resource 0 at server 1
+6033: TRANS 1000: Heihei. Jeg er en probe
+6034: TRANS 1000: Lock claimed. Processing...
+6113: TRANS 1000: Trying to claim lock of resource 2 at server 2
+6113: TRANS 1000: Heihei. Jeg er en probe
+6114: TRANS 1000: []
+6116: TRANS 1000: Lock claimed. Processing...
+6193: TRANS 1000: Committing transaction 1000.
+6193: TRANS 1000: Unlocked resource 6 at server 1
+6194: TRANS 1000: Unlocked resource 4 at server 1
+6200: TRANS 1000: Unlocked resource 3 at server 2
+6200: TRANS 1000: Unlocked resource 0 at server 1
+6210: TRANS 1000: Unlocked resource 2 at server 2
+6212: TRANS 1000: Transaction 1000 committed.
+6213: Transaction 1000 ended.
+6517: Transaction 1001 arrived.
+6518: TRANS 1001: Starting transaction 1001.
+6518: TRANS 1001: Trying to claim lock of resource 4 at server 1
+6518: TRANS 1001: Heihei. Jeg er en probe
+6520: TRANS 1001: []
+6522: TRANS 1001: Deadlock
+6522: TRANS 1001: [1]
+6536: TRANS 1001: Lock claimed. Processing...
+6614: TRANS 1001: Trying to claim lock of resource 7 at server 1
+6614: TRANS 1001: Heihei. Jeg er en probe
+6615: TRANS 1001: Lock claimed. Processing...
+6712: TRANS 1001: Trying to claim lock of resource 9 at server 2
+6713: TRANS 1001: Heihei. Jeg er en probe
+6717: TRANS 1001: Lock claimed. Processing...
+6747: TRANS 1001: Trying to claim lock of resource 7 at server 2
+6748: TRANS 1001: Heihei. Jeg er en probe
+6755: TRANS 1001: Lock claimed. Processing...
+6783: TRANS 1001: Trying to claim lock of resource 4 at server 2
+6783: TRANS 1001: Heihei. Jeg er en probe
+6785: TRANS 1001: Lock claimed. Processing...
+6786: TRANS 1001: []
+6863: TRANS 1001: Trying to claim lock of resource 2 at server 2
+6863: TRANS 1001: Heihei. Jeg er en probe
+6865: TRANS 1001: Lock claimed. Processing...
+6866: TRANS 1001: []
+6889: TRANS 1001: Trying to claim lock of resource 0 at server 2
+6889: TRANS 1001: Heihei. Jeg er en probe
+6893: TRANS 1001: Lock claimed. Processing...
+6918: TRANS 1001: Trying to claim lock of resource 6 at server 1
+6918: TRANS 1001: Heihei. Jeg er en probe
+6919: TRANS 1001: []
+6919: TRANS 1001: Deadlock
+6919: TRANS 1001: [1]
+6985: TRANS 1001: Lock claimed. Processing...
+7024: TRANS 1001: Committing transaction 1001.
+7024: TRANS 1001: Unlocked resource 4 at server 1
+7024: TRANS 1001: Unlocked resource 7 at server 1
+7025: TRANS 1001: Unlocked resource 9 at server 2
+7026: TRANS 1001: Unlocked resource 7 at server 2
+7027: TRANS 1001: Unlocked resource 4 at server 2
+7028: TRANS 1001: Unlocked resource 2 at server 2
+7028: TRANS 1001: Unlocked resource 0 at server 2
+7028: TRANS 1001: Unlocked resource 6 at server 1
+7029: TRANS 1001: Transaction 1001 committed.
+7029: Transaction 1001 ended.
+7204: Transaction 1002 arrived.
+7204: TRANS 1002: Starting transaction 1002.
+7204: TRANS 1002: Trying to claim lock of resource 2 at server 2
+7204: TRANS 1002: Heihei. Jeg er en probe
+7205: TRANS 1002: []
+7205: TRANS 1002: Lock claimed. Processing...
+7232: TRANS 1002: Trying to claim lock of resource 4 at server 1
+7232: TRANS 1002: Heihei. Jeg er en probe
+7233: TRANS 1002: Lock claimed. Processing...
+7256: TRANS 1002: Trying to claim lock of resource 0 at server 2
+7256: TRANS 1002: Heihei. Jeg er en probe
+7257: TRANS 1002: Lock claimed. Processing...
+7331: TRANS 1002: Trying to claim lock of resource 7 at server 2
+7333: TRANS 1002: Heihei. Jeg er en probe
+7335: TRANS 1002: Lock claimed. Processing...
+7409: TRANS 1002: Trying to claim lock of resource 2 at server 1
+7410: TRANS 1002: Heihei. Jeg er en probe
+7411: TRANS 1002: Lock claimed. Processing...
+7496: TRANS 1002: Trying to claim lock of resource 7 at server 1
+7496: TRANS 1002: Heihei. Jeg er en probe
+7497: TRANS 1002: []
+7497: TRANS 1002: Deadlock
+7498: TRANS 1002: [1]
+==================================================================
+266: Server 1 started.
+2076: Server 1 was notified of the arrival of server 2
+3715: Server 1 started its transactions.
+3782: Transaction 1000 arrived.
+3786: TRANS 1000: Starting transaction 1000.
+3787: TRANS 1000: Trying to claim lock of resource 1 at server 1
+3791: TRANS 1000: Heihei. Jeg er en probe
+3792: TRANS 1000: Lock claimed. Processing...
+3861: TRANS 1000: Trying to claim lock of resource 9 at server 2
+3862: TRANS 1000: Heihei. Jeg er en probe
+3865: TRANS 1000: Lock claimed. Processing...
+3893: TRANS 1000: Trying to claim lock of resource 2 at server 2
+3893: TRANS 1000: Heihei. Jeg er en probe
+3897: TRANS 1000: Lock claimed. Processing...
+3978: TRANS 1000: Trying to claim lock of resource 5 at server 1
+3979: TRANS 1000: Heihei. Jeg er en probe
+3983: TRANS 1000: Lock claimed. Processing...
+4015: TRANS 1000: Trying to claim lock of resource 3 at server 1
+4015: TRANS 1000: Heihei. Jeg er en probe
+==================================================================
+269: Server 1 started.
+2713: Server 1 was notified of the arrival of server 2
+4646: Server 1 started its transactions.
+4680: Transaction 1000 arrived.
+4681: TRANS 1000: Starting transaction 1000.
+4682: TRANS 1000: Trying to claim lock of resource 4 at server 2
+4686: TRANS 1000: Heihei. Jeg er en probe
+4688: TRANS 1000: Lock claimed. Processing...
+4734: TRANS 1000: Trying to claim lock of resource 5 at server 2
+4734: TRANS 1000: Heihei. Jeg er en probe
+4735: TRANS 1000: 
+4736: TRANS 1000: Lock claimed. Processing...
+4800: TRANS 1000: Trying to claim lock of resource 4 at server 1
+4800: TRANS 1000: Heihei. Jeg er en probe
+4801: TRANS 1000: Lock claimed. Processing...
+4887: TRANS 1000: Trying to claim lock of resource 0 at server 1
+4888: TRANS 1000: Heihei. Jeg er en probe
+4889: TRANS 1000: Lock claimed. Processing...
+4978: TRANS 1000: Trying to claim lock of resource 9 at server 1
+4979: TRANS 1000: Heihei. Jeg er en probe
+4980: TRANS 1000: Lock claimed. Processing...
+5053: TRANS 1000: Trying to claim lock of resource 7 at server 1
+5054: TRANS 1000: Heihei. Jeg er en probe
+5055: TRANS 1000: Lock claimed. Processing...
+5113: TRANS 1000: Trying to claim lock of resource 3 at server 2
+5113: TRANS 1000: Heihei. Jeg er en probe
+5114: TRANS 1000: 
+5114: TRANS 1000: Lock claimed. Processing...
+5160: TRANS 1000: Trying to claim lock of resource 6 at server 1
+5161: TRANS 1000: Heihei. Jeg er en probe
+5162: TRANS 1000: Lock claimed. Processing...
+5224: TRANS 1000: Trying to claim lock of resource 3 at server 1
+5225: TRANS 1000: Heihei. Jeg er en probe
+5225: TRANS 1000: Lock claimed. Processing...
+5246: TRANS 1000: Trying to claim lock of resource 1 at server 1
+5247: TRANS 1000: Heihei. Jeg er en probe
+5247: TRANS 1000: 
+5249: TRANS 1000: Deadlock
+5250: TRANS 1000: 1, 
+==================================================================
+272: Server 1 started.
+2027: Server 1 was notified of the arrival of server 2
+4115: Server 1 started its transactions.
+4182: Transaction 1000 arrived.
+4184: TRANS 1000: Starting transaction 1000.
+4186: TRANS 1000: Trying to claim lock of resource 4 at server 2
+4191: TRANS 1000: Heihei. Jeg er en probe
+4204: TRANS 1000: []
+4205: TRANS 1000: Lock claimed. Processing...
+4266: TRANS 1000: Trying to claim lock of resource 1 at server 2
+4266: TRANS 1000: Heihei. Jeg er en probe
+4267: TRANS 1000: Lock claimed. Processing...
+4306: TRANS 1000: Trying to claim lock of resource 3 at server 2
+4306: TRANS 1000: Heihei. Jeg er en probe
+4309: TRANS 1000: Lock claimed. Processing...
+4315: TRANS 1000: []
+4370: TRANS 1000: Trying to claim lock of resource 1 at server 1
+4370: TRANS 1000: Heihei. Jeg er en probe
+4370: TRANS 1000: Lock claimed. Processing...
+4391: TRANS 1000: Trying to claim lock of resource 8 at server 1
+4391: TRANS 1000: Heihei. Jeg er en probe
+4391: TRANS 1000: Lock claimed. Processing...
+4465: TRANS 1000: Trying to claim lock of resource 7 at server 2
+4466: TRANS 1000: Heihei. Jeg er en probe
+4475: TRANS 1000: Lock claimed. Processing...
+4534: TRANS 1000: Trying to claim lock of resource 3 at server 1
+4534: TRANS 1000: Heihei. Jeg er en probe
+4534: TRANS 1000: Lock claimed. Processing...
+4606: TRANS 1000: Trying to claim lock of resource 9 at server 1
+4606: TRANS 1000: Heihei. Jeg er en probe
+4607: TRANS 1000: Lock claimed. Processing...
+4707: TRANS 1000: Committing transaction 1000.
+4710: TRANS 1000: Unlocked resource 4 at server 2
+4713: TRANS 1000: Unlocked resource 1 at server 2
+4714: TRANS 1000: Unlocked resource 3 at server 2
+4715: TRANS 1000: Unlocked resource 1 at server 1
+4716: TRANS 1000: Unlocked resource 8 at server 1
+4718: TRANS 1000: Unlocked resource 7 at server 2
+4718: TRANS 1000: Unlocked resource 3 at server 1
+4719: TRANS 1000: Unlocked resource 9 at server 1
+4719: TRANS 1000: Transaction 1000 committed.
+4720: Transaction 1000 ended.
+4864: Transaction 1001 arrived.
+4865: TRANS 1001: Starting transaction 1001.
+4865: TRANS 1001: Trying to claim lock of resource 2 at server 1
+4866: TRANS 1001: Heihei. Jeg er en probe
+4866: TRANS 1001: Lock claimed. Processing...
+4967: TRANS 1001: Trying to claim lock of resource 5 at server 2
+4967: TRANS 1001: Heihei. Jeg er en probe
+4969: TRANS 1001: Lock claimed. Processing...
+5065: TRANS 1001: Trying to claim lock of resource 0 at server 2
+5066: TRANS 1001: Heihei. Jeg er en probe
+5067: TRANS 1001: []
+5080: TRANS 1001: Lock claimed. Processing...
+5116: TRANS 1001: Trying to claim lock of resource 9 at server 2
+5116: TRANS 1001: Heihei. Jeg er en probe
+5116: TRANS 1001: []
+5117: TRANS 1001: Lock claimed. Processing...
+5143: TRANS 1001: Trying to claim lock of resource 0 at server 1
+5143: TRANS 1001: Heihei. Jeg er en probe
+5143: TRANS 1001: Lock claimed. Processing...
+5242: TRANS 1001: Trying to claim lock of resource 1 at server 2
+5243: TRANS 1001: Heihei. Jeg er en probe
+5243: TRANS 1001: []
+5245: TRANS 1001: Lock claimed. Processing...
+5286: TRANS 1001: Committing transaction 1001.
+5286: TRANS 1001: Unlocked resource 2 at server 1
+5288: TRANS 1001: Unlocked resource 5 at server 2
+5289: TRANS 1001: Unlocked resource 0 at server 2
+5290: TRANS 1001: Unlocked resource 9 at server 2
+5290: TRANS 1001: Unlocked resource 0 at server 1
+5292: TRANS 1001: Unlocked resource 1 at server 2
+5292: TRANS 1001: Transaction 1001 committed.
+5292: Transaction 1001 ended.
+5349: Transaction 1002 arrived.
+5349: TRANS 1002: Starting transaction 1002.
+5350: TRANS 1002: Trying to claim lock of resource 0 at server 1
+5350: TRANS 1002: Heihei. Jeg er en probe
+5352: TRANS 1002: []
+5353: TRANS 1002: Deadlock
+5353: TRANS 1002: [2]
+5354: TRANS 1002: [1]
+5354: TRANS 1002: Deadlock
+5355: TRANS 1002: [2, 1]
+6078: TRANS 1002: Lock claimed. Processing...
+6179: TRANS 1002: Trying to claim lock of resource 6 at server 2
+6179: TRANS 1002: Heihei. Jeg er en probe
+6181: TRANS 1002: []
+6183: TRANS 1002: Lock claimed. Processing...
+6212: TRANS 1002: Trying to claim lock of resource 4 at server 2
+6212: TRANS 1002: Heihei. Jeg er en probe
+6216: TRANS 1002: Lock claimed. Processing...
+6269: TRANS 1002: Trying to claim lock of resource 1 at server 1
+6269: TRANS 1002: Heihei. Jeg er en probe
+6270: TRANS 1002: Lock claimed. Processing...
+6344: TRANS 1002: Trying to claim lock of resource 0 at server 2
+6345: TRANS 1002: Heihei. Jeg er en probe
+6346: TRANS 1002: Lock claimed. Processing...
+6422: TRANS 1002: Committing transaction 1002.
+6423: TRANS 1002: Unlocked resource 0 at server 1
+6424: TRANS 1002: Unlocked resource 6 at server 2
+6426: TRANS 1002: Unlocked resource 4 at server 2
+6426: TRANS 1002: Unlocked resource 1 at server 1
+6427: TRANS 1002: Unlocked resource 0 at server 2
+6427: TRANS 1002: Transaction 1002 committed.
+6428: Transaction 1002 ended.
+6678: Transaction 1003 arrived.
+6678: TRANS 1003: Starting transaction 1003.
+6679: TRANS 1003: Trying to claim lock of resource 7 at server 1
+6680: TRANS 1003: Heihei. Jeg er en probe
+6681: TRANS 1003: []
+6681: TRANS 1003: Deadlock
+6681: TRANS 1003: [1]
+7080: TRANS 1003: [2]
+7081: TRANS 1003: Deadlock
+7081: TRANS 1003: [2, 1]
+7150: TRANS 1003: Lock claimed. Processing...
+7243: TRANS 1003: Trying to claim lock of resource 6 at server 2
+7243: TRANS 1003: Heihei. Jeg er en probe
+7244: TRANS 1003: []
+7245: TRANS 1003: Lock claimed. Processing...
+7342: TRANS 1003: Trying to claim lock of resource 5 at server 2
+7342: TRANS 1003: Heihei. Jeg er en probe
+7343: TRANS 1003: []
+7346: TRANS 1003: Lock claimed. Processing...
+7445: TRANS 1003: Trying to claim lock of resource 8 at server 2
+7445: TRANS 1003: Heihei. Jeg er en probe
+7446: TRANS 1003: Lock claimed. Processing...
+7515: TRANS 1003: Trying to claim lock of resource 2 at server 2
+7515: TRANS 1003: Heihei. Jeg er en probe
+7516: TRANS 1003: []
+7517: TRANS 1003: Lock claimed. Processing...
+7545: TRANS 1003: Trying to claim lock of resource 7 at server 2
+7545: TRANS 1003: Heihei. Jeg er en probe
+7549: TRANS 1003: Lock claimed. Processing...
+7608: TRANS 1003: Trying to claim lock of resource 4 at server 2
+7608: TRANS 1003: Heihei. Jeg er en probe
+7609: TRANS 1003: []
+7612: TRANS 1003: Lock claimed. Processing...
+7703: TRANS 1003: Trying to claim lock of resource 1 at server 1
+7705: TRANS 1003: Heihei. Jeg er en probe
+7705: TRANS 1003: Lock claimed. Processing...
+7729: TRANS 1003: Committing transaction 1003.
+7730: TRANS 1003: Unlocked resource 7 at server 1
+7732: TRANS 1003: Unlocked resource 6 at server 2
+7738: TRANS 1003: Unlocked resource 5 at server 2
+7740: TRANS 1003: Unlocked resource 8 at server 2
+7744: TRANS 1003: Unlocked resource 2 at server 2
+7747: TRANS 1003: Unlocked resource 7 at server 2
+7749: TRANS 1003: Unlocked resource 4 at server 2
+7752: TRANS 1003: Unlocked resource 1 at server 1
+7752: TRANS 1003: Transaction 1003 committed.
+7752: Transaction 1003 ended.
+8034: Transaction 1004 arrived.
+8034: TRANS 1004: Starting transaction 1004.
+8034: TRANS 1004: Trying to claim lock of resource 3 at server 1
+8035: TRANS 1004: Heihei. Jeg er en probe
+8035: TRANS 1004: Lock claimed. Processing...
+8134: TRANS 1004: Trying to claim lock of resource 4 at server 1
+8135: TRANS 1004: Heihei. Jeg er en probe
+8136: TRANS 1004: Lock claimed. Processing...
+8190: TRANS 1004: Trying to claim lock of resource 2 at server 2
+8191: TRANS 1004: Heihei. Jeg er en probe
+8192: TRANS 1004: []
+8204: TRANS 1004: Lock claimed. Processing...
+8274: TRANS 1004: Trying to claim lock of resource 5 at server 1
+8274: TRANS 1004: Heihei. Jeg er en probe
+8275: TRANS 1004: Lock claimed. Processing...
+8311: TRANS 1004: Trying to claim lock of resource 6 at server 1
+8311: TRANS 1004: Heihei. Jeg er en probe
+8311: TRANS 1004: Lock claimed. Processing...
+8360: TRANS 1004: Committing transaction 1004.
+8360: TRANS 1004: Unlocked resource 3 at server 1
+8360: TRANS 1004: Unlocked resource 4 at server 1
+8363: TRANS 1004: Unlocked resource 2 at server 2
+8365: TRANS 1004: Unlocked resource 5 at server 1
+8367: TRANS 1004: Unlocked resource 6 at server 1
+8367: TRANS 1004: Transaction 1004 committed.
+8367: Transaction 1004 ended.
+8441: Transaction 1005 arrived.
+8441: TRANS 1005: Starting transaction 1005.
+8441: TRANS 1005: Trying to claim lock of resource 0 at server 1
+8441: TRANS 1005: Heihei. Jeg er en probe
+8442: TRANS 1005: Lock claimed. Processing...
+8508: TRANS 1005: Trying to claim lock of resource 9 at server 1
+8508: TRANS 1005: Heihei. Jeg er en probe
+8509: TRANS 1005: Lock claimed. Processing...
+8534: TRANS 1005: Trying to claim lock of resource 6 at server 1
+8535: TRANS 1005: Heihei. Jeg er en probe
+8535: TRANS 1005: Lock claimed. Processing...
+8615: TRANS 1005: Committing transaction 1005.
+8616: TRANS 1005: Unlocked resource 0 at server 1
+8616: TRANS 1005: Unlocked resource 9 at server 1
+8616: TRANS 1005: Unlocked resource 6 at server 1
+8617: TRANS 1005: Transaction 1005 committed.
+8617: Transaction 1005 ended.
+8714: Transaction 1006 arrived.
+8714: TRANS 1006: Starting transaction 1006.
+8714: TRANS 1006: Trying to claim lock of resource 4 at server 2
+8715: TRANS 1006: Heihei. Jeg er en probe
+8718: TRANS 1006: []
+8718: TRANS 1006: Lock claimed. Processing...
+8796: TRANS 1006: Trying to claim lock of resource 9 at server 1
+8796: TRANS 1006: Heihei. Jeg er en probe
+8796: TRANS 1006: Lock claimed. Processing...
+8876: TRANS 1006: Trying to claim lock of resource 6 at server 2
+8876: TRANS 1006: Heihei. Jeg er en probe
+8877: TRANS 1006: []
+8886: TRANS 1006: Lock claimed. Processing...
+8942: TRANS 1006: Committing transaction 1006.
+8943: TRANS 1006: Unlocked resource 4 at server 2
+8943: TRANS 1006: Unlocked resource 9 at server 1
+8944: TRANS 1006: Unlocked resource 6 at server 2
+8944: TRANS 1006: Transaction 1006 committed.
+8945: Transaction 1006 ended.
+9084: Transaction 1007 arrived.
+9084: TRANS 1007: Starting transaction 1007.
+9084: TRANS 1007: Trying to claim lock of resource 1 at server 2
+9084: TRANS 1007: Heihei. Jeg er en probe
+9085: TRANS 1007: []
+9086: TRANS 1007: Lock claimed. Processing...
+9118: TRANS 1007: Trying to claim lock of resource 6 at server 2
+9118: TRANS 1007: Heihei. Jeg er en probe
+9118: TRANS 1007: []
+9119: TRANS 1007: Lock claimed. Processing...
+9211: TRANS 1007: Trying to claim lock of resource 8 at server 1
+9211: TRANS 1007: Heihei. Jeg er en probe
+9212: TRANS 1007: Lock claimed. Processing...
+9238: TRANS 1007: Trying to claim lock of resource 3 at server 1
+9239: TRANS 1007: Heihei. Jeg er en probe
+9239: TRANS 1007: Lock claimed. Processing...
+9293: TRANS 1007: Trying to claim lock of resource 4 at server 2
+9293: TRANS 1007: Heihei. Jeg er en probe
+9298: TRANS 1007: Lock claimed. Processing...
+9379: TRANS 1007: Trying to claim lock of resource 9 at server 2
+9380: TRANS 1007: Heihei. Jeg er en probe
+9381: TRANS 1007: []
+9382: TRANS 1007: Lock claimed. Processing...
+9458: TRANS 1007: Trying to claim lock of resource 2 at server 2
+9459: TRANS 1007: Heihei. Jeg er en probe
+9460: TRANS 1007: []
+==================================================================
+264: Server 1 started.
+1991: Server 1 was notified of the arrival of server 2
+4320: Server 1 started its transactions.
+4376: Transaction 1000 arrived.
+4378: TRANS 1000: Starting transaction 1000.
+4379: TRANS 1000: Trying to claim lock of resource 5 at server 2
+4382: TRANS 1000: Heihei. Jeg er en probe
+4384: TRANS 1000: []
+4796: TRANS 1000: Lock claimed. Processing...
+4863: TRANS 1000: Trying to claim lock of resource 4 at server 1
+4863: TRANS 1000: Heihei. Jeg er en probe
+4864: TRANS 1000: Lock claimed. Processing...
+4951: TRANS 1000: Trying to claim lock of resource 1 at server 1
+4952: TRANS 1000: Heihei. Jeg er en probe
+4953: TRANS 1000: Lock claimed. Processing...
+4987: TRANS 1000: Committing transaction 1000.
+4992: TRANS 1000: Unlocked resource 5 at server 2
+4992: TRANS 1000: Unlocked resource 4 at server 1
+4992: TRANS 1000: Unlocked resource 1 at server 1
+4992: TRANS 1000: Transaction 1000 committed.
+4993: Transaction 1000 ended.
+5169: Transaction 1001 arrived.
+5169: TRANS 1001: Starting transaction 1001.
+5170: TRANS 1001: Trying to claim lock of resource 3 at server 2
+5170: TRANS 1001: Heihei. Jeg er en probe
+5173: TRANS 1001: Lock claimed. Processing...
+5173: TRANS 1001: []
+5234: TRANS 1001: Trying to claim lock of resource 1 at server 1
+5234: TRANS 1001: Heihei. Jeg er en probe
+5235: TRANS 1001: Lock claimed. Processing...
+5282: TRANS 1001: Trying to claim lock of resource 7 at server 1
+5282: TRANS 1001: Heihei. Jeg er en probe
+5282: TRANS 1001: Lock claimed. Processing...
+5305: TRANS 1001: Committing transaction 1001.
+5306: TRANS 1001: Unlocked resource 3 at server 2
+5308: TRANS 1001: Unlocked resource 1 at server 1
+5308: TRANS 1001: Unlocked resource 7 at server 1
+5308: TRANS 1001: Transaction 1001 committed.
+5308: Transaction 1001 ended.
+5442: Transaction 1002 arrived.
+5442: TRANS 1002: Starting transaction 1002.
+5443: TRANS 1002: Trying to claim lock of resource 1 at server 1
+5443: TRANS 1002: Heihei. Jeg er en probe
+5444: TRANS 1002: Lock claimed. Processing...
+5540: TRANS 1002: Trying to claim lock of resource 3 at server 1
+5541: TRANS 1002: Heihei. Jeg er en probe
+5542: TRANS 1002: Lock claimed. Processing...
+5603: TRANS 1002: Trying to claim lock of resource 8 at server 2
+5603: TRANS 1002: Heihei. Jeg er en probe
+5604: TRANS 1002: []
+5605: TRANS 1002: Lock claimed. Processing...
+5698: TRANS 1002: Committing transaction 1002.
+5698: TRANS 1002: Unlocked resource 1 at server 1
+5699: TRANS 1002: Unlocked resource 3 at server 1
+5706: TRANS 1002: Unlocked resource 8 at server 2
+5706: TRANS 1002: Transaction 1002 committed.
+5706: Transaction 1002 ended.
+5945: Transaction 1003 arrived.
+5945: TRANS 1003: Starting transaction 1003.
+5945: TRANS 1003: Trying to claim lock of resource 8 at server 2
+5946: TRANS 1003: Heihei. Jeg er en probe
+5947: TRANS 1003: Lock claimed. Processing...
+6026: TRANS 1003: Trying to claim lock of resource 7 at server 1
+6027: TRANS 1003: Heihei. Jeg er en probe
+6027: TRANS 1003: Lock claimed. Processing...
+6056: TRANS 1003: Trying to claim lock of resource 6 at server 2
+6056: TRANS 1003: Heihei. Jeg er en probe
+6059: TRANS 1003: Lock claimed. Processing...
+6122: TRANS 1003: Trying to claim lock of resource 5 at server 2
+6122: TRANS 1003: Heihei. Jeg er en probe
+6123: TRANS 1003: []
+6125: TRANS 1003: Lock claimed. Processing...
+6220: TRANS 1003: Trying to claim lock of resource 4 at server 2
+6221: TRANS 1003: Heihei. Jeg er en probe
+6224: TRANS 1003: Lock claimed. Processing...
+6290: TRANS 1003: Trying to claim lock of resource 9 at server 1
+6290: TRANS 1003: Heihei. Jeg er en probe
+6291: TRANS 1003: Lock claimed. Processing...
+6359: TRANS 1003: Trying to claim lock of resource 2 at server 1
+6359: TRANS 1003: Heihei. Jeg er en probe
+6359: TRANS 1003: Lock claimed. Processing...
+6428: TRANS 1003: Trying to claim lock of resource 1 at server 1
+6428: TRANS 1003: Heihei. Jeg er en probe
+6431: TRANS 1003: Lock claimed. Processing...
+6452: TRANS 1003: Trying to claim lock of resource 6 at server 1
+6452: TRANS 1003: Heihei. Jeg er en probe
+6452: TRANS 1003: Lock claimed. Processing...
+6502: TRANS 1003: Trying to claim lock of resource 9 at server 2
+6502: TRANS 1003: Heihei. Jeg er en probe
+6503: TRANS 1003: []
+6520: TRANS 1003: [2]
+==================================================================
+259: Server 1 started.
+3008: Server 1 was notified of the arrival of server 2
+4754: Server 1 started its transactions.
+4769: Transaction 1000 arrived.
+4771: TRANS 1000: Starting transaction 1000.
+4773: TRANS 1000: Trying to claim lock of resource 7 at server 1
+4781: TRANS 1000: Heihei. Jeg er en probe
+4782: TRANS 1000: Lock claimed. Processing...
+4857: TRANS 1000: Trying to claim lock of resource 6 at server 2
+4858: TRANS 1000: Heihei. Jeg er en probe
+4863: TRANS 1000: [1]
+4865: TRANS 1000: Lock claimed. Processing...
+4956: TRANS 1000: Trying to claim lock of resource 0 at server 2
+4956: TRANS 1000: Heihei. Jeg er en probe
+4957: TRANS 1000: [1]
+4989: TRANS 1000: [2, 1]
+==================================================================
+252: Server 1 started.
+3150: Server 1 was notified of the arrival of server 2
+5018: Server 1 started its transactions.
+5065: Transaction 1000 arrived.
+5067: TRANS 1000: Starting transaction 1000.
+5069: TRANS 1000: Trying to claim lock of resource 1 at server 2
+5073: TRANS 1000: Heihei. Jeg er en probe
+5082: TRANS 1000: Lock claimed. Processing...
+5083: TRANS 1000: [1]
+5117: TRANS 1000: Trying to claim lock of resource 6 at server 2
+5117: TRANS 1000: Heihei. Jeg er en probe
+5120: TRANS 1000: Lock claimed. Processing...
+5148: TRANS 1000: Trying to claim lock of resource 5 at server 2
+5148: TRANS 1000: Heihei. Jeg er en probe
+5149: TRANS 1000: [1]
+5149: TRANS 1000: Lock claimed. Processing...
+5229: TRANS 1000: Trying to claim lock of resource 4 at server 2
+5229: TRANS 1000: Heihei. Jeg er en probe
+5230: TRANS 1000: [1]
+5232: TRANS 1000: Lock claimed. Processing...
+5293: TRANS 1000: Trying to claim lock of resource 1 at server 1
+5294: TRANS 1000: Heihei. Jeg er en probe
+5295: TRANS 1000: [1]
+5297: TRANS 1000: Deadlock
+5300: TRANS 1000: [1, 1]
+==================================================================
+243: Server 1 started.
+2454: Server 1 was notified of the arrival of server 2
+4502: Server 1 started its transactions.
+4556: Transaction 1000 arrived.
+4557: TRANS 1000: Starting transaction 1000.
+4559: TRANS 1000: Trying to claim lock of resource 5 at server 1
+4564: TRANS 1000: Heihei. Jeg er en probe
+4566: TRANS 1000: Lock claimed. Processing...
+4589: TRANS 1000: Trying to claim lock of resource 4 at server 1
+4589: TRANS 1000: Heihei. Jeg er en probe
+4590: TRANS 1000: Lock claimed. Processing...
+4675: TRANS 1000: Trying to claim lock of resource 0 at server 1
+4675: TRANS 1000: Heihei. Jeg er en probe
+4676: TRANS 1000: Lock claimed. Processing...
+4765: TRANS 1000: Trying to claim lock of resource 8 at server 1
+4766: TRANS 1000: Heihei. Jeg er en probe
+4766: TRANS 1000: Lock claimed. Processing...
+4830: TRANS 1000: Trying to claim lock of resource 3 at server 2
+4831: TRANS 1000: Heihei. Jeg er en probe
+4843: TRANS 1000: [1]
+4843: TRANS 1000: Lock claimed. Processing...
+4892: TRANS 1000: Trying to claim lock of resource 7 at server 1
+4892: TRANS 1000: Heihei. Jeg er en probe
+4893: TRANS 1000: Lock claimed. Processing...
+4918: TRANS 1000: Trying to claim lock of resource 9 at server 1
+4918: TRANS 1000: Heihei. Jeg er en probe
+4919: TRANS 1000: [1]
+4919: TRANS 1000: Deadlock
+4921: TRANS 1000: [1, 1]
+==================================================================
+249: Server 1 started.
+1713: Server 1 was notified of the arrival of server 2
+3607: Server 1 started its transactions.
+3672: Transaction 1000 arrived.
+3673: TRANS 1000: Starting transaction 1000.
+3675: TRANS 1000: Trying to claim lock of resource 2 at server 1
+3692: TRANS 1000: Heihei. Jeg er en probe
+3696: TRANS 1000: [1]
+3697: TRANS 1000: Deadlock
+3697: TRANS 1000: Lock claimed. Processing...
+3697: TRANS 1000: [1, 1]
+3752: TRANS 1000: Trying to claim lock of resource 3 at server 2
+3752: TRANS 1000: Heihei. Jeg er en probe
+3753: TRANS 1000: [1]
+3754: TRANS 1000: Lock claimed. Processing...
+3776: TRANS 1000: Trying to claim lock of resource 8 at server 2
+3776: TRANS 1000: Heihei. Jeg er en probe
+3777: TRANS 1000: [2, 1]
+3779: TRANS 1000: Lock claimed. Processing...
+3831: TRANS 1000: Trying to claim lock of resource 1 at server 1
+3832: TRANS 1000: Heihei. Jeg er en probe
+3833: TRANS 1000: Lock claimed. Processing...
+3919: TRANS 1000: Committing transaction 1000.
+3920: TRANS 1000: Unlocked resource 2 at server 1
+3922: TRANS 1000: Unlocked resource 3 at server 2
+3924: TRANS 1000: Unlocked resource 8 at server 2
+3938: TRANS 1000: Unlocked resource 1 at server 1
+3938: TRANS 1000: Transaction 1000 committed.
+3938: Transaction 1000 ended.
+4194: Transaction 1001 arrived.
+4194: TRANS 1001: Starting transaction 1001.
+4195: TRANS 1001: Trying to claim lock of resource 4 at server 1
+4196: TRANS 1001: Heihei. Jeg er en probe
+4196: TRANS 1001: Lock claimed. Processing...
+4239: TRANS 1001: Trying to claim lock of resource 2 at server 2
+4239: TRANS 1001: Heihei. Jeg er en probe
+4240: TRANS 1001: [1]
+4241: TRANS 1001: Lock claimed. Processing...
+4331: TRANS 1001: Trying to claim lock of resource 1 at server 1
+4332: TRANS 1001: Heihei. Jeg er en probe
+4333: TRANS 1001: Lock claimed. Processing...
+4395: TRANS 1001: Trying to claim lock of resource 8 at server 2
+4395: TRANS 1001: Heihei. Jeg er en probe
+4396: TRANS 1001: [1]
+4397: TRANS 1001: Lock claimed. Processing...
+4447: TRANS 1001: Trying to claim lock of resource 4 at server 2
+4447: TRANS 1001: Heihei. Jeg er en probe
+4448: TRANS 1001: [1]
+4448: TRANS 1001: Lock claimed. Processing...
+4478: TRANS 1001: Trying to claim lock of resource 9 at server 2
+4478: TRANS 1001: Heihei. Jeg er en probe
+4479: TRANS 1001: [1]
+4479: TRANS 1001: Lock claimed. Processing...
+4565: TRANS 1001: Committing transaction 1001.
+4566: TRANS 1001: Unlocked resource 4 at server 1
+4568: TRANS 1001: Unlocked resource 2 at server 2
+4569: TRANS 1001: Unlocked resource 1 at server 1
+4570: TRANS 1001: Unlocked resource 8 at server 2
+4571: TRANS 1001: Unlocked resource 4 at server 2
+4572: TRANS 1001: Unlocked resource 9 at server 2
+4573: TRANS 1001: Transaction 1001 committed.
+4573: Transaction 1001 ended.
+4638: Transaction 1002 arrived.
+4639: TRANS 1002: Starting transaction 1002.
+4639: TRANS 1002: Trying to claim lock of resource 3 at server 1
+4639: TRANS 1002: Heihei. Jeg er en probe
+4639: TRANS 1002: Lock claimed. Processing...
+4700: TRANS 1002: Trying to claim lock of resource 9 at server 2
+4700: TRANS 1002: Heihei. Jeg er en probe
+4701: TRANS 1002: [1]
+4702: TRANS 1002: Lock claimed. Processing...
+4753: TRANS 1002: Trying to claim lock of resource 1 at server 2
+4754: TRANS 1002: Heihei. Jeg er en probe
+4755: TRANS 1002: [1]
+==================================================================
+252: Server 1 started.
+2501: Server 1 was notified of the arrival of server 2
+4343: Server 1 started its transactions.
+4364: Transaction 1000 arrived.
+4366: TRANS 1000: Starting transaction 1000.
+4368: TRANS 1000: Trying to claim lock of resource 3 at server 2
+4372: TRANS 1000: Heihei. Jeg er en probe
+4376: TRANS 1000: [1]
+4382: TRANS 1000: Lock claimed. Processing...
+4461: TRANS 1000: Trying to claim lock of resource 3 at server 1
+4462: TRANS 1000: Heihei. Jeg er en probe
+4465: TRANS 1000: Lock claimed. Processing...
+4532: TRANS 1000: Trying to claim lock of resource 0 at server 1
+4532: TRANS 1000: Heihei. Jeg er en probe
+4533: TRANS 1000: [1]
+4534: TRANS 1000: Deadlock
+4534: TRANS 1000: [1, 1]
+4635: TRANS 1000: [2, 1]
+4635: TRANS 1000: Deadlock
+4635: TRANS 1000: [2, 1, 1]
+==================================================================
+258: Server 1 started.
+1876: Server 1 was notified of the arrival of server 2
+3947: Server 1 started its transactions.
+3970: Transaction 1000 arrived.
+3971: TRANS 1000: Starting transaction 1000.
+3972: TRANS 1000: Trying to claim lock of resource 3 at server 1
+3975: TRANS 1000: Heihei. Jeg er en probe
+3976: TRANS 1000: Lock claimed. Processing...
+4034: TRANS 1000: Trying to claim lock of resource 5 at server 2
+4035: TRANS 1000: Heihei. Jeg er en probe
+4042: TRANS 1000: Lock claimed. Processing...
+4042: TRANS 1000: [1]
+4114: TRANS 1000: Trying to claim lock of resource 2 at server 1
+4114: TRANS 1000: Heihei. Jeg er en probe
+4115: TRANS 1000: Lock claimed. Processing...
+4202: TRANS 1000: Trying to claim lock of resource 6 at server 2
+4203: TRANS 1000: Heihei. Jeg er en probe
+4204: TRANS 1000: [1]
+4205: TRANS 1000: Lock claimed. Processing...
+4279: TRANS 1000: Trying to claim lock of resource 2 at server 2
+4280: TRANS 1000: Heihei. Jeg er en probe
+4281: TRANS 1000: [1]
+4282: TRANS 1000: Lock claimed. Processing...
+4318: TRANS 1000: Trying to claim lock of resource 8 at server 2
+4320: TRANS 1000: Heihei. Jeg er en probe
+4321: TRANS 1000: [1]
+4325: TRANS 1000: Lock claimed. Processing...
+4356: TRANS 1000: Trying to claim lock of resource 1 at server 1
+4357: TRANS 1000: Heihei. Jeg er en probe
+4357: TRANS 1000: Lock claimed. Processing...
+4435: TRANS 1000: Trying to claim lock of resource 4 at server 2
+4436: TRANS 1000: Heihei. Jeg er en probe
+4441: TRANS 1000: Lock claimed. Processing...
+4471: TRANS 1000: Trying to claim lock of resource 4 at server 1
+4472: TRANS 1000: Heihei. Jeg er en probe
+4472: TRANS 1000: Lock claimed. Processing...
+4537: TRANS 1000: Trying to claim lock of resource 5 at server 1
+4538: TRANS 1000: Heihei. Jeg er en probe
+4538: TRANS 1000: Lock claimed. Processing...
+4599: TRANS 1000: Committing transaction 1000.
+4600: TRANS 1000: Unlocked resource 3 at server 1
+4604: TRANS 1000: Unlocked resource 5 at server 2
+4605: TRANS 1000: Unlocked resource 2 at server 1
+4611: TRANS 1000: Unlocked resource 6 at server 2
+4612: TRANS 1000: Unlocked resource 2 at server 2
+4613: TRANS 1000: Unlocked resource 8 at server 2
+4614: TRANS 1000: Unlocked resource 1 at server 1
+4615: TRANS 1000: Unlocked resource 4 at server 2
+4615: TRANS 1000: Unlocked resource 4 at server 1
+4616: TRANS 1000: Unlocked resource 5 at server 1
+4616: TRANS 1000: Transaction 1000 committed.
+4616: Transaction 1000 ended.
+4862: Transaction 1001 arrived.
+4862: TRANS 1001: Starting transaction 1001.
+4863: TRANS 1001: Trying to claim lock of resource 8 at server 2
+4864: TRANS 1001: Heihei. Jeg er en probe
+4866: TRANS 1001: [1]
+4867: TRANS 1001: Lock claimed. Processing...
+4951: TRANS 1001: Trying to claim lock of resource 4 at server 2
+4952: TRANS 1001: Heihei. Jeg er en probe
+4953: TRANS 1001: [1]
+4955: TRANS 1001: Lock claimed. Processing...
+5052: TRANS 1001: Trying to claim lock of resource 5 at server 1
+5053: TRANS 1001: Heihei. Jeg er en probe
+5054: TRANS 1001: Lock claimed. Processing...
+5099: TRANS 1001: Trying to claim lock of resource 8 at server 1
+5100: TRANS 1001: Heihei. Jeg er en probe
+5100: TRANS 1001: [1]
+5102: TRANS 1001: Deadlock
+5104: TRANS 1001: [1, 1]
+==================================================================
+253: Server 1 started.
+1941: Server 1 was notified of the arrival of server 2
+6759: Server 1 started its transactions.
+6859: Transaction 1000 arrived.
+6860: TRANS 1000: Starting transaction 1000.
+6860: TRANS 1000: Trying to claim lock of resource 5 at server 2
+6862: TRANS 1000: Heihei. Jeg er en probe
+6868: TRANS 1000: Lock claimed. Processing...
+6868: TRANS 1000: [1]
+6896: TRANS 1000: Trying to claim lock of resource 1 at server 1
+6896: TRANS 1000: Heihei. Jeg er en probe
+6897: TRANS 1000: Lock claimed. Processing...
+6960: TRANS 1000: Trying to claim lock of resource 7 at server 1
+6960: TRANS 1000: Heihei. Jeg er en probe
+6961: TRANS 1000: Lock claimed. Processing...
+7010: TRANS 1000: Trying to claim lock of resource 1 at server 2
+7011: TRANS 1000: Heihei. Jeg er en probe
+7015: TRANS 1000: [1]
+7029: TRANS 1000: Deadlock
+7030: TRANS 1000: [1, 2, 1]
+==================================================================
+256: Server 1 started.
+2239: Server 1 was notified of the arrival of server 2
+9596: Server 1 started its transactions.
+9661: Transaction 1000 arrived.
+9661: TRANS 1000: Starting transaction 1000.
+9662: TRANS 1000: Trying to claim lock of resource 6 at server 1
+9664: TRANS 1000: Heihei. Jeg er en probe
+9665: TRANS 1000: Lock claimed. Processing...
+9726: TRANS 1000: Trying to claim lock of resource 4 at server 2
+9727: TRANS 1000: Heihei. Jeg er en probe
+9731: TRANS 1000: Lock claimed. Processing...
+9733: TRANS 1000: [1]
+9761: TRANS 1000: Trying to claim lock of resource 6 at server 2
+9762: TRANS 1000: Heihei. Jeg er en probe
+9766: TRANS 1000: [1]
+9766: TRANS 1000: Lock claimed. Processing...
+9859: TRANS 1000: Trying to claim lock of resource 3 at server 2
+9860: TRANS 1000: Heihei. Jeg er en probe
+9876: TRANS 1000: [2, 1]
+9878: TRANS 1000: Lock claimed. Processing...
+9950: TRANS 1000: Trying to claim lock of resource 9 at server 1
+9951: TRANS 1000: Heihei. Jeg er en probe
+9952: TRANS 1000: Lock claimed. Processing...
+9974: TRANS 1000: Trying to claim lock of resource 0 at server 1
+9974: TRANS 1000: Heihei. Jeg er en probe
+9978: TRANS 1000: [1]
+9979: TRANS 1000: Deadlock
+9979: TRANS 1000: [1, 1]
+10065: TRANS 1000: [2, 1]
+10065: TRANS 1000: Deadlock
+10066: TRANS 1000: [2, 1, 1]
+10148: TRANS 1000: Lock claimed. Processing...
+10173: TRANS 1000: Trying to claim lock of resource 1 at server 2
+10173: TRANS 1000: Heihei. Jeg er en probe
+10174: TRANS 1000: [1]
+10175: TRANS 1000: Lock claimed. Processing...
+10244: TRANS 1000: Committing transaction 1000.
+10245: TRANS 1000: Unlocked resource 6 at server 1
+10247: TRANS 1000: Unlocked resource 4 at server 2
+10254: TRANS 1000: Unlocked resource 6 at server 2
+10258: TRANS 1000: Unlocked resource 3 at server 2
+10259: TRANS 1000: Unlocked resource 9 at server 1
+10259: TRANS 1000: Unlocked resource 0 at server 1
+10266: TRANS 1000: Unlocked resource 1 at server 2
+10267: TRANS 1000: Transaction 1000 committed.
+10267: Transaction 1000 ended.
+10452: Transaction 1001 arrived.
+10452: TRANS 1001: Starting transaction 1001.
+10452: TRANS 1001: Trying to claim lock of resource 8 at server 2
+10453: TRANS 1001: Heihei. Jeg er en probe
+10455: TRANS 1001: Lock claimed. Processing...
+10456: TRANS 1001: [1]
+10489: TRANS 1001: Trying to claim lock of resource 1 at server 2
+10489: TRANS 1001: Heihei. Jeg er en probe
+10490: TRANS 1001: [1]
+10490: TRANS 1001: Lock claimed. Processing...
+10560: TRANS 1001: Trying to claim lock of resource 7 at server 1
+10561: TRANS 1001: Heihei. Jeg er en probe
+10562: TRANS 1001: Lock claimed. Processing...
+10595: TRANS 1001: Trying to claim lock of resource 5 at server 1
+10595: TRANS 1001: Heihei. Jeg er en probe
+10596: TRANS 1001: [1]
+10596: TRANS 1001: Deadlock
+10597: TRANS 1001: [1, 1]
+10628: TRANS 1001: Lock claimed. Processing...
+10720: TRANS 1001: Trying to claim lock of resource 4 at server 2
+10721: TRANS 1001: Heihei. Jeg er en probe
+10722: TRANS 1001: [1]
+10723: TRANS 1001: Lock claimed. Processing...
+10788: TRANS 1001: Trying to claim lock of resource 8 at server 1
+10788: TRANS 1001: Heihei. Jeg er en probe
+10789: TRANS 1001: Lock claimed. Processing...
+10830: TRANS 1001: Committing transaction 1001.
+10832: TRANS 1001: Unlocked resource 8 at server 2
+10837: TRANS 1001: Unlocked resource 1 at server 2
+10841: TRANS 1001: Unlocked resource 7 at server 1
+10841: TRANS 1001: Unlocked resource 5 at server 1
+10843: TRANS 1001: Unlocked resource 4 at server 2
+10851: TRANS 1001: Unlocked resource 8 at server 1
+10852: TRANS 1001: Transaction 1001 committed.
+10852: Transaction 1001 ended.
+10949: Transaction 1002 arrived.
+10950: TRANS 1002: Starting transaction 1002.
+10951: TRANS 1002: Trying to claim lock of resource 3 at server 1
+10951: TRANS 1002: Heihei. Jeg er en probe
+10952: TRANS 1002: [1]
+10952: TRANS 1002: Deadlock
+10953: TRANS 1002: [1, 1]
+11238: TRANS 1002: [2, 1]
+11239: TRANS 1002: Deadlock
+11239: TRANS 1002: [2, 1, 1]
+11335: TRANS 1002: Lock claimed. Processing...
+11413: TRANS 1002: Trying to claim lock of resource 6 at server 1
+11414: TRANS 1002: Heihei. Jeg er en probe
+11415: TRANS 1002: Lock claimed. Processing...
+11437: TRANS 1002: Trying to claim lock of resource 2 at server 1
+11438: TRANS 1002: Heihei. Jeg er en probe
+11439: TRANS 1002: Lock claimed. Processing...
+11534: TRANS 1002: Trying to claim lock of resource 0 at server 2
+11535: TRANS 1002: Heihei. Jeg er en probe
+11535: TRANS 1002: [1]
+11537: TRANS 1002: Lock claimed. Processing...
+11637: TRANS 1002: Trying to claim lock of resource 8 at server 2
+11638: TRANS 1002: Heihei. Jeg er en probe
+11638: TRANS 1002: [1]
+11640: TRANS 1002: Lock claimed. Processing...
+11690: TRANS 1002: Committing transaction 1002.
+11690: TRANS 1002: Unlocked resource 3 at server 1
+11691: TRANS 1002: Unlocked resource 6 at server 1
+11691: TRANS 1002: Unlocked resource 2 at server 1
+11692: TRANS 1002: Unlocked resource 0 at server 2
+11704: TRANS 1002: Unlocked resource 8 at server 2
+11704: TRANS 1002: Transaction 1002 committed.
+11704: Transaction 1002 ended.
+11968: Transaction 1003 arrived.
+11969: TRANS 1003: Starting transaction 1003.
+11969: TRANS 1003: Trying to claim lock of resource 1 at server 2
+11970: TRANS 1003: Heihei. Jeg er en probe
+11976: TRANS 1003: [1]
+11985: TRANS 1003: Lock claimed. Processing...
+12058: TRANS 1003: Trying to claim lock of resource 5 at server 2
+12059: TRANS 1003: Heihei. Jeg er en probe
+12060: TRANS 1003: [1]
+12062: TRANS 1003: Lock claimed. Processing...
+12118: TRANS 1003: Trying to claim lock of resource 7 at server 2
+12119: TRANS 1003: Heihei. Jeg er en probe
+12120: TRANS 1003: [1]
+==================================================================
+256: Server 1 started.
+2077: Server 1 was notified of the arrival of server 2
+4024: Server 1 started its transactions.
+4069: Transaction 1000 arrived.
+4070: TRANS 1000: Starting transaction 1000.
+4071: TRANS 1000: Trying to claim lock of resource 1 at server 1
+4073: TRANS 1000: Heihei. Jeg er en probe
+4075: TRANS 1000: [1]
+4076: TRANS 1000: Deadlock
+4076: TRANS 1000: [1, 1]
+4701: TRANS 1000: Lock claimed. Processing...
+4765: TRANS 1000: Trying to claim lock of resource 3 at server 2
+4766: TRANS 1000: Heihei. Jeg er en probe
+4768: TRANS 1000: [1]
+4769: TRANS 1000: Lock claimed. Processing...
+4791: TRANS 1000: Trying to claim lock of resource 5 at server 1
+4791: TRANS 1000: Heihei. Jeg er en probe
+4792: TRANS 1000: Lock claimed. Processing...
+4855: TRANS 1000: Trying to claim lock of resource 1 at server 2
+4856: TRANS 1000: Heihei. Jeg er en probe
+4857: TRANS 1000: [1]
+4861: TRANS 1000: Lock claimed. Processing...
+4907: TRANS 1000: Trying to claim lock of resource 6 at server 1
+4908: TRANS 1000: Heihei. Jeg er en probe
+4909: TRANS 1000: Lock claimed. Processing...
+4982: TRANS 1000: Trying to claim lock of resource 8 at server 1
+4982: TRANS 1000: Heihei. Jeg er en probe
+4982: TRANS 1000: Lock claimed. Processing...
+5025: TRANS 1000: Committing transaction 1000.
+5025: TRANS 1000: Unlocked resource 1 at server 1
+5028: TRANS 1000: Unlocked resource 3 at server 2
+5028: TRANS 1000: Unlocked resource 5 at server 1
+5029: TRANS 1000: Unlocked resource 1 at server 2
+5029: TRANS 1000: Unlocked resource 6 at server 1
+5029: TRANS 1000: Unlocked resource 8 at server 1
+5030: TRANS 1000: Transaction 1000 committed.
+5030: Transaction 1000 ended.
+5136: Transaction 1001 arrived.
+5137: TRANS 1001: Starting transaction 1001.
+5137: TRANS 1001: Trying to claim lock of resource 1 at server 2
+5138: TRANS 1001: Heihei. Jeg er en probe
+5139: TRANS 1001: [1]
+5145: TRANS 1001: Lock claimed. Processing...
+5212: TRANS 1001: Trying to claim lock of resource 5 at server 1
+5213: TRANS 1001: Heihei. Jeg er en probe
+5214: TRANS 1001: Lock claimed. Processing...
+5297: TRANS 1001: Trying to claim lock of resource 3 at server 2
+5298: TRANS 1001: Heihei. Jeg er en probe
+5302: TRANS 1001: Lock claimed. Processing...
+5305: TRANS 1001: [1]
+5352: TRANS 1001: Committing transaction 1001.
+5354: TRANS 1001: Unlocked resource 1 at server 2
+5354: TRANS 1001: Unlocked resource 5 at server 1
+5357: TRANS 1001: Unlocked resource 3 at server 2
+5357: TRANS 1001: Transaction 1001 committed.
+5358: Transaction 1001 ended.
+5548: Transaction 1002 arrived.
+5549: TRANS 1002: Starting transaction 1002.
+5549: TRANS 1002: Trying to claim lock of resource 8 at server 1
+5550: TRANS 1002: Heihei. Jeg er en probe
+5551: TRANS 1002: Lock claimed. Processing...
+5631: TRANS 1002: Trying to claim lock of resource 2 at server 1
+5631: TRANS 1002: Heihei. Jeg er en probe
+5632: TRANS 1002: Lock claimed. Processing...
+5692: TRANS 1002: Trying to claim lock of resource 0 at server 1
+5693: TRANS 1002: Heihei. Jeg er en probe
+5698: TRANS 1002: [1]
+5698: TRANS 1002: Deadlock
+5699: TRANS 1002: [1, 1]
+5848: TRANS 1002: Lock claimed. Processing...
+5928: TRANS 1002: Trying to claim lock of resource 1 at server 2
+5929: TRANS 1002: Heihei. Jeg er en probe
+5939: TRANS 1002: Lock claimed. Processing...
+6013: TRANS 1002: Trying to claim lock of resource 4 at server 2
+6014: TRANS 1002: Heihei. Jeg er en probe
+6022: TRANS 1002: Lock claimed. Processing...
+6022: TRANS 1002: [1]
+6101: TRANS 1002: Trying to claim lock of resource 0 at server 2
+6106: TRANS 1002: Heihei. Jeg er en probe
+6115: TRANS 1002: [1]
+6121: TRANS 1002: Lock claimed. Processing...
+6222: TRANS 1002: Committing transaction 1002.
+6223: TRANS 1002: Unlocked resource 8 at server 1
+6224: TRANS 1002: Unlocked resource 2 at server 1
+6224: TRANS 1002: Unlocked resource 0 at server 1
+6227: TRANS 1002: Unlocked resource 1 at server 2
+6229: TRANS 1002: Unlocked resource 4 at server 2
+6230: TRANS 1002: Unlocked resource 0 at server 2
+6231: TRANS 1002: Transaction 1002 committed.
+6231: Transaction 1002 ended.
+6496: Transaction 1003 arrived.
+6496: TRANS 1003: Starting transaction 1003.
+6497: TRANS 1003: Trying to claim lock of resource 6 at server 2
+6497: TRANS 1003: Heihei. Jeg er en probe
+6499: TRANS 1003: [1]
+6502: TRANS 1003: Lock claimed. Processing...
+6545: TRANS 1003: Trying to claim lock of resource 4 at server 2
+6546: TRANS 1003: Heihei. Jeg er en probe
+6548: TRANS 1003: Lock claimed. Processing...
+6583: TRANS 1003: Trying to claim lock of resource 7 at server 2
+6584: TRANS 1003: Heihei. Jeg er en probe
+6585: TRANS 1003: [1]
+==================================================================
+255: Server 1 started.
+1912: Server 1 was notified of the arrival of server 2
+3914: Server 1 started its transactions.
+3966: Transaction 1000 arrived.
+3967: TRANS 1000: Starting transaction 1000.
+3969: TRANS 1000: Trying to claim lock of resource 5 at server 1
+3974: TRANS 1000: Heihei. Jeg er en probe
+3977: TRANS 1000: Lock claimed. Processing...
+4027: TRANS 1000: Trying to claim lock of resource 7 at server 2
+4027: TRANS 1000: Heihei. Jeg er en probe
+4031: TRANS 1000: [1]
+4032: TRANS 1000: Lock claimed. Processing...
+4121: TRANS 1000: Trying to claim lock of resource 6 at server 1
+4122: TRANS 1000: Heihei. Jeg er en probe
+4123: TRANS 1000: [1]
+4124: TRANS 1000: Deadlock
+4126: TRANS 1000: [1, 1]
+4219: TRANS 1000: [2, 1]
+4221: TRANS 1000: Deadlock
+4222: TRANS 1000: [2, 1, 1]
+4305: TRANS 1000: Lock claimed. Processing...
+4345: TRANS 1000: Trying to claim lock of resource 3 at server 1
+4345: TRANS 1000: Heihei. Jeg er en probe
+4345: TRANS 1000: Lock claimed. Processing...
+4378: TRANS 1000: Trying to claim lock of resource 6 at server 2
+4378: TRANS 1000: Heihei. Jeg er en probe
+4379: TRANS 1000: [1]
+4381: TRANS 1000: Lock claimed. Processing...
+4437: TRANS 1000: Trying to claim lock of resource 3 at server 2
+4437: TRANS 1000: Heihei. Jeg er en probe
+4438: TRANS 1000: [1]
+4439: TRANS 1000: Lock claimed. Processing...
+4521: TRANS 1000: Trying to claim lock of resource 9 at server 1
+4522: TRANS 1000: Heihei. Jeg er en probe
+4523: TRANS 1000: Lock claimed. Processing...
+4557: TRANS 1000: Trying to claim lock of resource 0 at server 2
+4558: TRANS 1000: Heihei. Jeg er en probe
+4558: TRANS 1000: [1]
+4559: TRANS 1000: Lock claimed. Processing...
+4600: TRANS 1000: Committing transaction 1000.
+4601: TRANS 1000: Unlocked resource 5 at server 1
+4602: TRANS 1000: Unlocked resource 7 at server 2
+4605: TRANS 1000: Unlocked resource 6 at server 1
+4605: TRANS 1000: Unlocked resource 3 at server 1
+4606: TRANS 1000: Unlocked resource 6 at server 2
+4607: TRANS 1000: Unlocked resource 3 at server 2
+4608: TRANS 1000: Unlocked resource 9 at server 1
+4608: TRANS 1000: Unlocked resource 0 at server 2
+4609: TRANS 1000: Transaction 1000 committed.
+4609: Transaction 1000 ended.
+4711: Transaction 1001 arrived.
+4712: TRANS 1001: Starting transaction 1001.
+4712: TRANS 1001: Trying to claim lock of resource 6 at server 1
+4713: TRANS 1001: Heihei. Jeg er en probe
+4714: TRANS 1001: [1]
+4714: TRANS 1001: Deadlock
+4715: TRANS 1001: [1, 1]
+4751: TRANS 1001: [2, 1]
+4751: TRANS 1001: Deadlock
+4751: TRANS 1001: [2, 1, 1]
+4788: TRANS 1001: Lock claimed. Processing...
+4849: TRANS 1001: Trying to claim lock of resource 2 at server 1
+4850: TRANS 1001: Heihei. Jeg er en probe
+4850: TRANS 1001: Lock claimed. Processing...
+4938: TRANS 1001: Trying to claim lock of resource 2 at server 2
+4938: TRANS 1001: Heihei. Jeg er en probe
+4943: TRANS 1001: [1]
+4945: TRANS 1001: Lock claimed. Processing...
+4996: TRANS 1001: Trying to claim lock of resource 0 at server 1
+4996: TRANS 1001: Heihei. Jeg er en probe
+4996: TRANS 1001: Lock claimed. Processing...
+5019: TRANS 1001: Trying to claim lock of resource 5 at server 2
+5019: TRANS 1001: Heihei. Jeg er en probe
+5020: TRANS 1001: [1]
+5022: TRANS 1001: Lock claimed. Processing...
+5108: TRANS 1001: Trying to claim lock of resource 1 at server 2
+5109: TRANS 1001: Heihei. Jeg er en probe
+5111: TRANS 1001: [1]
+5112: TRANS 1001: Lock claimed. Processing...
+5139: TRANS 1001: Trying to claim lock of resource 4 at server 1
+5139: TRANS 1001: Heihei. Jeg er en probe
+5141: TRANS 1001: Lock claimed. Processing...
+5241: TRANS 1001: Trying to claim lock of resource 5 at server 1
+5242: TRANS 1001: Heihei. Jeg er en probe
+5242: TRANS 1001: Lock claimed. Processing...
+5275: TRANS 1001: Trying to claim lock of resource 7 at server 1
+5276: TRANS 1001: Heihei. Jeg er en probe
+5276: TRANS 1001: Lock claimed. Processing...
+5350: TRANS 1001: Committing transaction 1001.
+5351: TRANS 1001: Unlocked resource 6 at server 1
+5351: TRANS 1001: Unlocked resource 2 at server 1
+5353: TRANS 1001: Unlocked resource 2 at server 2
+5353: TRANS 1001: Unlocked resource 0 at server 1
+5354: TRANS 1001: Unlocked resource 5 at server 2
+5356: TRANS 1001: Unlocked resource 1 at server 2
+5356: TRANS 1001: Unlocked resource 4 at server 1
+5356: TRANS 1001: Unlocked resource 5 at server 1
+5357: TRANS 1001: Unlocked resource 7 at server 1
+5357: TRANS 1001: Transaction 1001 committed.
+5358: Transaction 1001 ended.
+5656: Transaction 1002 arrived.
+5657: TRANS 1002: Starting transaction 1002.
+5657: TRANS 1002: Trying to claim lock of resource 0 at server 2
+5658: TRANS 1002: Heihei. Jeg er en probe
+5660: TRANS 1002: Lock claimed. Processing...
+5663: TRANS 1002: [1]
+5738: TRANS 1002: Trying to claim lock of resource 9 at server 2
+5741: TRANS 1002: Heihei. Jeg er en probe
+5744: TRANS 1002: Lock claimed. Processing...
+5800: TRANS 1002: Trying to claim lock of resource 1 at server 1
+5801: TRANS 1002: Heihei. Jeg er en probe
+5801: TRANS 1002: Lock claimed. Processing...
+5829: TRANS 1002: Trying to claim lock of resource 9 at server 1
+5830: TRANS 1002: Heihei. Jeg er en probe
+5830: TRANS 1002: Lock claimed. Processing...
+5882: TRANS 1002: Trying to claim lock of resource 5 at server 2
+5883: TRANS 1002: Heihei. Jeg er en probe
+5884: TRANS 1002: [1]
+5886: TRANS 1002: Lock claimed. Processing...
+5914: TRANS 1002: Trying to claim lock of resource 1 at server 2
+5914: TRANS 1002: Heihei. Jeg er en probe
+5915: TRANS 1002: [1]
+6044: TRANS 1002: Lock claimed. Processing...
+6085: TRANS 1002: Committing transaction 1002.
+6087: TRANS 1002: Unlocked resource 0 at server 2
+6088: TRANS 1002: Unlocked resource 9 at server 2
+6088: TRANS 1002: Unlocked resource 1 at server 1
+6088: TRANS 1002: Unlocked resource 9 at server 1
+6095: TRANS 1002: Unlocked resource 5 at server 2
+6097: TRANS 1002: Unlocked resource 1 at server 2
+6097: TRANS 1002: Transaction 1002 committed.
+6098: Transaction 1002 ended.
+6385: Transaction 1003 arrived.
+6386: TRANS 1003: Starting transaction 1003.
+6386: TRANS 1003: Trying to claim lock of resource 9 at server 2
+6386: TRANS 1003: Heihei. Jeg er en probe
+6391: TRANS 1003: Lock claimed. Processing...
+6395: TRANS 1003: [1]
+6487: TRANS 1003: Trying to claim lock of resource 9 at server 1
+6487: TRANS 1003: Heihei. Jeg er en probe
+6488: TRANS 1003: Lock claimed. Processing...
+6513: TRANS 1003: Trying to claim lock of resource 0 at server 2
+6513: TRANS 1003: Heihei. Jeg er en probe
+6516: TRANS 1003: Lock claimed. Processing...
+6545: TRANS 1003: Trying to claim lock of resource 8 at server 2
+6545: TRANS 1003: Heihei. Jeg er en probe
+6546: TRANS 1003: [1]
+6568: TRANS 1003: [2, 1]
+6685: TRANS 1003: Lock claimed. Processing...
+6723: TRANS 1003: Committing transaction 1003.
+6725: TRANS 1003: Unlocked resource 9 at server 2
+6725: TRANS 1003: Unlocked resource 9 at server 1
+6726: TRANS 1003: Unlocked resource 0 at server 2
+6726: TRANS 1003: Unlocked resource 8 at server 2
+6726: TRANS 1003: Transaction 1003 committed.
+6727: Transaction 1003 ended.
+6936: Transaction 1004 arrived.
+6937: TRANS 1004: Starting transaction 1004.
+6937: TRANS 1004: Trying to claim lock of resource 1 at server 1
+6938: TRANS 1004: Heihei. Jeg er en probe
+6938: TRANS 1004: Lock claimed. Processing...
+6989: TRANS 1004: Trying to claim lock of resource 0 at server 2
+6989: TRANS 1004: Heihei. Jeg er en probe
+6993: TRANS 1004: [1]
+6993: TRANS 1004: Lock claimed. Processing...
+7021: TRANS 1004: Trying to claim lock of resource 5 at server 2
+7021: TRANS 1004: Heihei. Jeg er en probe
+7023: TRANS 1004: Lock claimed. Processing...
+7046: TRANS 1004: Committing transaction 1004.
+7046: TRANS 1004: Unlocked resource 1 at server 1
+7051: TRANS 1004: Unlocked resource 0 at server 2
+7053: TRANS 1004: Unlocked resource 5 at server 2
+7053: TRANS 1004: Transaction 1004 committed.
+7053: Transaction 1004 ended.
+7216: Transaction 1005 arrived.
+7217: TRANS 1005: Starting transaction 1005.
+7217: TRANS 1005: Trying to claim lock of resource 5 at server 2
+7217: TRANS 1005: Heihei. Jeg er en probe
+7224: TRANS 1005: Lock claimed. Processing...
+7301: TRANS 1005: Trying to claim lock of resource 4 at server 1
+7302: TRANS 1005: Heihei. Jeg er en probe
+7302: TRANS 1005: Lock claimed. Processing...
+7394: TRANS 1005: Trying to claim lock of resource 6 at server 1
+7395: TRANS 1005: Heihei. Jeg er en probe
+7395: TRANS 1005: Lock claimed. Processing...
+7464: TRANS 1005: Trying to claim lock of resource 1 at server 1
+7465: TRANS 1005: Heihei. Jeg er en probe
+7466: TRANS 1005: Lock claimed. Processing...
+7539: TRANS 1005: Committing transaction 1005.
+7546: TRANS 1005: Unlocked resource 5 at server 2
+7551: TRANS 1005: Unlocked resource 4 at server 1
+7551: TRANS 1005: Unlocked resource 6 at server 1
+7552: TRANS 1005: Unlocked resource 1 at server 1
+7552: TRANS 1005: Transaction 1005 committed.
+7552: Transaction 1005 ended.
+7750: Transaction 1006 arrived.
+7751: TRANS 1006: Starting transaction 1006.
+7751: TRANS 1006: Trying to claim lock of resource 2 at server 2
+7752: TRANS 1006: Heihei. Jeg er en probe
+7754: TRANS 1006: [1]
+7757: TRANS 1006: Lock claimed. Processing...
+7828: TRANS 1006: Trying to claim lock of resource 5 at server 2
+7829: TRANS 1006: Heihei. Jeg er en probe
+7830: TRANS 1006: [1]
+7872: TRANS 1006: [2, 1]
+7988: TRANS 1006: Lock claimed. Processing...
+8031: TRANS 1006: Trying to claim lock of resource 8 at server 1
+8032: TRANS 1006: Heihei. Jeg er en probe
+8033: TRANS 1006: Lock claimed. Processing...
+8112: TRANS 1006: Trying to claim lock of resource 0 at server 1
+8113: TRANS 1006: Heihei. Jeg er en probe
+8114: TRANS 1006: Lock claimed. Processing...
+8160: TRANS 1006: Trying to claim lock of resource 4 at server 2
+8161: TRANS 1006: Heihei. Jeg er en probe
+8167: TRANS 1006: [1]
+8168: TRANS 1006: Lock claimed. Processing...
+8245: TRANS 1006: Trying to claim lock of resource 0 at server 2
+8245: TRANS 1006: Heihei. Jeg er en probe
+8246: TRANS 1006: [1]
+8250: TRANS 1006: Lock claimed. Processing...
+8355: TRANS 1006: Trying to claim lock of resource 7 at server 1
+8355: TRANS 1006: [2, 1]
+8355: TRANS 1006: Heihei. Jeg er en probe
+8355: TRANS 1006: Deadlock
+8355: TRANS 1006: [2, 1, 1]
+8356: TRANS 1006: Lock claimed. Processing...
+8413: TRANS 1006: Trying to claim lock of resource 3 at server 1
+8413: TRANS 1006: Heihei. Jeg er en probe
+8414: TRANS 1006: [1]
+8414: TRANS 1006: Deadlock
+8415: TRANS 1006: [1, 1]
+8448: TRANS 1006: Lock claimed. Processing...
+8475: TRANS 1006: Trying to claim lock of resource 2 at server 1
+8475: TRANS 1006: Heihei. Jeg er en probe
+8475: TRANS 1006: Lock claimed. Processing...
+8570: TRANS 1006: Trying to claim lock of resource 6 at server 2
+8571: TRANS 1006: Heihei. Jeg er en probe
+8572: TRANS 1006: Lock claimed. Processing...
+8621: TRANS 1006: Committing transaction 1006.
+8622: TRANS 1006: Unlocked resource 2 at server 2
+8623: TRANS 1006: Unlocked resource 5 at server 2
+8623: TRANS 1006: Unlocked resource 8 at server 1
+8623: TRANS 1006: Unlocked resource 0 at server 1
+8624: TRANS 1006: Unlocked resource 4 at server 2
+8624: TRANS 1006: Unlocked resource 0 at server 2
+8624: TRANS 1006: Unlocked resource 7 at server 1
+8625: TRANS 1006: Unlocked resource 3 at server 1
+8625: TRANS 1006: Unlocked resource 2 at server 1
+8625: TRANS 1006: Unlocked resource 6 at server 2
+8625: TRANS 1006: Transaction 1006 committed.
+8626: Transaction 1006 ended.
+8841: Transaction 1007 arrived.
+8841: TRANS 1007: Starting transaction 1007.
+8842: TRANS 1007: Trying to claim lock of resource 2 at server 2
+8842: TRANS 1007: Heihei. Jeg er en probe
+8843: TRANS 1007: [1]
+8910: TRANS 1007: [2, 1]
+9026: TRANS 1007: Lock claimed. Processing...
+9096: TRANS 1007: Trying to claim lock of resource 6 at server 2
+9096: TRANS 1007: Heihei. Jeg er en probe
+9097: TRANS 1007: [1]
+9097: TRANS 1007: Lock claimed. Processing...
+9124: TRANS 1007: Trying to claim lock of resource 7 at server 1
+9125: TRANS 1007: Heihei. Jeg er en probe
+9125: TRANS 1007: Lock claimed. Processing...
+9182: TRANS 1007: Trying to claim lock of resource 3 at server 1
+9183: TRANS 1007: Heihei. Jeg er en probe
+9184: TRANS 1007: Lock claimed. Processing...
+9251: TRANS 1007: Trying to claim lock of resource 7 at server 2
+9251: TRANS 1007: Heihei. Jeg er en probe
+9252: TRANS 1007: [1]
+9253: TRANS 1007: Lock claimed. Processing...
+9349: TRANS 1007: Committing transaction 1007.
+9363: TRANS 1007: Unlocked resource 2 at server 2
+9370: TRANS 1007: Unlocked resource 6 at server 2
+9371: TRANS 1007: Unlocked resource 7 at server 1
+9372: TRANS 1007: Unlocked resource 3 at server 1
+9382: TRANS 1007: Unlocked resource 7 at server 2
+9382: TRANS 1007: Transaction 1007 committed.
+9382: Transaction 1007 ended.
+9676: Transaction 1008 arrived.
+9677: TRANS 1008: Starting transaction 1008.
+9678: TRANS 1008: Trying to claim lock of resource 3 at server 1
+9678: TRANS 1008: Heihei. Jeg er en probe
+9679: TRANS 1008: Lock claimed. Processing...
+9770: TRANS 1008: Trying to claim lock of resource 3 at server 2
+9770: TRANS 1008: Heihei. Jeg er en probe
+9772: TRANS 1008: [1]
+9777: TRANS 1008: Lock claimed. Processing...
+9838: TRANS 1008: Trying to claim lock of resource 1 at server 2
+9838: TRANS 1008: Heihei. Jeg er en probe
+9840: TRANS 1008: [1]
+9887: TRANS 1008: Lock claimed. Processing...
+9943: TRANS 1008: Trying to claim lock of resource 8 at server 2
+9943: TRANS 1008: Heihei. Jeg er en probe
+9944: TRANS 1008: [1]
+9944: TRANS 1008: Lock claimed. Processing...
+10028: TRANS 1008: Trying to claim lock of resource 7 at server 1
+10028: TRANS 1008: Heihei. Jeg er en probe
+10029: TRANS 1008: Lock claimed. Processing...
+10119: TRANS 1008: Trying to claim lock of resource 4 at server 1
+10120: TRANS 1008: Heihei. Jeg er en probe
+10120: TRANS 1008: Lock claimed. Processing...
+10176: TRANS 1008: Trying to claim lock of resource 0 at server 1
+10177: TRANS 1008: Heihei. Jeg er en probe
+10177: TRANS 1008: Lock claimed. Processing...
+10202: TRANS 1008: Committing transaction 1008.
+10202: TRANS 1008: Unlocked resource 3 at server 1
+10209: TRANS 1008: Unlocked resource 3 at server 2
+10211: TRANS 1008: Unlocked resource 1 at server 2
+10215: TRANS 1008: Unlocked resource 8 at server 2
+10215: TRANS 1008: Unlocked resource 7 at server 1
+10216: TRANS 1008: Unlocked resource 4 at server 1
+10216: TRANS 1008: Unlocked resource 0 at server 1
+10216: TRANS 1008: Transaction 1008 committed.
+10217: Transaction 1008 ended.
+10442: Transaction 1009 arrived.
+10442: TRANS 1009: Starting transaction 1009.
+10442: TRANS 1009: Trying to claim lock of resource 6 at server 2
+10442: TRANS 1009: Heihei. Jeg er en probe
+10443: TRANS 1009: [1]
+10452: TRANS 1009: Lock claimed. Processing...
+10522: TRANS 1009: Trying to claim lock of resource 4 at server 2
+10523: TRANS 1009: Heihei. Jeg er en probe
+10524: TRANS 1009: [1]
+10524: TRANS 1009: Lock claimed. Processing...
+10563: TRANS 1009: Trying to claim lock of resource 8 at server 1
+10563: TRANS 1009: Heihei. Jeg er en probe
+10564: TRANS 1009: Lock claimed. Processing...
+10663: TRANS 1009: Committing transaction 1009.
+10665: TRANS 1009: Unlocked resource 6 at server 2
+10666: TRANS 1009: Unlocked resource 4 at server 2
+10666: TRANS 1009: Unlocked resource 8 at server 1
+10667: TRANS 1009: Transaction 1009 committed.
+10667: Transaction 1009 ended.
+10952: Transaction 1010 arrived.
+10953: TRANS 1010: Starting transaction 1010.
+10953: TRANS 1010: Trying to claim lock of resource 1 at server 1
+10953: TRANS 1010: Heihei. Jeg er en probe
+10954: TRANS 1010: [1]
+10954: TRANS 1010: Lock claimed. Processing...
+11039: TRANS 1010: Trying to claim lock of resource 8 at server 2
+11040: TRANS 1010: Heihei. Jeg er en probe
+11044: TRANS 1010: Lock claimed. Processing...
+11133: TRANS 1010: Trying to claim lock of resource 8 at server 1
+11133: TRANS 1010: Heihei. Jeg er en probe
+11134: TRANS 1010: [1]
+11134: TRANS 1010: Deadlock
+11134: TRANS 1010: [1, 1]
+11134: TRANS 1010: Lock claimed. Processing...
+11204: TRANS 1010: Committing transaction 1010.
+11204: TRANS 1010: Unlocked resource 1 at server 1
+11208: TRANS 1010: Unlocked resource 8 at server 2
+11208: TRANS 1010: Unlocked resource 8 at server 1
+11208: TRANS 1010: Transaction 1010 committed.
+11208: Transaction 1010 ended.
+11494: Transaction 1011 arrived.
+11494: TRANS 1011: Starting transaction 1011.
+11495: TRANS 1011: Trying to claim lock of resource 6 at server 2
+11495: TRANS 1011: Heihei. Jeg er en probe
+11496: TRANS 1011: Lock claimed. Processing...
+11572: TRANS 1011: Trying to claim lock of resource 5 at server 2
+11572: TRANS 1011: Heihei. Jeg er en probe
+11573: TRANS 1011: Lock claimed. Processing...
+11573: TRANS 1011: [1]
+11605: TRANS 1011: Trying to claim lock of resource 2 at server 2
+11605: TRANS 1011: Heihei. Jeg er en probe
+11608: TRANS 1011: [1]
+11611: TRANS 1011: Lock claimed. Processing...
+11662: TRANS 1011: Trying to claim lock of resource 6 at server 1
+11663: TRANS 1011: Heihei. Jeg er en probe
+11668: TRANS 1011: Lock claimed. Processing...
+11704: TRANS 1011: Trying to claim lock of resource 2 at server 1
+11704: TRANS 1011: Heihei. Jeg er en probe
+11704: TRANS 1011: Lock claimed. Processing...
+11783: TRANS 1011: Trying to claim lock of resource 4 at server 1
+11783: TRANS 1011: Heihei. Jeg er en probe
+11784: TRANS 1011: Lock claimed. Processing...
+11828: TRANS 1011: Trying to claim lock of resource 3 at server 1
+11829: TRANS 1011: Heihei. Jeg er en probe
+11830: TRANS 1011: Lock claimed. Processing...
+11902: TRANS 1011: Trying to claim lock of resource 8 at server 2
+11902: TRANS 1011: Heihei. Jeg er en probe
+11904: TRANS 1011: Lock claimed. Processing...
+11969: TRANS 1011: Trying to claim lock of resource 9 at server 1
+11969: TRANS 1011: Heihei. Jeg er en probe
+11970: TRANS 1011: Lock claimed. Processing...
+12017: TRANS 1011: Trying to claim lock of resource 1 at server 1
+12017: TRANS 1011: Heihei. Jeg er en probe
+12019: TRANS 1011: Lock claimed. Processing...
+12019: TRANS 1011: [1]
+12044: TRANS 1011: Committing transaction 1011.
+12047: TRANS 1011: Unlocked resource 6 at server 2
+12056: TRANS 1011: Unlocked resource 5 at server 2
+12081: TRANS 1011: Unlocked resource 2 at server 2
+12082: TRANS 1011: Unlocked resource 6 at server 1
+12082: TRANS 1011: Unlocked resource 2 at server 1
+12082: TRANS 1011: Unlocked resource 4 at server 1
+12082: TRANS 1011: Unlocked resource 3 at server 1
+12086: TRANS 1011: Unlocked resource 8 at server 2
+12086: TRANS 1011: Unlocked resource 9 at server 1
+12087: TRANS 1011: Unlocked resource 1 at server 1
+12087: TRANS 1011: Transaction 1011 committed.
+12087: Transaction 1011 ended.
+12162: Transaction 1012 arrived.
+12163: TRANS 1012: Starting transaction 1012.
+12163: TRANS 1012: Trying to claim lock of resource 6 at server 2
+12163: TRANS 1012: Heihei. Jeg er en probe
+12164: TRANS 1012: [1]
+12164: TRANS 1012: Lock claimed. Processing...
+12201: TRANS 1012: Trying to claim lock of resource 0 at server 1
+12202: TRANS 1012: Heihei. Jeg er en probe
+12202: TRANS 1012: [1]
+12203: TRANS 1012: Deadlock
+12203: TRANS 1012: [1, 1]
+12415: TRANS 1012: [2, 1]
+12415: TRANS 1012: Deadlock
+12415: TRANS 1012: [2, 1, 1]
+12503: TRANS 1012: Lock claimed. Processing...
+12593: TRANS 1012: Trying to claim lock of resource 2 at server 1
+12593: TRANS 1012: Heihei. Jeg er en probe
+12594: TRANS 1012: Lock claimed. Processing...
+12666: TRANS 1012: Trying to claim lock of resource 6 at server 1
+12668: TRANS 1012: Heihei. Jeg er en probe
+12669: TRANS 1012: Lock claimed. Processing...
+12669: TRANS 1012: [1]
+12727: TRANS 1012: Trying to claim lock of resource 1 at server 2
+12727: TRANS 1012: Heihei. Jeg er en probe
+12730: TRANS 1012: Lock claimed. Processing...
+12763: TRANS 1012: Committing transaction 1012.
+12765: TRANS 1012: Unlocked resource 6 at server 2
+12768: TRANS 1012: Unlocked resource 0 at server 1
+12769: TRANS 1012: Unlocked resource 2 at server 1
+12769: TRANS 1012: Unlocked resource 6 at server 1
+12774: TRANS 1012: Unlocked resource 1 at server 2
+12774: TRANS 1012: Transaction 1012 committed.
+12775: Transaction 1012 ended.
+12984: Transaction 1013 arrived.
+12984: TRANS 1013: Starting transaction 1013.
+12985: TRANS 1013: Trying to claim lock of resource 4 at server 1
+12985: TRANS 1013: Heihei. Jeg er en probe
+12987: TRANS 1013: Lock claimed. Processing...
+12987: TRANS 1013: [1]
+13084: TRANS 1013: Trying to claim lock of resource 9 at server 1
+13084: TRANS 1013: Heihei. Jeg er en probe
+13085: TRANS 1013: [1]
+13086: TRANS 1013: Deadlock
+13086: TRANS 1013: [1, 1]
+13381: TRANS 1013: Lock claimed. Processing...
+13448: TRANS 1013: Trying to claim lock of resource 1 at server 1
+13448: TRANS 1013: Heihei. Jeg er en probe
+13448: TRANS 1013: Lock claimed. Processing...
+13501: TRANS 1013: Trying to claim lock of resource 8 at server 1
+13501: TRANS 1013: Heihei. Jeg er en probe
+13502: TRANS 1013: Lock claimed. Processing...
+13531: TRANS 1013: Trying to claim lock of resource 5 at server 1
+13531: TRANS 1013: Heihei. Jeg er en probe
+13532: TRANS 1013: Lock claimed. Processing...
+13587: TRANS 1013: Trying to claim lock of resource 2 at server 2
+13588: TRANS 1013: Heihei. Jeg er en probe
+13590: TRANS 1013: [1]
+13597: TRANS 1013: Lock claimed. Processing...
+13621: TRANS 1013: Trying to claim lock of resource 0 at server 2
+13621: TRANS 1013: Heihei. Jeg er en probe
+13622: TRANS 1013: [1]
+13624: TRANS 1013: Lock claimed. Processing...
+13719: TRANS 1013: Committing transaction 1013.
+13720: TRANS 1013: Unlocked resource 4 at server 1
+13720: TRANS 1013: Unlocked resource 9 at server 1
+13720: TRANS 1013: Unlocked resource 1 at server 1
+13721: TRANS 1013: Unlocked resource 8 at server 1
+13721: TRANS 1013: Unlocked resource 5 at server 1
+13722: TRANS 1013: Unlocked resource 2 at server 2
+13723: TRANS 1013: Unlocked resource 0 at server 2
+13723: TRANS 1013: Transaction 1013 committed.
+13724: Transaction 1013 ended.
+13923: Transaction 1014 arrived.
+13923: TRANS 1014: Starting transaction 1014.
+13924: TRANS 1014: Trying to claim lock of resource 1 at server 2
+13924: TRANS 1014: Heihei. Jeg er en probe
+13939: TRANS 1014: Lock claimed. Processing...
+13940: TRANS 1014: [1]
+13993: TRANS 1014: Trying to claim lock of resource 7 at server 1
+13993: TRANS 1014: Heihei. Jeg er en probe
+13993: TRANS 1014: Lock claimed. Processing...
+14053: TRANS 1014: Trying to claim lock of resource 6 at server 1
+14053: TRANS 1014: Heihei. Jeg er en probe
+14053: TRANS 1014: Lock claimed. Processing...
+14145: TRANS 1014: Trying to claim lock of resource 7 at server 2
+14145: TRANS 1014: Heihei. Jeg er en probe
+14148: TRANS 1014: Lock claimed. Processing...
+14179: TRANS 1014: Trying to claim lock of resource 4 at server 2
+14179: TRANS 1014: Heihei. Jeg er en probe
+14182: TRANS 1014: Lock claimed. Processing...
+14207: TRANS 1014: Committing transaction 1014.
+14209: TRANS 1014: Unlocked resource 1 at server 2
+14209: TRANS 1014: Unlocked resource 7 at server 1
+14209: TRANS 1014: Unlocked resource 6 at server 1
+14212: TRANS 1014: Unlocked resource 7 at server 2
+14214: TRANS 1014: Unlocked resource 4 at server 2
+14214: TRANS 1014: Transaction 1014 committed.
+14214: Transaction 1014 ended.
+14394: Transaction 1015 arrived.
+14394: TRANS 1015: Starting transaction 1015.
+14395: TRANS 1015: Trying to claim lock of resource 9 at server 2
+14395: TRANS 1015: Heihei. Jeg er en probe
+14396: TRANS 1015: [1]
+14396: TRANS 1015: Lock claimed. Processing...
+14499: TRANS 1015: Trying to claim lock of resource 2 at server 2
+14500: TRANS 1015: Heihei. Jeg er en probe
+14502: TRANS 1015: [1]
+14507: TRANS 1015: [2, 1]
+14512: TRANS 1015: Deadlock
+14512: TRANS 1015: [1, 2, 1]
+14547: TRANS 1015: [2, 1]
+14641: TRANS 1015: [2, 1]
+14776: TRANS 1015: [2, 1]
+14864: TRANS 1015: Lock claimed. Processing...
+14949: TRANS 1015: Trying to claim lock of resource 0 at server 2
+14949: TRANS 1015: Heihei. Jeg er en probe
+14950: TRANS 1015: [1]
+14951: TRANS 1015: Lock claimed. Processing...
+15045: TRANS 1015: Trying to claim lock of resource 8 at server 2
+15045: TRANS 1015: Heihei. Jeg er en probe
+15047: TRANS 1015: [1]
+15050: TRANS 1015: Lock claimed. Processing...
+15124: TRANS 1015: Trying to claim lock of resource 5 at server 2
+15124: TRANS 1015: Heihei. Jeg er en probe
+15127: TRANS 1015: Lock claimed. Processing...
+15217: TRANS 1015: Trying to claim lock of resource 3 at server 2
+15218: TRANS 1015: Heihei. Jeg er en probe
+15220: TRANS 1015: [1]
+15222: TRANS 1015: Lock claimed. Processing...
+15278: TRANS 1015: Trying to claim lock of resource 0 at server 1
+15278: TRANS 1015: Heihei. Jeg er en probe
+15280: TRANS 1015: Lock claimed. Processing...
+15315: TRANS 1015: Committing transaction 1015.
+15317: TRANS 1015: Unlocked resource 9 at server 2
+15318: TRANS 1015: Unlocked resource 2 at server 2
+15320: TRANS 1015: Unlocked resource 0 at server 2
+15321: TRANS 1015: Unlocked resource 8 at server 2
+15322: TRANS 1015: Unlocked resource 5 at server 2
+15322: TRANS 1015: Unlocked resource 3 at server 2
+15323: TRANS 1015: Unlocked resource 0 at server 1
+15323: TRANS 1015: Transaction 1015 committed.
+15323: Transaction 1015 ended.
+15415: Transaction 1016 arrived.
+15415: TRANS 1016: Starting transaction 1016.
+15416: TRANS 1016: Trying to claim lock of resource 6 at server 2
+15416: TRANS 1016: Heihei. Jeg er en probe
+15420: TRANS 1016: Lock claimed. Processing...
+15445: TRANS 1016: Trying to claim lock of resource 9 at server 2
+15445: TRANS 1016: Heihei. Jeg er en probe
+15448: TRANS 1016: [1]
+15470: TRANS 1016: [2, 1]
+15520: TRANS 1016: [2, 1]
+15604: TRANS 1016: [2, 1]
+15637: TRANS 1016: Lock claimed. Processing...
+15678: TRANS 1016: Trying to claim lock of resource 5 at server 1
+15678: TRANS 1016: Heihei. Jeg er en probe
+15678: TRANS 1016: Lock claimed. Processing...
+15698: TRANS 1016: Trying to claim lock of resource 3 at server 2
+15698: TRANS 1016: Heihei. Jeg er en probe
+15699: TRANS 1016: [1]
+15699: TRANS 1016: Lock claimed. Processing...
+15763: TRANS 1016: Trying to claim lock of resource 6 at server 1
+15763: TRANS 1016: Heihei. Jeg er en probe
+15764: TRANS 1016: Lock claimed. Processing...
+15847: TRANS 1016: Trying to claim lock of resource 3 at server 1
+15849: TRANS 1016: Heihei. Jeg er en probe
+15850: TRANS 1016: Lock claimed. Processing...
+15850: TRANS 1016: [1]
+15892: TRANS 1016: Trying to claim lock of resource 8 at server 2
+15892: TRANS 1016: Heihei. Jeg er en probe
+15894: TRANS 1016: [1]
+15894: TRANS 1016: Lock claimed. Processing...
+15951: TRANS 1016: Committing transaction 1016.
+15952: TRANS 1016: Unlocked resource 6 at server 2
+15954: TRANS 1016: Unlocked resource 9 at server 2
+15954: TRANS 1016: Unlocked resource 5 at server 1
+15956: TRANS 1016: Unlocked resource 3 at server 2
+15956: TRANS 1016: Unlocked resource 6 at server 1
+15957: TRANS 1016: Unlocked resource 3 at server 1
+15959: TRANS 1016: Unlocked resource 8 at server 2
+15959: TRANS 1016: Transaction 1016 committed.
+15959: Transaction 1016 ended.
+16020: Transaction 1017 arrived.
+16020: TRANS 1017: Starting transaction 1017.
+16020: TRANS 1017: Trying to claim lock of resource 9 at server 1
+16021: TRANS 1017: Heihei. Jeg er en probe
+16023: TRANS 1017: [1]
+16023: TRANS 1017: Deadlock
+16023: TRANS 1017: [1, 1]
+16063: TRANS 1017: [2, 1]
+16063: TRANS 1017: Deadlock
+16063: TRANS 1017: [2, 1, 1]
+16131: TRANS 1017: [2, 1]
+16131: TRANS 1017: Deadlock
+16132: TRANS 1017: [2, 1, 1]
+16315: TRANS 1017: [2, 1]
+16316: TRANS 1017: Deadlock
+16316: TRANS 1017: [2, 1, 1]
+16382: TRANS 1017: Lock claimed. Processing...
+16422: TRANS 1017: Trying to claim lock of resource 0 at server 2
+16422: TRANS 1017: Heihei. Jeg er en probe
+16423: TRANS 1017: Lock claimed. Processing...
+16509: TRANS 1017: Trying to claim lock of resource 1 at server 1
+16509: TRANS 1017: Heihei. Jeg er en probe
+16510: TRANS 1017: [1]
+16511: TRANS 1017: Deadlock
+16511: TRANS 1017: [1, 1]
+16559: TRANS 1017: [2, 1]
+16559: TRANS 1017: Deadlock
+16560: TRANS 1017: [2, 1, 1]
+16680: TRANS 1017: Lock claimed. Processing...
+16744: TRANS 1017: Trying to claim lock of resource 3 at server 2
+16744: TRANS 1017: Heihei. Jeg er en probe
+16747: TRANS 1017: Lock claimed. Processing...
+16786: TRANS 1017: [1]
+16851: TRANS 1017: Committing transaction 1017.
+16852: TRANS 1017: Unlocked resource 9 at server 1
+16854: TRANS 1017: Unlocked resource 0 at server 2
+16855: TRANS 1017: Unlocked resource 1 at server 1
+16860: TRANS 1017: Unlocked resource 3 at server 2
+16860: TRANS 1017: Transaction 1017 committed.
+16861: Transaction 1017 ended.
+16941: Transaction 1018 arrived.
+16941: TRANS 1018: Starting transaction 1018.
+16941: TRANS 1018: Trying to claim lock of resource 5 at server 2
+16941: TRANS 1018: Heihei. Jeg er en probe
+16942: TRANS 1018: [1]
+16943: TRANS 1018: Lock claimed. Processing...
+17041: TRANS 1018: Trying to claim lock of resource 1 at server 1
+17041: TRANS 1018: Heihei. Jeg er en probe
+17041: TRANS 1018: Lock claimed. Processing...
+17121: TRANS 1018: Trying to claim lock of resource 2 at server 1
+17121: TRANS 1018: Heihei. Jeg er en probe
+17122: TRANS 1018: Lock claimed. Processing...
+17165: TRANS 1018: Trying to claim lock of resource 1 at server 2
+17165: TRANS 1018: Heihei. Jeg er en probe
+17166: TRANS 1018: [1]
+17167: TRANS 1018: Lock claimed. Processing...
+17249: TRANS 1018: Trying to claim lock of resource 3 at server 2
+17249: TRANS 1018: Heihei. Jeg er en probe
+17250: TRANS 1018: [1]
+17260: TRANS 1018: Lock claimed. Processing...
+17321: TRANS 1018: Trying to claim lock of resource 3 at server 1
+17321: TRANS 1018: Heihei. Jeg er en probe
+17322: TRANS 1018: [1]
+17322: TRANS 1018: Deadlock
+17322: TRANS 1018: [1, 1]
+17323: TRANS 1018: Lock claimed. Processing...
+17404: TRANS 1018: Trying to claim lock of resource 8 at server 2
+17404: TRANS 1018: Heihei. Jeg er en probe
+17406: TRANS 1018: [1]
+17406: TRANS 1018: Lock claimed. Processing...
+17469: TRANS 1018: Trying to claim lock of resource 8 at server 1
+17469: TRANS 1018: Heihei. Jeg er en probe
+17470: TRANS 1018: Lock claimed. Processing...
+17527: TRANS 1018: Trying to claim lock of resource 7 at server 1
+17527: TRANS 1018: Heihei. Jeg er en probe
+17528: TRANS 1018: [1]
+17528: TRANS 1018: Deadlock
+17528: TRANS 1018: [1, 1]
+17569: TRANS 1018: [2, 1]
+17569: TRANS 1018: Deadlock
+17569: TRANS 1018: [2, 1, 1]
+==================================================================
+261: Server 1 started.
+1883: Server 1 was notified of the arrival of server 2
+6227: Server 1 started its transactions.
+6273: Transaction 1000 arrived.
+6274: TRANS 1000: Starting transaction 1000.
+6276: TRANS 1000: Trying to claim lock of resource 2 at server 2
+6278: TRANS 1000: Heihei. Jeg er en probe
+6281: TRANS 1000: Lock claimed. Processing...
+6304: TRANS 1000: Trying to claim lock of resource 5 at server 2
+6304: TRANS 1000: Heihei. Jeg er en probe
+6305: TRANS 1000: Lock claimed. Processing...
+6308: TRANS 1000: [1]
+6365: TRANS 1000: Trying to claim lock of resource 8 at server 1
+6366: TRANS 1000: Heihei. Jeg er en probe
+6368: TRANS 1000: Lock claimed. Processing...
+6431: TRANS 1000: Trying to claim lock of resource 5 at server 1
+6432: TRANS 1000: Heihei. Jeg er en probe
+6432: TRANS 1000: Lock claimed. Processing...
+6486: TRANS 1000: Committing transaction 1000.
+6488: TRANS 1000: Unlocked resource 2 at server 2
+6497: TRANS 1000: Unlocked resource 5 at server 2
+6498: TRANS 1000: Unlocked resource 8 at server 1
+6498: TRANS 1000: Unlocked resource 5 at server 1
+6498: TRANS 1000: Transaction 1000 committed.
+6499: Transaction 1000 ended.
+6704: Transaction 1001 arrived.
+6704: TRANS 1001: Starting transaction 1001.
+6704: TRANS 1001: Trying to claim lock of resource 9 at server 1
+6704: TRANS 1001: Heihei. Jeg er en probe
+6707: TRANS 1001: [2, 1]
+6707: TRANS 1001: [1]
+6708: TRANS 1001: Deadlock
+6708: TRANS 1001: Deadlock
+6708: TRANS 1001: [2, 1, 1]
+6708: TRANS 1001: [1, 1]
+6735: TRANS 1001: Lock claimed. Processing...
+6760: TRANS 1001: Trying to claim lock of resource 1 at server 1
+6760: TRANS 1001: Heihei. Jeg er en probe
+6761: TRANS 1001: Lock claimed. Processing...
+6811: TRANS 1001: Trying to claim lock of resource 0 at server 1
+6812: TRANS 1001: Heihei. Jeg er en probe
+6812: TRANS 1001: Lock claimed. Processing...
+6884: TRANS 1001: Trying to claim lock of resource 2 at server 2
+6885: TRANS 1001: Heihei. Jeg er en probe
+6886: TRANS 1001: Lock claimed. Processing...
+6925: TRANS 1001: Committing transaction 1001.
+6925: TRANS 1001: Unlocked resource 9 at server 1
+6926: TRANS 1001: Unlocked resource 1 at server 1
+6926: TRANS 1001: Unlocked resource 0 at server 1
+6940: TRANS 1001: Unlocked resource 2 at server 2
+6940: TRANS 1001: Transaction 1001 committed.
+6940: Transaction 1001 ended.
+7248: Transaction 1002 arrived.
+7248: TRANS 1002: Starting transaction 1002.
+7251: TRANS 1002: Trying to claim lock of resource 2 at server 2
+7251: TRANS 1002: Heihei. Jeg er en probe
+7253: TRANS 1002: [1]
+7270: TRANS 1002: Lock claimed. Processing...
+7298: TRANS 1002: Trying to claim lock of resource 4 at server 1
+7298: TRANS 1002: Heihei. Jeg er en probe
+7298: TRANS 1002: Lock claimed. Processing...
+7344: TRANS 1002: Trying to claim lock of resource 1 at server 2
+7345: TRANS 1002: Heihei. Jeg er en probe
+7346: TRANS 1002: [1]
+7350: TRANS 1002: Lock claimed. Processing...
+7409: TRANS 1002: Trying to claim lock of resource 8 at server 2
+7410: TRANS 1002: Heihei. Jeg er en probe
+7410: TRANS 1002: [1]
+7415: TRANS 1002: Lock claimed. Processing...
+7475: TRANS 1002: Trying to claim lock of resource 9 at server 2
+7476: TRANS 1002: Heihei. Jeg er en probe
+7478: TRANS 1002: Lock claimed. Processing...
+7546: TRANS 1002: Trying to claim lock of resource 3 at server 1
+7546: TRANS 1002: Heihei. Jeg er en probe
+7547: TRANS 1002: Lock claimed. Processing...
+7586: TRANS 1002: Committing transaction 1002.
+7587: TRANS 1002: Unlocked resource 2 at server 2
+7588: TRANS 1002: Unlocked resource 4 at server 1
+7596: TRANS 1002: Unlocked resource 1 at server 2
+7602: TRANS 1002: Unlocked resource 8 at server 2
+7604: TRANS 1002: Unlocked resource 9 at server 2
+7605: TRANS 1002: Unlocked resource 3 at server 1
+7605: TRANS 1002: Transaction 1002 committed.
+7605: Transaction 1002 ended.
+7774: Transaction 1003 arrived.
+7774: TRANS 1003: Starting transaction 1003.
+7775: TRANS 1003: Trying to claim lock of resource 5 at server 1
+7775: TRANS 1003: Heihei. Jeg er en probe
+7776: TRANS 1003: Lock claimed. Processing...
+7798: TRANS 1003: Trying to claim lock of resource 0 at server 1
+7798: TRANS 1003: Heihei. Jeg er en probe
+7800: TRANS 1003: Lock claimed. Processing...
+7840: TRANS 1003: Trying to claim lock of resource 8 at server 1
+7840: TRANS 1003: Heihei. Jeg er en probe
+7840: TRANS 1003: Lock claimed. Processing...
+7940: TRANS 1003: Trying to claim lock of resource 1 at server 2
+7941: TRANS 1003: Heihei. Jeg er en probe
+7943: TRANS 1003: Lock claimed. Processing...
+7991: TRANS 1003: Trying to claim lock of resource 5 at server 2
+7991: TRANS 1003: Heihei. Jeg er en probe
+7993: TRANS 1003: [1]
+8000: TRANS 1003: Deadlock
+8000: TRANS 1003: [1, 2, 1]
+==================================================================
+257: Server 1 started.
+2082: Server 1 was notified of the arrival of server 2
+4132: Server 1 started its transactions.
+4170: Transaction 1000 arrived.
+4172: TRANS 1000: Starting transaction 1000.
+4172: TRANS 1000: Trying to claim lock of resource 1 at server 2
+4175: TRANS 1000: Heihei. Jeg er en probe
+4178: TRANS 1000: Lock claimed. Processing...
+4179: TRANS 1000: [1]
+4226: TRANS 1000: Trying to claim lock of resource 8 at server 1
+4227: TRANS 1000: Heihei. Jeg er en probe
+4227: TRANS 1000: Lock claimed. Processing...
+4285: TRANS 1000: Trying to claim lock of resource 7 at server 2
+4286: TRANS 1000: Heihei. Jeg er en probe
+4287: TRANS 1000: [1]
+4290: TRANS 1000: Lock claimed. Processing...
+4310: TRANS 1000: Trying to claim lock of resource 9 at server 2
+4311: TRANS 1000: Heihei. Jeg er en probe
+4312: TRANS 1000: [1]
+4313: TRANS 1000: Lock claimed. Processing...
+4370: TRANS 1000: Trying to claim lock of resource 5 at server 1
+4370: TRANS 1000: Heihei. Jeg er en probe
+4371: TRANS 1000: Lock claimed. Processing...
+4408: TRANS 1000: Committing transaction 1000.
+4410: TRANS 1000: Unlocked resource 1 at server 2
+4411: TRANS 1000: Unlocked resource 8 at server 1
+4412: TRANS 1000: Unlocked resource 7 at server 2
+4413: TRANS 1000: Unlocked resource 9 at server 2
+4413: TRANS 1000: Unlocked resource 5 at server 1
+4413: TRANS 1000: Transaction 1000 committed.
+4414: Transaction 1000 ended.
+4588: Transaction 1001 arrived.
+4589: TRANS 1001: Starting transaction 1001.
+4589: TRANS 1001: Trying to claim lock of resource 2 at server 1
+4590: TRANS 1001: Heihei. Jeg er en probe
+4591: TRANS 1001: Lock claimed. Processing...
+4658: TRANS 1001: Trying to claim lock of resource 9 at server 2
+4659: TRANS 1001: Heihei. Jeg er en probe
+4662: TRANS 1001: [1]
+4665: TRANS 1001: Lock claimed. Processing...
+4706: TRANS 1001: Trying to claim lock of resource 9 at server 1
+4706: TRANS 1001: Heihei. Jeg er en probe
+4707: TRANS 1001: Lock claimed. Processing...
+4745: TRANS 1001: Trying to claim lock of resource 4 at server 2
+4746: TRANS 1001: Heihei. Jeg er en probe
+4751: TRANS 1001: Lock claimed. Processing...
+4833: TRANS 1001: Trying to claim lock of resource 0 at server 2
+4834: TRANS 1001: Heihei. Jeg er en probe
+4835: TRANS 1001: [1]
+4840: TRANS 1001: Deadlock
+4842: TRANS 1001: [1, 2, 1]
+4848: TRANS 1001: Lock claimed. Processing...
+4948: TRANS 1001: Trying to claim lock of resource 5 at server 1
+4949: TRANS 1001: Heihei. Jeg er en probe
+4950: TRANS 1001: [1]
+4950: TRANS 1001: Deadlock
+4950: TRANS 1001: [1, 1]
+==================================================================
+265: Server 1 started.
+2821: Server 1 was notified of the arrival of server 2
+4769: Server 1 started its transactions.
+4877: Transaction 1000 arrived.
+4879: TRANS 1000: Starting transaction 1000.
+4880: TRANS 1000: Trying to claim lock of resource 5 at server 1
+4884: TRANS 1000: Heihei. Jeg er en probe
+4888: TRANS 1000: [1]
+4890: TRANS 1000: Deadlock
+4892: TRANS 1000: [1, 1]
+5267: TRANS 1000: Lock claimed. Processing...
+5363: TRANS 1000: Trying to claim lock of resource 4 at server 2
+5364: TRANS 1000: Heihei. Jeg er en probe
+5365: TRANS 1000: [1]
+5368: TRANS 1000: Lock claimed. Processing...
+5395: TRANS 1000: Trying to claim lock of resource 3 at server 1
+5396: TRANS 1000: Heihei. Jeg er en probe
+5396: TRANS 1000: Lock claimed. Processing...
+5471: TRANS 1000: Trying to claim lock of resource 7 at server 2
+5471: TRANS 1000: Heihei. Jeg er en probe
+5473: TRANS 1000: [1]
+5477: TRANS 1000: Lock claimed. Processing...
+5574: TRANS 1000: Trying to claim lock of resource 4 at server 1
+5575: TRANS 1000: Heihei. Jeg er en probe
+5576: TRANS 1000: Lock claimed. Processing...
+5609: TRANS 1000: Trying to claim lock of resource 6 at server 2
+5610: TRANS 1000: Heihei. Jeg er en probe
+5612: TRANS 1000: [1]
+5614: TRANS 1000: Lock claimed. Processing...
+5706: TRANS 1000: Trying to claim lock of resource 2 at server 1
+5707: TRANS 1000: Heihei. Jeg er en probe
+5708: TRANS 1000: Lock claimed. Processing...
+5805: TRANS 1000: Committing transaction 1000.
+5807: TRANS 1000: Unlocked resource 5 at server 1
+5809: TRANS 1000: Unlocked resource 4 at server 2
+5811: TRANS 1000: Unlocked resource 3 at server 1
+5813: TRANS 1000: Unlocked resource 7 at server 2
+5814: TRANS 1000: Unlocked resource 4 at server 1
+5816: TRANS 1000: Unlocked resource 6 at server 2
+5817: TRANS 1000: Unlocked resource 2 at server 1
+5817: TRANS 1000: Transaction 1000 committed.
+5818: Transaction 1000 ended.
+5995: Transaction 1001 arrived.
+5995: TRANS 1001: Starting transaction 1001.
+5996: TRANS 1001: Trying to claim lock of resource 9 at server 2
+5996: TRANS 1001: Heihei. Jeg er en probe
+5997: TRANS 1001: [1]
+5999: TRANS 1001: Lock claimed. Processing...
+6090: TRANS 1001: Trying to claim lock of resource 5 at server 2
+6091: TRANS 1001: Heihei. Jeg er en probe
+6093: TRANS 1001: Lock claimed. Processing...
+6114: TRANS 1001: Trying to claim lock of resource 2 at server 1
+6114: TRANS 1001: Heihei. Jeg er en probe
+6115: TRANS 1001: Lock claimed. Processing...
+6204: TRANS 1001: Trying to claim lock of resource 9 at server 1
+6204: TRANS 1001: Heihei. Jeg er en probe
+6205: TRANS 1001: Lock claimed. Processing...
+6259: TRANS 1001: Trying to claim lock of resource 8 at server 2
+6260: TRANS 1001: Heihei. Jeg er en probe
+6261: TRANS 1001: [1]
+12848: Contact with server 2 was lost.

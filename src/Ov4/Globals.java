@@ -15,7 +15,7 @@ class Globals
   /**
    * Whether or not to use edge chasing to detect deadlocks
    */
-  static boolean PROBING_ENABLED = false;
+  static boolean PROBING_ENABLED = true;
   /**
    * The number of local resources on each server
    */
