@@ -606,7 +606,7 @@ public class ServerImpl extends UnicastRemoteObject implements Server
   }
   
   @Override
-  public void receiveProbe(ArrayList<Integer> ints) throws RemoteException{
+  public void receiveProbe(ArrayList<Integer> ints, int resourceId) throws RemoteException{
 	  if(this.activeTransaction != null){
 		  ResourceAccess ra = this.activeTransaction.getWaitingForResource();
 		  if(ra != null){
@@ -615,23 +615,16 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 				  ints.add(this.serverId);
 				  println("Deadlock", this.activeTransaction.getId());
 				  println(ints.toString(), this.activeTransaction.getId());
-				  this.activeTransaction.setAbort();
+				  resources.get(resourceId).abortCurrentTransaction(activeTransaction);
 			  }
 			  else{
 				  ints.add(this.serverId);
 				  println(ints.toString(), this.activeTransaction.getId());
 				  if(this.activeTransaction.getWaitingForResource() != null){
-					  this.activeTransaction.getWaitingForResource().server.receiveProbe(ints);
+					  this.activeTransaction.getWaitingForResource().server.receiveProbe(ints,resourceId);
 				  }
 			  }
 		  }
 	  }
-  }
-  private String arrayToString(ArrayList<Integer> list){
-	  String temp = "";
-	  for (int i = 0; i < list.size(); i++) {
-		temp += list.get(i) + ", ";
-	  }
-	  return temp;
   }
 }

@@ -173,7 +173,7 @@ class Transaction
     owner.println("Trying to claim lock of resource " + resourceAccess.resourceId + " at server " + resourceAccess.serverId, transactionId);
     try {
     	if(Globals.PROBING_ENABLED)
-    		new Probe(owner,this).start();
+    		new Probe(owner,waitingForResource.resourceId).start();
       if (resourceAccess.server.lockResource(transactionId, resourceAccess.resourceId)) {
         lockedResources.add(resourceAccess);
         waitingForResource = null;

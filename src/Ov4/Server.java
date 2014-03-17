@@ -55,5 +55,5 @@ public interface Server extends Remote
    */
   void startTransactions() throws RemoteException;
   
-  void receiveProbe(ArrayList<Integer> ints) throws RemoteException;
+  void receiveProbe(ArrayList<Integer> ints, int resourceId) throws RemoteException;
 }

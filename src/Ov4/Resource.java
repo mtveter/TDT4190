@@ -55,6 +55,9 @@ class Resource
               wait();
             } catch (InterruptedException ie) {
             }
+            if(lockOwner != NOT_LOCKED){
+            	return false;
+            }
           }
     }
     
@@ -113,5 +116,8 @@ class Resource
   synchronized boolean isLockedByServer(int serverId)
   {
     return lockOwner != NOT_LOCKED && ServerImpl.getTransactionOwner(lockOwner) == serverId;
+  }
+  public synchronized void abortCurrentTransaction(Transaction t){
+	  notifyAll();
   }
 }
