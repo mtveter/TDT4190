@@ -203,7 +203,7 @@ class Transaction
   /**
    * Aborts this transaction, releasing all the locks held by it.
    */
-  synchronized void abort()
+  private synchronized void abort()
   {
 	
     owner.println("Aborting transaction " + transactionId + '.', transactionId);
